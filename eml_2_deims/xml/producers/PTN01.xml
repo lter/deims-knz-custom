@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+    xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd"
+    packageId="knb-lter-knz.67.6" system="KNB" scope="system">
+    <access system="https://pasta.lternet.edu" order="allowFirst"
+        authSystem="https://pasta.lternet.edu/authentication">
+ <allow>
+            <principal>uid=KNZ,o=LTER,dc=ecoinformatics,dc=org</principal>
+            <permission>all</permission>
+ </allow>
+        <allow>
+            <principal>public</principal>
+            <permission>read</permission>
+        </allow>
+    </access>
+    <dataset>
+        <alternateIdentifier>PTN01</alternateIdentifier>
+        <title>PTN01 Aboveground net primary productivity along transects spanning topographic gradients on an annually burned and unburned watershed at Konza Prairie</title>
+        <creator>
+            <individualName>
+                <givenName>John</givenName>
+                <givenName>M.</givenName>
+                <surName>Blair</surName>
+            </individualName>
+            <address>
+        <deliveryPoint>Division of Biology, Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66506</postalCode>
+        <country>USA</country>
+      </address>
+            <phone>785-532-7065</phone>
+            <electronicMailAddress>jblair@ksu.edu</electronicMailAddress>
+        </creator>
+        <pubDate>2014</pubDate>
+        <language>english</language>
+        <abstract>
+            <section>
+                <para>In 1989, single transects spanning upland-lowland-upland topographic positions
+                    were established in a long-term unburned (0020B) and an annually burned (001D)
+                    watershed. Standing crop biomass data were collected in late season at 11 sites
+                    along each transect and sorted into live graminoids, forbs and woody plants,
+                    current year's dead, and previous years dead vegetation. Four 0.1 m2 quadrats
+                    were harvested at each of the 11 sites per watershed and all data except
+                    previous years' dead were combined to provide an estimate of aboveground NPP. In
+                    1993, soil moisture measurements began along each transect at 15 and 30 cm
+                    depths (where possible) with a Time Domain Reflectomerty (TDR) system.
+                    Measurements were made twice a month from March - October and intermittently
+                    during the winter months. </para>
+            </section>
+        </abstract>
+        <coreArea>Primary Production</coreArea>
+ <coreArea>Disturbance</coreArea>               
+<keywordSet>
+            <keyword keywordType="place">LTER</keyword>
+            <keyword keywordType="place">KNZ</keyword>
+            <keyword keywordType="place">Konza Prairie Biological Station</keyword>
+            <keyword keywordType="place">Kansas</keyword>
+        </keywordSet>
+        <keywordSet>
+            <keyword>aboveground biomass</keyword>
+            <keyword>primary productivity</keyword>
+            <keyword>graminoids</keyword>
+            <keyword>grasses</keyword>
+            <keyword>woody</keyword>
+            <keyword>forbs</keyword>
+            <keyword>net primary productivity</keyword>
+            <keyword>litter</keyword>
+            <keyword>detritus</keyword>
+            <keyword>plant biomass</keyword>
+            <keyword>topography</keyword>
+            <keyword>landscape</keyword>
+            <keyword>soil moisture</keyword>
+        </keywordSet>
+        <distribution>
+            <online>
+                <url>http://www.konza.ksu.edu/KNZ/pages/data/Knzdsdetail.aspx?datasetCode=PTN01</url>
+            </online>
+        </distribution>
+        <coverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>1989-08-15</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>1997-09-26</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+        </coverage>
+        <contact>
+            <positionName>Information Manager</positionName>
+            <organizationName>LTER Network Office</organizationName>
+            <address>
+        <deliveryPoint>UNM Biology Department, MSC03-2020</deliveryPoint>
+        <deliveryPoint>1 University of New Mexico</deliveryPoint>
+        <city>Albuquerque</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>87131-0001</postalCode>
+        <country>USA</country>
+      </address>
+            <phone phonetype="voice">505 277-2535</phone>
+            <phone phonetype="fax">505 277-2541</phone>
+            <electronicMailAddress>tech-support@lternet.edu</electronicMailAddress>
+            <onlineUrl>http://www.lternet.edu</onlineUrl>
+        </contact>
+        <contact id="im">
+            <positionName>KNZ-LTER Data Manager</positionName>
+            <address>
+        <deliveryPoint> Division of Biology</deliveryPoint>
+        <deliveryPoint> Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66506</postalCode>
+      </address>
+            <phone phonetype="voice">(785)532-6729</phone>
+            <phone phonetype="fax">(785)532-6653</phone>
+            <electronicMailAddress>knzlter@ksu.edu</electronicMailAddress>
+            <onlineUrl>http://www.konza.ksu.edu</onlineUrl>
+        </contact>
+        <methods>
+            <methodStep>
+                <description>
+                    <para>For additional metadata see:
+                            <ulink>http://www.konza.ksu.edu/KNZ/docs/DC.pdf</ulink>
+                    </para>
+                    <para>For additional methods information see:
+                            <ulink>http://www.konza.ksu.edu/KNZ/docs/MM.pdf</ulink>
+                    </para>
+                </description>
+            </methodStep>
+        </methods>
+        <dataTable>
+            <alternateIdentifier>PTN011</alternateIdentifier>
+            <entityName>Aboveground biomass(1989- 1997)</entityName>
+            <entityDescription>Data on aboveground biomass with live graminoids, forbs, current year's dead, 
+     previous year’s dead, and woody vegetation from 1989 to 1997 (note: woody data collected from 1993 and data of 1990 was listed as PTN012). </entityDescription>
+            <physical>
+                <objectName>PTN011</objectName>
+                <encodingMethod>None</encodingMethod>
+                <dataFormat>
+                    <textFormat>
+                        <numHeaderLines>1</numHeaderLines>
+                        <recordDelimiter>\n</recordDelimiter>
+                        <attributeOrientation>column</attributeOrientation>
+                        <simpleDelimited>
+                            <fieldDelimiter>,</fieldDelimiter>
+                            <collapseDelimiters>no</collapseDelimiters>
+                            <quoteCharacter>"</quoteCharacter>
+                        </simpleDelimited>
+                    </textFormat>
+                </dataFormat>
+                <distribution>
+                    <online>
+                        <url>http://www.konza.ksu.edu/harvest/PASTA/PTN011.CSV</url>
+                    </online>
+                </distribution>
+            </physical>
+            <coverage>
+                <temporalCoverage>
+                    <rangeOfDates>
+                        <beginDate>
+                            <calendarDate>1989-08-15</calendarDate>
+                        </beginDate>
+                        <endDate>
+                            <calendarDate>1997-09-26</calendarDate>
+                        </endDate>
+                    </rangeOfDates>
+                </temporalCoverage>
+            </coverage>
+            <attributeList>
+                <attribute>
+                    <attributeName>DataCode</attributeName>
+                    <attributeDefinition>Dataset code</attributeDefinition>
+                    <storageType>char(5)</storageType>
+                    <measurementScale>
+                        <nominal>
+                            <nonNumericDomain>
+                                <textDomain>
+                                    <definition>dataset code</definition>
+                                </textDomain>
+                            </nonNumericDomain>
+                        </nominal>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>RecType</attributeName>
+                    <attributeDefinition>Record type</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <interval>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>1</precision>
+                            <numericDomain>
+                                <numberType>natural</numberType>
+                            </numericDomain>
+                        </interval>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>RecYear</attributeName>
+                    <attributeDefinition>Year of sample</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <dateTime>
+                            <formatString>YYYY</formatString>
+                            <dateTimePrecision>1
+                            </dateTimePrecision>
+                            <dateTimeDomain>
+                                <bounds>
+                                    <minimum exclusive="false"/>
+                                    <maximum exclusive="false"/>
+                                </bounds>
+                            </dateTimeDomain>
+                        </dateTime>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>RecMonth</attributeName>
+                    <attributeDefinition>month of record</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <dateTime>
+                            <formatString>MM</formatString>
+                            <dateTimePrecision>1</dateTimePrecision>
+                            <dateTimeDomain>
+                                <bounds>
+                                    <minimum exclusive="false">
+                                    </minimum>
+                                    <maximum exclusive="false">
+                                    </maximum>
+                                </bounds>
+                            </dateTimeDomain>
+                        </dateTime>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>RecDay</attributeName>
+                    <attributeDefinition>day of record</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <dateTime>
+                            <formatString>DD</formatString>
+                            <dateTimePrecision>1</dateTimePrecision>
+                            <dateTimeDomain>
+                                <bounds>
+                                    <minimum exclusive="false">
+                                    </minimum>
+                                    <maximum exclusive="false">
+                                    </maximum>
+                                </bounds>
+                            </dateTimeDomain>
+                        </dateTime>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Watershed</attributeName>
+                    <attributeDefinition>watershed</attributeDefinition>
+                    <storageType>char(4)</storageType>
+                    <measurementScale>
+                        <nominal>
+                            <nonNumericDomain>
+                                <textDomain>
+                                    <definition>watershed</definition>
+                                </textDomain>
+                            </nonNumericDomain>
+                        </nominal>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Transect</attributeName>
+                    <attributeDefinition>transect (1-11)</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <interval>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>1</precision>
+                            <numericDomain>
+                                <numberType>natural</numberType>
+                            </numericDomain>
+                        </interval>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Plotnum</attributeName>
+                    <attributeDefinition>plot numer (A, B, C, D)</attributeDefinition>
+                    <storageType>char(1)</storageType>
+                    <measurementScale>
+                        <nominal>
+                            <nonNumericDomain>
+                                <textDomain>
+                                    <definition>plot numer (A, B, C, D)</definition>
+                                </textDomain>
+                            </nonNumericDomain>
+                        </nominal>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Lvgrass</attributeName>
+                    <attributeDefinition>mass of live grass</attributeDefinition>
+                    <storageType>numeric(6,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Forbs</attributeName>
+                    <attributeDefinition>mass of forbs</attributeDefinition>
+                    <storageType>numeric(6,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Cuyrdead</attributeName>
+                    <attributeDefinition>mass of current year dead</attributeDefinition>
+                    <storageType>numeric(6,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Pryrdead</attributeName>
+                    <attributeDefinition>mass of previous years dead</attributeDefinition>
+                    <storageType>numeric(6,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Woody</attributeName>
+                    <attributeDefinition>lead woody plant</attributeDefinition>
+                    <storageType>numeric(6,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>     
+                <attribute>
+                    <attributeName>Comments</attributeName>
+                    <attributeDefinition>comments</attributeDefinition>
+                    <storageType>varchar(255)</storageType>
+                    <measurementScale>
+                        <nominal>
+                            <nonNumericDomain>
+                                <textDomain>
+                                    <definition>comments</definition>
+                                </textDomain>
+                            </nonNumericDomain>
+                        </nominal>
+                    </measurementScale>
+                </attribute>     
+            </attributeList>
+        </dataTable>
+        <dataTable>
+            <alternateIdentifier>PTN012</alternateIdentifier>
+            <entityName>Aboveground biomass with live graminoids, forbs, current year's dead, previous year's dead vegetation, and their standard errors for 1990</entityName>
+            <entityDescription>Data on aboveground biomass with live graminoids, forbs, current year's dead, previous year’s dead vegetation, and their standard errors for 1990.</entityDescription>
+            <physical>
+                <objectName>PTN012</objectName>
+                <encodingMethod>None</encodingMethod>
+                <dataFormat>
+                    <textFormat>
+                        <numHeaderLines>1</numHeaderLines>
+                        <recordDelimiter>\n</recordDelimiter>
+                        <attributeOrientation>column</attributeOrientation>
+                        <simpleDelimited>
+                            <fieldDelimiter>,</fieldDelimiter>
+                            <collapseDelimiters>no</collapseDelimiters>
+                            <quoteCharacter>"</quoteCharacter>
+                        </simpleDelimited>
+                    </textFormat>
+                </dataFormat>
+                <distribution>
+                    <online>
+                        <url>http://www.konza.ksu.edu/harvest/PASTA/PTN012.CSV</url>
+                    </online>
+                </distribution>
+            </physical>
+            <coverage>
+                <temporalCoverage>
+                    <rangeOfDates>
+                        <beginDate>
+                            <calendarDate>1990-06-20</calendarDate>
+                        </beginDate>
+                        <endDate>
+                            <calendarDate>1990-09-30</calendarDate>
+                        </endDate>
+                    </rangeOfDates>
+                </temporalCoverage>
+            </coverage>
+            <attributeList>
+                <attribute>
+                    <attributeName>DataCode</attributeName>
+                    <attributeDefinition>Dataset code</attributeDefinition>
+                    <storageType>char(5)</storageType>
+                    <measurementScale>
+                        <nominal>
+                            <nonNumericDomain>
+                                <textDomain>
+                                    <definition>dataset code</definition>
+                                </textDomain>
+                            </nonNumericDomain>
+                        </nominal>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>RecType</attributeName>
+                    <attributeDefinition>Record type</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <interval>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>1</precision>
+                            <numericDomain>
+                                <numberType>natural</numberType>
+                            </numericDomain>
+                        </interval>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>RecYear</attributeName>
+                    <attributeDefinition>Year of sample</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <dateTime>
+                            <formatString>YYYY</formatString>
+                            <dateTimePrecision>1
+                            </dateTimePrecision>
+                            <dateTimeDomain>
+                                <bounds>
+                                    <minimum exclusive="false"/>
+                                    <maximum exclusive="false"/>
+                                </bounds>
+                            </dateTimeDomain>
+                        </dateTime>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>RecMonth</attributeName>
+                    <attributeDefinition>month of record</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <dateTime>
+                            <formatString>MM</formatString>
+                            <dateTimePrecision>1</dateTimePrecision>
+                            <dateTimeDomain>
+                                <bounds>
+                                    <minimum exclusive="false">
+                                    </minimum>
+                                    <maximum exclusive="false">
+                                    </maximum>
+                                </bounds>
+                            </dateTimeDomain>
+                        </dateTime>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>RecDay</attributeName>
+                    <attributeDefinition>day of record</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <dateTime>
+                            <formatString>DD</formatString>
+                            <dateTimePrecision>1</dateTimePrecision>
+                            <dateTimeDomain>
+                                <bounds>
+                                    <minimum exclusive="false">
+                                    </minimum>
+                                    <maximum exclusive="false">
+                                    </maximum>
+                                </bounds>
+                            </dateTimeDomain>
+                        </dateTime>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Watershed</attributeName>
+                    <attributeDefinition>watershed</attributeDefinition>
+                    <storageType>char(4)</storageType>
+                    <measurementScale>
+                        <nominal>
+                            <nonNumericDomain>
+                                <textDomain>
+                                    <definition>watershed</definition>
+                                </textDomain>
+                            </nonNumericDomain>
+                        </nominal>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Transect</attributeName>
+                    <attributeDefinition>transect (1-11)</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <interval>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>1</precision>
+                            <numericDomain>
+                                <numberType>natural</numberType>
+                            </numericDomain>
+                        </interval>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Lvgrass</attributeName>
+                    <attributeDefinition>mass of live grass</attributeDefinition>
+                    <storageType>numeric(5,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Lvgrse</attributeName>
+                    <attributeDefinition>standard error of live grass</attributeDefinition>
+                    <storageType>numeric(5,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Forbs</attributeName>
+                    <attributeDefinition>mass of forbs</attributeDefinition>
+                    <storageType>numeric(5,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Forbse</attributeName>
+                    <attributeDefinition>standard error of forbs</attributeDefinition>
+                    <storageType>numeric(5,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Cuyrdead</attributeName>
+                    <attributeDefinition>mass of current year dead</attributeDefinition>
+                    <storageType>numeric(5,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Cuyrdese</attributeName>
+                    <attributeDefinition>standard error of currents years dead</attributeDefinition>
+                    <storageType>numeric(5,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Pryrdead</attributeName>
+                    <attributeDefinition>mass of previous years dead</attributeDefinition>
+                    <storageType>numeric(5,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Pryrdese</attributeName>
+                    <attributeDefinition>standard error of previous years dead</attributeDefinition>
+                    <storageType>numeric(5,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Total</attributeName>
+                    <attributeDefinition>total aboveground biomass (livegrass + forbs + current years dead)</attributeDefinition>
+                    <storageType>numeric(5,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Totalse</attributeName>
+                    <attributeDefinition>standard error of total aboveground biomass</attributeDefinition>
+                    <storageType>numeric(5,2)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.01</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+            </attributeList>
+        </dataTable>
+ <dataTable>
+            <alternateIdentifier>PTN013</alternateIdentifier>
+     <entityName>Soil water content at 15-cm and 30-cm depth from 1993 to 1996</entityName>
+     <entityDescription>Soil water content at 15-cm and 30-cm depth from 1993 to 1996</entityDescription>
+            <physical>
+                <objectName>PTN013</objectName>
+                <encodingMethod>None</encodingMethod>
+                <dataFormat>
+                    <textFormat>
+                        <numHeaderLines>1</numHeaderLines>
+                        <recordDelimiter>\n</recordDelimiter>
+                        <attributeOrientation>column</attributeOrientation>
+                        <simpleDelimited>
+                            <fieldDelimiter>,</fieldDelimiter>
+                            <collapseDelimiters>no</collapseDelimiters>
+                            <quoteCharacter>"</quoteCharacter>
+                        </simpleDelimited>
+                    </textFormat>
+                </dataFormat>
+                <distribution>
+                    <online>
+                        <url>http://www.konza.ksu.edu/harvest/PASTA/PTN013.CSV</url>
+                    </online>
+                </distribution>
+            </physical>
+            <coverage>
+                <temporalCoverage>
+                    <rangeOfDates>
+                        <beginDate>
+                            <calendarDate>1993-03-24</calendarDate>
+                        </beginDate>
+                        <endDate>
+                            <calendarDate>1996-12-30</calendarDate>
+                        </endDate>
+                    </rangeOfDates>
+                </temporalCoverage>
+            </coverage>
+            <attributeList>
+                <attribute>
+                    <attributeName>Datacode</attributeName>
+                    <attributeDefinition>dataset code</attributeDefinition>
+                    <storageType>char(5)</storageType>
+                    <measurementScale>
+                        <nominal>
+                            <nonNumericDomain>
+                                <textDomain>
+                                    <definition>dataset code</definition>
+                                </textDomain>
+                            </nonNumericDomain>
+                        </nominal>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Rectype</attributeName>
+                    <attributeDefinition>record type</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <interval>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>1</precision>
+                            <numericDomain>
+                                <numberType>natural</numberType>
+                            </numericDomain>
+                        </interval>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>RecYear</attributeName>
+                    <attributeDefinition>Year of sample</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <dateTime>
+                            <formatString>YYYY</formatString>
+                            <dateTimePrecision>1
+                            </dateTimePrecision>
+                            <dateTimeDomain>
+                                <bounds>
+                                    <minimum exclusive="false"/>
+                                    <maximum exclusive="false"/>
+                                </bounds>
+                            </dateTimeDomain>
+                        </dateTime>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>RecMonth</attributeName>
+                    <attributeDefinition>month of record</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <dateTime>
+                            <formatString>MM</formatString>
+                            <dateTimePrecision>1</dateTimePrecision>
+                            <dateTimeDomain>
+                                <bounds>
+                                    <minimum exclusive="false">
+                                    </minimum>
+                                    <maximum exclusive="false">
+                                    </maximum>
+                                </bounds>
+                            </dateTimeDomain>
+                        </dateTime>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>RecDay</attributeName>
+                    <attributeDefinition>day of record</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <dateTime>
+                            <formatString>DD</formatString>
+                            <dateTimePrecision>1</dateTimePrecision>
+                            <dateTimeDomain>
+                                <bounds>
+                                    <minimum exclusive="false">
+                                    </minimum>
+                                    <maximum exclusive="false">
+                                    </maximum>
+                                </bounds>
+                            </dateTimeDomain>
+                        </dateTime>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Watershed</attributeName>
+                    <attributeDefinition>watershed (always HQ)</attributeDefinition>
+                    <storageType>char(4)</storageType>
+                    <measurementScale>
+                        <nominal>
+                            <nonNumericDomain>
+                                <textDomain>
+                                    <definition>watershed (always HQ)</definition>
+                                </textDomain>
+                            </nonNumericDomain>
+                        </nominal>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Depth</attributeName>
+                    <attributeDefinition>Soil depth to collect data</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <interval>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>1</precision>
+                            <numericDomain>
+                                <numberType>natural</numberType>
+                            </numericDomain>
+                        </interval>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Tag#</attributeName>
+                    <attributeDefinition>Tag  number</attributeDefinition>
+                    <storageType>int</storageType>
+                    <measurementScale>
+                        <interval>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>1</precision>
+                            <numericDomain>
+                                <numberType>natural</numberType>
+                            </numericDomain>
+                        </interval>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Reading</attributeName>
+                    <attributeDefinition>Reading from TDR</attributeDefinition>
+                    <storageType>numeric(8,4)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.001</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>H2O</attributeName>
+                    <attributeDefinition>% volumetric H2O based on the TOPP equation</attributeDefinition>
+                    <storageType>numeric(8,4)</storageType>
+                    <measurementScale>
+                        <ratio>
+                            <unit>
+                                <standardUnit>dimensionless</standardUnit>
+                            </unit>
+                            <precision>0.001</precision>
+                            <numericDomain>
+                                <numberType>real</numberType>
+                            </numericDomain>
+                        </ratio>
+                    </measurementScale>
+                </attribute>
+                <attribute>
+                    <attributeName>Comments</attributeName>
+                    <attributeDefinition>comments</attributeDefinition>
+                    <storageType>varchar(255)</storageType>
+                    <measurementScale>
+                        <nominal>
+                            <nonNumericDomain>
+                                <textDomain>
+                                    <definition>comments</definition>
+                                </textDomain>
+                            </nonNumericDomain>
+                        </nominal>
+                    </measurementScale>
+                </attribute>
+            </attributeList>
+        </dataTable>
+    </dataset>
+    <additionalMetadata>
+        <metadata><stmml:unitList><stmml:unit name="year (yyyy)" unitType="datetime" id="year (yyyy)" parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1          
+            "> </stmml:unit><stmml:unit name="month of year" unitType="datetime" id="month of year" parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1                
+            "> </stmml:unit><stmml:unit name="day of month" unitType="datetime" id="day of month" parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1
+            "> </stmml:unit></stmml:unitList></metadata>
+    </additionalMetadata>
+</eml:eml>

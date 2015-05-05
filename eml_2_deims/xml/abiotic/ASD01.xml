@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+	xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd"
+	packageId="knb-lter-knz.6.8" system="KNB" scope="system">
+	<access authSystem="knb" order="allowFirst" scope="document">
+		<allow>
+			<principal>uid=KNZ,o=lter,dc=ecoinformatics,dc=org</principal>
+			<permission>all</permission>
+		</allow>
+		<allow>
+			<principal>public</principal>
+			<permission>read</permission>
+		</allow>
+	</access>
+  <dataset>
+    <alternateIdentifier>ASD01</alternateIdentifier>
+    <title>ASD01 Stream Discharge for Kings Creek Measured at USGS Gaging Station</title>
+    <creator>
+      <individualName>
+        <givenName>Walter</givenName>
+        <givenName>K.</givenName>
+        <surName>Dodds</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>116 Ackert Hall, Division of Biology, Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66506</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>785-532-6998</phone>
+      <electronicMailAddress>wkdodds@ksu.edu</electronicMailAddress>
+    </creator>
+    <abstract>
+      <section>
+        <para>The 1060 hectacre Kings Creek watershed (STATION NUMBER 06879650) is a U.S. Geological survey hydrologic benchmark. (cf. Cobb, e.D. and J.E. Beisecker. 1971. USGS circular 460-d) flow is measured continuously with a bubble gage. The period of record started in March, 1979. The hydrologic regime is driven by the mid-continent climate characterized by summer thunderstorms and drought. The stream, at the gaging station, is fourth order in gallery forest. The riparian vegetation in the headwaters (1st &amp; 2nd order) is tallgrass, or true, prairie. Flow occurred in spring and early summer in all years. Late summer, fall and winter records also include periods of no flow, the longest of these was ca. nine months. The time from base flow to peak flow for typical storm flow hydrographs is an hour or so and amplitude of ca. three meters above base flow has been recorded (Data comes from USGS office in Lawrence, Kansas; Contact person:Butch Lawcock, (913) 842-9709).</para>
+      </section>
+    </abstract>
+  	<keywordSet>
+  		<keyword keywordType="place">LTER</keyword>
+  		<keyword keywordType="place">KNZ</keyword>
+  		<keyword keywordType="place">Konza Prairie Biological Station</keyword>
+  		<keyword keywordType="place">Kansas</keyword>
+  	</keywordSet>
+  	<keywordSet>
+  		<keyword>hydrology</keyword>
+  		<keyword>hydrologic processes</keyword>
+  		<keyword>stream</keyword>
+  		<keyword>streamflow</keyword>
+  		<keyword>stream discharge</keyword>
+  	</keywordSet>
+    <distribution>
+      <online>
+        <url>http://www.konza.ksu.edu/KNZ/pages/data/Knzdsdetail.aspx?datasetCode=ASD01</url>
+      </online>
+    </distribution>
+    <coverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1979-04-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate> 2012-10-01 </calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact id="im">
+      <positionName>KNZ-LTER Data Manager</positionName>
+      <address>
+        <deliveryPoint> Division of Biology</deliveryPoint>
+        <deliveryPoint> Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66506</postalCode>
+      </address>
+      <phone phonetype="voice">(785)532-6729</phone>
+      <phone phonetype="fax">(785)532-6653</phone>
+      <electronicMailAddress>knzlter@ksu.edu</electronicMailAddress>
+      <onlineUrl>http://www.konza.ksu.edu</onlineUrl>
+    </contact>
+  	<methods>
+  		<methodStep>
+  			<description>
+  				<para>For additional metadata see: <ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/DC2011_1.pdf</ulink></para>
+  				<para>For additional methods information see: <ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/MM2011_1.pdf</ulink></para>
+  			</description>
+  		</methodStep>
+  	</methods>
+    <dataTable>
+      <alternateIdentifier>ASD011</alternateIdentifier>
+      <entityName>ASD011 Stream daily discharge in Kings Creak at USGS station</entityName>
+      <entityDescription>Stream daily discharge in Kings Creak at USGS station</entityDescription>
+      <physical>
+        <objectName>ASD011</objectName>
+        <encodingMethod>None</encodingMethod>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <collapseDelimiters>no</collapseDelimiters>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>http://www.konza.ksu.edu/harvest/PASTA/ASD011.CSV</url>
+          </online>
+        </distribution>
+      </physical>
+      <coverage>
+        <temporalCoverage>
+          <rangeOfDates>
+            <beginDate>
+              <calendarDate>1979-04-01</calendarDate>
+            </beginDate>
+            <endDate>
+              <calendarDate> 2012-10-01 </calendarDate>
+            </endDate>
+          </rangeOfDates>
+        </temporalCoverage>
+      </coverage>
+      <attributeList>
+        <attribute>
+          <attributeName>DataCode</attributeName>
+          <attributeDefinition>Datset code</attributeDefinition>
+          <storageType>char(5)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Datset code</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      	<attribute>
+      		<attributeName>RecType</attributeName>
+      		<attributeDefinition>Record type</attributeDefinition>
+      		<storageType>int</storageType>
+      		<measurementScale>
+      			<nominal>
+      				<nonNumericDomain>
+      					<textDomain>
+      						<definition>record type</definition>
+      					</textDomain>
+      				</nonNumericDomain>
+      			</nominal>
+      		</measurementScale>
+      	</attribute>
+        <attribute>
+          <attributeName>Date</attributeName>
+          <attributeDefinition>Record date</attributeDefinition>
+          <storageType> </storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false"> </minimum>
+                  <maximum exclusive="false"> </maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>discharge</attributeName>
+          <attributeDefinition>Stream daily discharge</attributeDefinition>
+          <storageType>numberic(7,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>comment</attributeName>
+          <attributeDefinition>Comments of data collection. A - Approved for publication; P -
+            Provisional data subject to revision; e - Value has been estimated</attributeDefinition>
+          <storageType>char(4)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Comments of data collection. A - Approved for publication; P -
+                    Provisional data subject to revision; e - Value has been estimated</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+   <metadata> <stmml:unitList>
+      <stmml:unit name="year (yyyy)" unitType="datetime" id="year (yyyy)"
+        parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1&#xD;&#xA;							"> </stmml:unit>
+      <stmml:unit name="month of year" unitType="datetime" id="month of year"
+        parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1&#xD;&#xA;							"> </stmml:unit>
+      <stmml:unit name="day of month" unitType="datetime" id="day of month"
+        parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1&#xD;&#xA;							"> </stmml:unit>
+    </stmml:unitList></metadata>
+  </additionalMetadata>
+</eml:eml>

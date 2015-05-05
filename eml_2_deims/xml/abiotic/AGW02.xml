@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd"
+  packageId="knb-lter-knz.2.7" system="KNB" scope="system">
+  <access authSystem="knb" order="allowFirst" scope="document">
+    <allow>
+      <principal>uid=KNZ,o=lter,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier>AGW02</alternateIdentifier>
+    <title>Measurement of Groundwater Physical and Chemical Properties from Wells in Contrasting Land Uses near Kings Creek</title>
+    <creator>
+      <individualName>
+        <givenName>Walter</givenName>
+        <givenName>K.</givenName>
+        <surName>Dodds</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>116 Ackert Hall, Division of Biology, Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66506</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>785-532-6998</phone>
+      <electronicMailAddress>wkdodds@ksu.edu</electronicMailAddress>
+    </creator>
+    <abstract>
+      <section>
+        <para>Wells were drilled in two sites on Konza Prairie Biological Station in April, 1993 
+          approximately 100 m from Kings Creek.  The two sites are located in a grassland and an 
+          agricultural area.  The grassland site (K01A) is an old field that was planted with brome 
+          sometime prior to 1976.  It has not been grazed for 25 years and is burned in spring every 1-2 
+          years.  The agricultural site is currently under a mix of cultivation and restoration plots.  
+          Historically, it was cultivated from sometime between 1939 and 1950 to the present.  It is 
+          approximately 1 km downstream in an area geologically similar to K01A.  The soil at both sites 
+          is mapped as Reading silt loam (fine, mixed, mesic Typic Arguidolls).  Samples are taken monthly 
+          by PVC bailer following removal of  2 times the well volume.  Samples are analyzed with same 
+          methods as used for LTER stream water chemistry.</para>
+      </section>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="place">LTER</keyword>
+      <keyword keywordType="place">KNZ</keyword>
+      <keyword keywordType="place">Konza Prairie Biological Station</keyword>
+      <keyword keywordType="place">Kansas</keyword>
+    </keywordSet>
+    <keywordSet>
+      <keyword>groundwater</keyword>
+      <keyword>water chemistry</keyword>
+      <keyword>dissolved nutrients</keyword>
+      <keyword>organic and inorganic nitrogen and phosphorus</keyword>
+      <keyword>nitrate</keyword>
+      <keyword>ammonium</keyword>
+      <keyword>soluble reactive phosphorus</keyword>
+      <keyword>dissolved organic carbon</keyword>
+    </keywordSet>
+    <distribution>
+      <online>
+        <url>http://www.konza.ksu.edu/KNZ/pages/data/Knzdsdetail.aspx?datasetCode=AGW01</url>
+      </online>
+    </distribution>
+    <coverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1996-05-17</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate> 2012-10-01 </calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact id="im">
+      <positionName>KNZ-LTER Data Manager</positionName>
+      <address>
+        <deliveryPoint> Division of Biology</deliveryPoint>
+        <deliveryPoint> Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66506</postalCode>
+      </address>
+      <phone phonetype="voice">(785)532-6729</phone>
+      <phone phonetype="fax">(785)532-6653</phone>
+      <electronicMailAddress>knzlter@ksu.edu</electronicMailAddress>
+      <onlineUrl>http://www.konza.ksu.edu</onlineUrl>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>
+            For additional metadata see: <ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/DC2011_1.pdf</ulink></para>
+          <para>For additional methods information see: <ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/MM2011_1.pdf</ulink>
+          </para>
+        </description>
+      </methodStep>
+    </methods>
+    <dataTable>
+      <alternateIdentifier>AGW021</alternateIdentifier>
+      <entityName>Belowground water chemistry for King Creek 96 to pesent.</entityName>
+      <entityDescription>Belowground water chemistry from wells near King Creek (05/1996 - present)</entityDescription>
+      <physical>
+        <objectName>AGW021</objectName>
+        <encodingMethod>None</encodingMethod>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <collapseDelimiters>no</collapseDelimiters>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>http://www.konza.ksu.edu/harvest/PASTA/AGW021.CSV</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>ID</attributeName>
+          <attributeDefinition>Row ID number</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>natural</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DataCode</attributeName>
+          <attributeDefinition>Dataset code</attributeDefinition>
+          <storageType>char(5)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>dataset code</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      	<attribute>
+      		<attributeName>RecType</attributeName>
+      		<attributeDefinition>Record type</attributeDefinition>
+      		<storageType>int</storageType>
+      		<measurementScale>
+      			<nominal>
+      				<nonNumericDomain>
+      					<textDomain>
+      						<definition>record type</definition>
+      					</textDomain>
+      				</nonNumericDomain>
+      			</nominal>
+      		</measurementScale>
+      	</attribute>
+        <attribute>
+          <attributeName>RecYear</attributeName>
+          <attributeDefinition>Year of record</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false"> </minimum>
+                  <maximum exclusive="false"> </maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>RecMonth</attributeName>
+          <attributeDefinition>Month of record</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>MM</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false"> </minimum>
+                  <maximum exclusive="false"> </maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>RecDay</attributeName>
+          <attributeDefinition>Day of record</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>DD</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false"> </minimum>
+                  <maximum exclusive="false"> </maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>watershed</attributeName>
+          <attributeDefinition>watershed</attributeDefinition>
+          <storageType>nvarchar(255)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>watershed</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>wellNumber</attributeName>
+          <attributeDefinition>A1-A7, P1-P7</attributeDefinition>
+          <storageType>nvarchar(10)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>A1-A7, P1-P7</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>wellDepth</attributeName>
+          <attributeDefinition>depth of well</attributeDefinition>
+          <storageType>numeric(4,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>depthToWater</attributeName>
+          <attributeDefinition>depth to water</attributeDefinition>
+          <storageType>numeric(4,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>NO3</attributeName>
+          <attributeDefinition>nitrate-nitrogen</attributeDefinition>
+          <storageType>numeric(6,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>NH4</attributeName>
+          <attributeDefinition>ammonium-nitrogen</attributeDefinition>
+          <storageType>numeric(6,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>PO4</attributeName>
+          <attributeDefinition>Orthophosphate</attributeDefinition>
+          <storageType>numeric(5,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>TN</attributeName>
+          <attributeDefinition>Total N</attributeDefinition>
+          <storageType>numeric(7,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>TP</attributeName>
+          <attributeDefinition>Total P</attributeDefinition>
+          <storageType>numeric(5,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DOC</attributeName>
+          <attributeDefinition>Dissolved Organic Carbon</attributeDefinition>
+          <storageType>numeric(6,3)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.001</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Comments</attributeName>
+          <attributeDefinition>Comments on data collection</attributeDefinition>
+          <storageType>nvarchar(255)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>comments on data collection</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+    <dataTable>
+      <alternateIdentifier>AGW022</alternateIdentifier>
+      <entityName>Belowground water chemistry for Kings Creek 93 to 96.</entityName>
+      <entityDescription>Belowground water chemistry from wells near Kings Creek (08/1993 -
+        01/1996)</entityDescription>
+      <physical>
+        <objectName>AGW022</objectName>
+        <encodingMethod>None</encodingMethod>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <collapseDelimiters>no</collapseDelimiters>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>http://www.konza.ksu.edu/harvest/PASTA/AGW022.CSV</url>
+          </online>
+        </distribution>
+      </physical>
+      <coverage>
+        <temporalCoverage>
+          <rangeOfDates>
+            <beginDate>
+              <calendarDate>1993-08-06</calendarDate>
+            </beginDate>
+            <endDate>
+              <calendarDate> 2012-10-01 </calendarDate>
+            </endDate>
+          </rangeOfDates>
+        </temporalCoverage>
+      </coverage>
+      <attributeList>
+        <attribute>
+          <attributeName>WellID</attributeName>
+          <attributeDefinition>Well identifier from A-1 to A-7 and from P-1 to P-7. KC represents
+            Kings Creek</attributeDefinition>
+          <storageType>char(4)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Well identifier from A-1 to A-7 and from P-1 to P-7. KC represents
+                    Kings Creek</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Date</attributeName>
+          <attributeDefinition>Date of sample collection</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false"> </minimum>
+                  <maximum exclusive="false"> </maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Depth2wat</attributeName>
+          <attributeDefinition>Water depth from ground</attributeDefinition>
+          <storageType>numeric(8,3)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>isdry</attributeName>
+          <attributeDefinition>Is well dry?</attributeDefinition>
+          <storageType>bit</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Is well dry?</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Na</attributeName>
+          <attributeDefinition>Sodium concentration</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Na_error</attributeName>
+          <attributeDefinition>Analytical error, based on precision of duplicate samples and
+            accuracy of quality control samples</attributeDefinition>
+          <storageType>numeric(5,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>K</attributeName>
+          <attributeDefinition>Potassium concentration</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>K_error</attributeName>
+          <attributeDefinition>Analytical error, based on precision of duplicate samples and
+            accuracy of quality control samples</attributeDefinition>
+          <storageType>numeric(5,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Ca</attributeName>
+          <attributeDefinition>Calcium concentration</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Ca_error</attributeName>
+          <attributeDefinition>Analytical error, based on precision of duplicate samples and
+            accuracy of quality control samples</attributeDefinition>
+          <storageType>numeric(5,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Mg</attributeName>
+          <attributeDefinition>Magnesium concentration</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Mg_error</attributeName>
+          <attributeDefinition>Analytical error, based on precision of duplicate samples and
+            accuracy of quality control samples</attributeDefinition>
+          <storageType>numeric(5,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>NH4_H</attributeName>
+          <attributeDefinition>Ammonium-nitrogen concentration</attributeDefinition>
+          <storageType>numericr(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>NH4_error</attributeName>
+          <attributeDefinition>Analytical error, based on precision of duplicate samples and
+            accuracy of quality control samples</attributeDefinition>
+          <storageType>numeric(5,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SO4</attributeName>
+          <attributeDefinition>Sulfate concentration</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SO4_error</attributeName>
+          <attributeDefinition>Analytical error, based on precision of duplicate samples and
+            accuracy of quality control samples</attributeDefinition>
+          <storageType>numeric(5,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>F</attributeName>
+          <attributeDefinition>Fluoride concentration</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>F_error</attributeName>
+          <attributeDefinition>Analytical error, based on precision of duplicate samples and
+            accuracy of quality control samples</attributeDefinition>
+          <storageType>numericr(5,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Cl</attributeName>
+          <attributeDefinition>Chloride concentration</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Cl_error</attributeName>
+          <attributeDefinition>Analytical error, based on precision of duplicate samples and
+            accuracy of quality control samples</attributeDefinition>
+          <storageType>numeric(5,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>NO3-N</attributeName>
+          <attributeDefinition>Nitrate-nitrogen concentration</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>NO3_error</attributeName>
+          <attributeDefinition>Analytical error, based on precision of duplicate samples and
+            accuracy of quality control samples</attributeDefinition>
+          <storageType>numeric(5,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>P</attributeName>
+          <attributeDefinition>Phosphate as phosphorus concentration</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>P_error</attributeName>
+          <attributeDefinition>Analytical error, based on precision of duplicate samples and
+            accuracy of quality control samples</attributeDefinition>
+          <storageType>numeric(5,1)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.1</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Alkal</attributeName>
+          <attributeDefinition>Titration alkalinity</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>pH_Lab</attributeName>
+          <attributeDefinition>pH measured in lab</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>pH_F</attributeName>
+          <attributeDefinition>pH measured in field</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>pH_H</attributeName>
+          <attributeDefinition>pH measured with hydrolab</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>T</attributeName>
+          <attributeDefinition>Water temperature</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Cond</attributeName>
+          <attributeDefinition>Specific conductance, (micromhos/cm)</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Salinity</attributeName>
+          <attributeDefinition>Salinity in hydrolab</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DO</attributeName>
+          <attributeDefinition>Dissolved oxygen (percent saturation)</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DO_ppm</attributeName>
+          <attributeDefinition>Dissolved oxygen, (parts per million)</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Eh</attributeName>
+          <attributeDefinition>Oxidation-Reduction potential (millivolts)</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>TDS</attributeName>
+          <attributeDefinition>Total dissolved solids</attributeDefinition>
+          <storageType>numeric(8,3)</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>del15N_NO3_N</attributeName>
+          <attributeDefinition>Nitrogen isotope ratio, nitrate</attributeDefinition>
+          <storageType>numeric(8,3)</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+      	<attribute>
+      		<attributeName>RecYear</attributeName>
+      		<attributeDefinition>Year of record</attributeDefinition>
+      		<storageType>int</storageType>
+      		<measurementScale>
+      			<dateTime>
+      				<formatString>YYYY</formatString>
+      				<dateTimePrecision>1</dateTimePrecision>
+      				<dateTimeDomain>
+      					<bounds>
+      						<minimum exclusive="false"> </minimum>
+      						<maximum exclusive="false"> </maximum>
+      					</bounds>
+      				</dateTimeDomain>
+      			</dateTime>
+      		</measurementScale>
+      	</attribute>
+      </attributeList>
+    </dataTable>
+    <dataTable>
+      <alternateIdentifier>AGW023</alternateIdentifier>
+      <entityName>Wells from 2 sites drilled near Kings Creek.</entityName>
+      <entityDescription>Wells information drilled near Kings Creek in two sites on Konza Prairie
+        Biological Station</entityDescription>
+      <physical>
+        <objectName>AGW023</objectName>
+        <encodingMethod>None</encodingMethod>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <collapseDelimiters>no</collapseDelimiters>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>http://www.konza.ksu.edu/harvest/PASTA/AGW023.CSV</url>
+          </online>
+        </distribution>
+      </physical>
+      <coverage>
+        <temporalCoverage>
+          <rangeOfDates>
+            <beginDate>
+              <calendarDate>1993-04-01</calendarDate>
+            </beginDate>
+            <endDate>
+              <calendarDate>1993-04-30</calendarDate>
+            </endDate>
+          </rangeOfDates>
+        </temporalCoverage>
+      </coverage>
+      <attributeList>
+        <attribute>
+          <attributeName>WellID</attributeName>
+          <attributeDefinition>Well identifier from A-1 to A-7 and from P-1 to
+            P-7</attributeDefinition>
+          <storageType>char(4)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Well identifier from A-1 to A-7 and from P-1 to P-7</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Elvation</attributeName>
+          <attributeDefinition>Relative ground elevation (m), estimated from Clennan,
+            1994</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Depth</attributeName>
+          <attributeDefinition>Total depth below ground</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CaseWidth</attributeName>
+          <attributeDefinition>Casing diameter</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CaseHeight</attributeName>
+          <attributeDefinition>Original casing height above ground</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CaseHeightA</attributeName>
+          <attributeDefinition>Casing above ground after well protectors installed
+            (m)</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CapLength</attributeName>
+          <attributeDefinition>Screen + slotter bottom cap length</attributeDefinition>
+          <storageType>numeric(5,2)</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+    <stmml:unitList>
+      <stmml:unit name="year (yyyy)" unitType="datetime" id="year (yyyy)"
+        parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1&#xD;&#xA;							"> </stmml:unit>
+      <stmml:unit name="month of year" unitType="datetime" id="month of year"
+        parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1&#xD;&#xA;							"> </stmml:unit>
+      <stmml:unit name="day of month" unitType="datetime" id="day of month"
+        parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1&#xD;&#xA;							"> </stmml:unit>
+      <stmml:unit name="date as month, day, year" unitType="datetime" id="date as month, day, year"
+        parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1&#xD;&#xA;							"> </stmml:unit>
+      <stmml:unit name="pH units" unitType="undefined" id="pH units" parentSI="unknown"
+        multiplierToSI="1&#xD;&#xA;							"> </stmml:unit>
+    </stmml:unitList></metadata>
+  </additionalMetadata>
+</eml:eml>

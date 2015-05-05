@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+	xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd"
+	packageId="knb-lter-knz.27.7" system="KNB" scope="system">
+	<access authSystem="knb" order="allowFirst" scope="document">
+		<allow>
+			<principal>uid=KNZ,o=lter,dc=ecoinformatics,dc=org</principal>
+			<permission>all</permission>
+		</allow>
+		<allow>
+			<principal>public</principal>
+			<permission>read</permission>
+		</allow>
+	</access>
+  <dataset>
+    <alternateIdentifier>CGP01</alternateIdentifier>
+    <title>CGP01 Gall-insect Densities on Selected Plant Species in Watersheds with Different Fire Frequencies</title>
+    <creator>
+      <individualName>
+        <givenName>David</givenName>
+        <givenName>C.</givenName>
+        <surName>Hartnett</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>116 Ackert Hall, Division of Biology, Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66506</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>785-532-5925</phone>
+      <electronicMailAddress>dchart@ksu.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Philip</givenName>
+        <givenName>A.</givenName>
+        <surName>Fay</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>USDA-ARS Grassland, Soil and Water Lab,808 E. Blackland Rd.</deliveryPoint>
+        <city>Temple</city>
+        <administrativeArea>TX</administrativeArea>
+        <postalCode>76502-6712</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>254-770-6533</phone>
+      <electronicMailAddress>philip.fay@ars.usda.gov</electronicMailAddress>
+    </creator>
+    <abstract>
+      <section>
+        <para>Long-term monitoring of gall-insect densities on Solidago canadensis, Vernonia baldwinii, and Ceanothus herbaceous. Gall abundances are censused in watersheds burned at one- to twenty- year intervals to asses the role of fire frequency and time since fire on gall-insect population dynamics. The data sets contain the following: Watershed fire frequency, number of growing seasons since last fire, plant species, number of galled stems, and number of censused stems. Censuses conducted for the 1989-1996 growing seasons except 1992 and 1994, next scheduled census is fall 1997. See methods manual pages 64-65 for further sampling details.</para>
+      </section>
+    </abstract>
+     <coreArea>Disturbance</coreArea>               
+ 	<keywordSet>
+  		<keyword keywordType="place">LTER</keyword>
+  		<keyword keywordType="place">KNZ</keyword>
+  		<keyword keywordType="place">Konza Prairie Biological Station</keyword>
+  		<keyword keywordType="place">Kansas</keyword>
+  	</keywordSet>
+    <keywordSet>
+      <keyword>Ceanothus</keyword>
+      <keyword>Diptera</keyword>
+      <keyword>fire</keyword>
+      <keyword>gall-insects</keyword>
+      <keyword>insects</keyword>
+      <keyword>Lepidoptera Compositae</keyword>
+      <keyword>Na</keyword>
+      <keyword>population dynamics</keyword>
+      <keyword>Rhamnaceae</keyword>
+      <keyword>Solidago</keyword>
+      <keyword>Vernonia</keyword>
+    </keywordSet>
+    <distribution>
+      <online>
+        <url>http://www.konza.ksu.edu/KNZ/pages/data/Knzdsdetail.aspx?datasetCode=CGP01</url>
+      </online>
+    </distribution>
+    <coverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1988-10-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>1996-12-30</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact id="im">
+      <positionName>KNZ-LTER Data Manager</positionName>
+      <address>
+        <deliveryPoint> Division of Biology</deliveryPoint>
+        <deliveryPoint> Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66506</postalCode>
+      </address>
+      <phone phonetype="voice">(785)532-6729</phone>
+      <phone phonetype="fax">(785)532-6653</phone>
+      <electronicMailAddress>knzlter@ksu.edu</electronicMailAddress>
+      <onlineUrl>http://www.konza.ksu.edu</onlineUrl>
+    </contact>
+  	<methods>
+  		<methodStep>
+  			<description>
+  				<para>For additional metadata see: <ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/DC2011_1.pdf</ulink></para>
+  				<para>For additional methods information see: <ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/MM2011_1.pdf</ulink></para>
+  			</description>
+  		</methodStep>
+  	</methods>
+    <dataTable>
+      <alternateIdentifier>CGP011</alternateIdentifier>
+      <entityName>CGP011 Long-term monitoring of gall-insect densities</entityName>
+      <entityDescription>Long-term monitoring of gall-insect densities on Solidago canadensis, Vernonia baldwinii, and Ceanothus herbaceous.</entityDescription>
+      <physical>
+        <objectName>CGP011</objectName>
+        <encodingMethod>None</encodingMethod>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <collapseDelimiters>no</collapseDelimiters>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>http://www.konza.ksu.edu/harvest/PASTA/CGP011.CSV</url>
+          </online>
+        </distribution>
+      </physical>
+      <coverage>
+        <temporalCoverage>
+          <rangeOfDates>
+            <beginDate>
+              <calendarDate>1988-10-01</calendarDate>
+            </beginDate>
+            <endDate>
+              <calendarDate> 1996-12-31 </calendarDate>
+            </endDate>
+          </rangeOfDates>
+        </temporalCoverage>
+      </coverage>
+      <attributeList>
+        <attribute>
+          <attributeName>DataCode</attributeName>
+          <attributeDefinition>Dataset code</attributeDefinition>
+          <storageType>char(5)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>dataset code</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      	<attribute>
+      		<attributeName>RecType</attributeName>
+      		<attributeDefinition>Record type</attributeDefinition>
+      		<storageType>int</storageType>
+      		<measurementScale>
+      			<nominal>
+      				<nonNumericDomain>
+      					<textDomain>
+      						<definition>record type</definition>
+      					</textDomain>
+      				</nonNumericDomain>
+      			</nominal>
+      		</measurementScale>
+      	</attribute>
+        <attribute>
+          <attributeName>RecYear</attributeName>
+          <attributeDefinition>Year of record</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false"> </minimum>
+                  <maximum exclusive="false"> </maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>monthday</attributeName>
+          <attributeDefinition>Month and day of record (mmdd)</attributeDefinition>
+          <storageType>int</storageType>
+        	<measurementScale>
+        		<dateTime>
+        			<formatString>MMDD</formatString>
+        			<dateTimePrecision>1</dateTimePrecision>
+        			<dateTimeDomain>
+        				<bounds>
+        					<minimum exclusive="false"> </minimum>
+        					<maximum exclusive="false"> </maximum>
+        				</bounds>
+        			</dateTimeDomain>
+        		</dateTime>
+        	</measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Watershed</attributeName>
+          <attributeDefinition>watershed identifier</attributeDefinition>
+          <storageType>char(4)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>watershed identifier</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fireFrequency</attributeName>
+          <attributeDefinition>fire frequence</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>natural</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>LastFire</attributeName>
+          <attributeDefinition>last fire</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>natural</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>LastWildfire</attributeName>
+          <attributeDefinition>last wildfire</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>natural</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Species</attributeName>
+          <attributeDefinition>species name</attributeDefinition>
+          <storageType>varchar(25)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>species name</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>CensusReplicate</attributeName>
+          <attributeDefinition>census replicates</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+              	<textDomain>
+              		<definition>census replicate</definition>
+              	</textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>GalledStems</attributeName>
+          <attributeDefinition>number of galled stems</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SampledStems</attributeName>
+          <attributeDefinition>number of samples stems</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+    <stmml:unitList>
+      <stmml:unit name="year (yyyy)" unitType="datetime" id="year (yyyy)"
+        parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1&#xD;&#xA;							"> </stmml:unit>
+    </stmml:unitList></metadata>
+  </additionalMetadata>
+</eml:eml>

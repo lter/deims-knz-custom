@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+	xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd"
+	packageId="knb-lter-knz.60.4" system="KNB" scope="system">
+	<access authSystem="knb" order="allowFirst" scope="document">
+		<allow>
+			<principal>uid=KNZ,o=lter,dc=ecoinformatics,dc=org</principal>
+			<permission>all</permission>
+		</allow>
+		<allow>
+			<principal>public</principal>
+			<permission>read</permission>
+		</allow>
+	</access>
+	<dataset>
+		<alternateIdentifier>PEB01</alternateIdentifier>
+		<title>Aboveground Net Primary Productivity of Tallgrass Prairie Based on Accumulated Plant Biomass in Grazing Exclsoures on Bison-Grazed Watersheds</title>
+		<creator>
+			<individualName>
+				<givenName>David</givenName>
+				<givenName>C.</givenName>
+				<surName>Hartnett</surName>
+			</individualName>
+			<address>
+        <deliveryPoint>116 Ackert Hall, Division of Biology, Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66506</postalCode>
+        <country>USA</country>
+      </address>
+			<phone>785-532-5925</phone>
+			<electronicMailAddress>dchart@ksu.edu</electronicMailAddress>
+		</creator>
+		<abstract>
+			<section>
+				<para>Data set contains estimates of end-of-season standing crop biomass (grams per square
+					meter) of live graminoids, forbs, woody plants, and previous year's dead vegetation in
+					grazing exclosures. Date from exclosures is used to determine long- term effects of bison
+					grazing on aboveground net primary productivity.</para>
+			</section>
+		</abstract>
+		<coreArea>Primary Production</coreArea>
+ <coreArea>Disturbance</coreArea>               
+<keywordSet>
+			<keyword keywordType="place">LTER</keyword>
+			<keyword keywordType="place">KNZ</keyword>
+			<keyword keywordType="place">Konza Prairie Biological Station</keyword>
+			<keyword keywordType="place">Kansas</keyword>
+		</keywordSet>
+		<keywordSet>
+			<keyword>aboveground biomass</keyword>
+			<keyword>forbs</keyword>
+			<keyword>grasses</keyword>
+			<keyword>primary productivity</keyword>
+			<keyword>woody species</keyword>
+			<keyword>graminoids</keyword>
+			<keyword>previous year's dead</keyword>
+			<keyword>net primary productivity</keyword>
+			<keyword>litter</keyword>
+			<keyword>standing crop</keyword>
+			<keyword>detritus</keyword>
+			<keyword>plant biomass</keyword>
+		</keywordSet>
+		<distribution>
+			<online>
+				<url>http://www.konza.ksu.edu/datasets/knzdsdetail.aspx?currMenu=18&amp;datasetcode=PEB01</url>
+			</online>
+		</distribution>
+		<coverage>
+			<temporalCoverage>
+				<rangeOfDates>
+					<beginDate>
+						<calendarDate>1992-01-01</calendarDate>
+					</beginDate>
+					<endDate>
+						<calendarDate> 2012-12-01 </calendarDate>
+					</endDate>
+				</rangeOfDates>
+			</temporalCoverage>
+		</coverage>
+		<contact id="im">
+			<positionName>KNZ-LTER Data Manager</positionName>
+			<address>
+        <deliveryPoint> Division of Biology</deliveryPoint>
+        <deliveryPoint> Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66506</postalCode>
+      </address>
+			<phone phonetype="voice">(785)532-6729</phone>
+			<phone phonetype="fax">(785)532-6653</phone>
+			<electronicMailAddress>knzlter@ksu.edu</electronicMailAddress>
+			<onlineUrl>http://www.konza.ksu.edu</onlineUrl>
+		</contact>
+		<methods>
+			<methodStep>
+				<description>
+					<para>
+						For additional metadata see: <ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/DC2011_1.pdf</ulink></para>
+					<para>For additional methods information see: <ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/MM2011_1.pdf</ulink>
+					</para>
+				</description>
+			</methodStep>
+		</methods>
+		<dataTable>
+			<alternateIdentifier>PEB011</alternateIdentifier>
+			<entityName>Primary production in grazing exclosures.</entityName>
+			<entityDescription>Primary production in grazing exclosures</entityDescription>
+			<physical>
+				<objectName>PEB011</objectName>
+				<encodingMethod>None</encodingMethod>
+				<dataFormat>
+					<textFormat>
+						<numHeaderLines>1</numHeaderLines>
+						<recordDelimiter>\n</recordDelimiter>
+						<attributeOrientation>column</attributeOrientation>
+						<simpleDelimited>
+							<fieldDelimiter>,</fieldDelimiter>
+							<collapseDelimiters>no</collapseDelimiters>
+							<quoteCharacter>"</quoteCharacter>
+						</simpleDelimited>
+					</textFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/PEB011.CSV</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<temporalCoverage>
+					<rangeOfDates>
+						<beginDate>
+							<calendarDate>1992-01-01</calendarDate>
+						</beginDate>
+						<endDate>
+							<calendarDate> 2012-12-01 </calendarDate>
+						</endDate>
+					</rangeOfDates>
+				</temporalCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>DataCode</attributeName>
+					<attributeDefinition>Dataset code</attributeDefinition>
+					<storageType>char(5)</storageType>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>dataset code</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>RecType</attributeName>
+					<attributeDefinition>Record type</attributeDefinition>
+					<storageType>int</storageType>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>record type</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>RecYear</attributeName>
+					<attributeDefinition>Year of sample</attributeDefinition>
+					<storageType>int</storageType>
+					<measurementScale>
+						<dateTime>
+							<formatString>YYYY</formatString>
+							<dateTimePrecision>1
+              </dateTimePrecision>
+							<dateTimeDomain>
+								<bounds>
+									<minimum exclusive="false"> </minimum>
+									<maximum exclusive="false"> </maximum>
+								</bounds>
+							</dateTimeDomain>
+						</dateTime>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>RecMonth</attributeName>
+					<attributeDefinition>Month of sample</attributeDefinition>
+					<storageType>int</storageType>
+					<measurementScale>
+						<dateTime>
+							<formatString>MM</formatString>
+							<dateTimePrecision>1
+              </dateTimePrecision>
+							<dateTimeDomain>
+								<bounds>
+									<minimum exclusive="false"> </minimum>
+									<maximum exclusive="false"> </maximum>
+								</bounds>
+							</dateTimeDomain>
+						</dateTime>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>RecDay</attributeName>
+					<attributeDefinition>Day of sample</attributeDefinition>
+					<storageType>int</storageType>
+					<measurementScale>
+						<dateTime>
+							<formatString>DD</formatString>
+							<dateTimePrecision>1
+              </dateTimePrecision>
+							<dateTimeDomain>
+								<bounds>
+									<minimum exclusive="false"> </minimum>
+									<maximum exclusive="false"> </maximum>
+								</bounds>
+							</dateTimeDomain>
+						</dateTime>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>watershed</attributeName>
+					<attributeDefinition>watershed of collection</attributeDefinition>
+					<storageType>char(4)</storageType>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>watershed of collection</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>treatment</attributeName>
+					<attributeDefinition>grazed or ungrazed</attributeDefinition>
+					<storageType>char(1)</storageType>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>grazed or ungrazed</definition>
+								</textDomain>
+								<enumeratedDomain>
+									<codeDefinition>
+										<code>G</code>
+										<definition>grazed</definition>
+									</codeDefinition>
+									<codeDefinition>
+										<code>U</code>
+										<definition>ungrazed</definition>
+									</codeDefinition>
+								</enumeratedDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>cage</attributeName>
+					<attributeDefinition>cage</attributeDefinition>
+					<storageType>char(2)</storageType>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>cage</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>plotnum</attributeName>
+					<attributeDefinition>plot number</attributeDefinition>
+					<storageType>char(2)</storageType>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>plot number</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>lvgrass</attributeName>
+					<attributeDefinition>mass of live grass</attributeDefinition>
+					<storageType>numeric(6,2)</storageType>
+					<measurementScale>
+						<ratio>
+							<unit>
+								<standardUnit>dimensionless</standardUnit>
+							</unit>
+							<precision>0.01</precision>
+							<numericDomain>
+								<numberType>real</numberType>
+							</numericDomain>
+						</ratio>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>forbs</attributeName>
+					<attributeDefinition>mass of forbs</attributeDefinition>
+					<storageType>numeric(6,2)</storageType>
+					<measurementScale>
+						<ratio>
+							<unit>
+								<standardUnit>dimensionless</standardUnit>
+							</unit>
+							<precision>0.01</precision>
+							<numericDomain>
+								<numberType>real</numberType>
+							</numericDomain>
+						</ratio>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>cuyrdead</attributeName>
+					<attributeDefinition>mass of current years dead</attributeDefinition>
+					<storageType>numeric(6,2)</storageType>
+					<measurementScale>
+						<ratio>
+							<unit>
+								<standardUnit>dimensionless</standardUnit>
+							</unit>
+							<precision>0.01</precision>
+							<numericDomain>
+								<numberType>real</numberType>
+							</numericDomain>
+						</ratio>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>pryrdead</attributeName>
+					<attributeDefinition>mass of previous years dead</attributeDefinition>
+					<storageType>numeric(6,2)</storageType>
+					<measurementScale>
+						<ratio>
+							<unit>
+								<standardUnit>dimensionless</standardUnit>
+							</unit>
+							<precision>0.01</precision>
+							<numericDomain>
+								<numberType>real</numberType>
+							</numericDomain>
+						</ratio>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>woody</attributeName>
+					<attributeDefinition>mass of woody</attributeDefinition>
+					<storageType>numeric(6,2)</storageType>
+					<measurementScale>
+						<ratio>
+							<unit>
+								<standardUnit>dimensionless</standardUnit>
+							</unit>
+							<precision>0.01</precision>
+							<numericDomain>
+								<numberType>real</numberType>
+							</numericDomain>
+						</ratio>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Comments</attributeName>
+					<attributeDefinition>Comments on data collection</attributeDefinition>
+					<storageType>text</storageType>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>comments on data collection</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+		</dataTable>
+	</dataset>
+</eml:eml>

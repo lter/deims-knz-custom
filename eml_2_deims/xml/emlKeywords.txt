@@ -1,0 +1,249 @@
+aboveground biomass
+Abundance
+abundance populations
+Acrididae
+aerial photograph
+ air temperature
+ammonia
+ammonium
+ANPP
+ants
+Arthropods
+Atmospheric Processes
+belowground
+Belowground Plot Experiment
+belowground plots
+big bluestem
+biodiversity
+biogeochemistry
+Bird
+Bird census
+birds
+Bison
+Bison Herd
+Brome
+bulk density
+bulk depositionn
+burned
+burning
+Ca
+canopy
+canopy cover
+canopy coverage
+carbon
+cations
+cattle
+Ceanothus
+chemical hydrogeology
+chemistry
+Cicadidae
+Cl
+community composition
+conductance
+conductivity
+Consumers
+current year dead
+Daily Precipitation Amounts
+dates of occurence
+decomposition
+Density
+detritivores
+detritus
+Diptera
+dissolved nutrients
+dissolved organic carbon
+dissolved oxygen
+d-vac
+Evapotranspiration
+fertilizer
+fine roots
+Fire
+Fire history
+Fish
+flowering
+flower stem density
+forbs
+forest
+fungi
+gallery forest
+gall-insects
+geology
+graminoid
+grasses
+grasshoppers
+grazing
+Greater prairie chicken
+groundwater
+Hemiptera
+Herbivores
+herbivory
+historical land use
+Homoptera
+Hydrologic Processes
+hydrologic properties
+hydrology
+importance value
+indiangrass
+infiltration
+inorganic groundwater chemistry
+inorganic N
+insects
+interception
+Irrigation
+ K
+ Kansas
+ KNZ
+Konza Prairie
+Konza Prairie Biological Station
+landscape
+leaf litter
+leks
+Lepidoptera Compositae
+litter
+litterbag
+litterfall
+little bluestem
+ low-temperature aqueous geochemistry
+LTER
+lysimeters
+mammals
+Mass
+ Mg
+microbial biomass
+microbial biomass C 
+microbial biomass N
+mowing
+mycorrhizae
+Na
+NADP
+nematodes
+nesting
+nest record
+net primary productivity
+neutron probe
+NH4
+night trapping
+nitrate
+nitrogen
+nitrogen flush
+NO3
+nutrients
+ordination
+organic
+organic and inorganic nitrogen and phosphorus
+organic matter
+organic nitrogen
+overland flow
+patch-burn grazing
+pH
+phenology
+phosphate
+phosphorus
+physical properties
+Physiological Processes
+Pinned-specimens
+plant biomass
+plant communities
+plant cover
+planted grasslands
+plant phenology
+plant species
+plant species composition
+plant water potential
+point-quarter method
+Population
+population dynamics
+prairie
+precipitation
+precipitation chemistry
+predators
+presence
+previous year's dead
+primary productivity
+ Rain
+relative abundance
+relative humidity
+reproduction
+reproductive effort
+Respiration
+reversal trapline
+Rhamnaceae
+rhizomes
+riparian
+rodents
+root
+root decomposition
+root growth
+root lengths
+runoff
+salinity
+Scarabaeidae
+sediments
+seed
+seed weight
+senescence
+shrews
+shrubs
+simulation
+small mammals
+SO4
+soil
+soil chemistry
+soil invertebrates
+soil invertegrates
+soil moisture
+soil nutrients
+soil organic matter
+soil properties
+soil solution chemistry
+soil temperature
+soil texture
+soil water
+Soil water content
+solar radiation
+Solidago
+soluble reactive phosphorus
+solution chemistry
+species
+species composition
+species diversity
+Species List
+spiders
+spores
+spring fire
+standing crop
+standing dead
+stems
+stream
+stream discharge
+streamflow
+stream water
+suspended solids
+sweep sampling
+Temperature
+Terrestrial
+throughfall
+topography
+total nitrogen
+total phosphorus
+trees
+trophic structure
+turbidity
+unburned
+Vernonia
+water
+water chemistry
+water quality
+water stress
+water temperature
+Weight
+wetfall
+wind direction
+wind speed
+wood
+wooded limestone ledges
+woody
+woody debris
+woody plant cover
+woody species
+woody vegetation

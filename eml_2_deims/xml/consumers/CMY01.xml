@@ -1,0 +1,2304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd"
+  packageId="knb-lter-knz.33.7" system="KNB" scope="system">
+  <access authSystem="knb" order="allowFirst" scope="document">
+    <allow>
+      <principal>uid=KNZ,o=lter,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier>CMY01</alternateIdentifier>
+    <title>CMY01 Mycorrhizal Colonization and Plant Community Responses to Long-term Suppression of Mycorrhizal Fungi</title>
+    <creator>
+      <individualName>
+        <givenName>Gail</givenName>
+        <givenName>W. T.</givenName>
+        <surName>Wilson</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>008C Ag Hall, Natural Ressource Ecology &amp; Management, Oklahoma State University</deliveryPoint>
+        <city>Stillwater</city>
+        <administrativeArea>OK</administrativeArea>
+        <postalCode>74077</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>405-744-5539</phone>
+      <electronicMailAddress>gail.wilson@okstate.edu</electronicMailAddress>
+    </creator>
+    <abstract>
+      <section>
+        <para>Twenty replicate permanent 2x2 m plots were established in early 1991 along a randomly located transect, with a 2m space between each plot, on the following watersheds: 1B, 1D, annually burned HQB, 10B, 20D and infrequently burned HQB. Ten of the plots were randomly assigned as long-term mycorrhizal suppression plots. In each of these plots, AM fungi were suppressed by the application of the fungicide benomyl as a soil drench (7.5 liters per plot) at the rate of 1.25 g/m2 (active ingredient). The mycorrhizal suppression plots were treated biweekly throughout each growing season (April through October) beginning in 1991. The control plots each received no fungicide, but an equivalent volume of water (7.5 liters) was applied biweekly. To evaluate the effectiveness of the fungicide, three soil cores (2.5 cm diameter x 14 cm deep) were removed from both fungicide-treated and control plots each October throughout the study. Roots were extracted from the soil, washed free of soil, stained in trypan blue (Phillips and Hayman, 1970), and examined microscopically to assess percentage root colonization by mycorrhizal fungi using a Petri dish scored in 1-cm squares (Daniels et al. 1981).</para>
+        <para>The vegetation within all plots was sampled in May and September of 1991, 1993, and 1995. In each plot, the cover and frequency of each plant species was estimated using a modified point-frame method (Cook and Stubbendieck, 1986). A frame containing ten 1m long vertical pins arranged in parallel at 10 cm apart was placed systematically at 4 locations (each 25 cm apart) within the central 1 m2 of the plot (4 frames=40 pins per plot). Every contact of the aboveground structures of each plant species with each pin was recorded. From the pin-contact data, the relative cover was calculated for each plant species (total number of pin-contacts mad by individual of species x/total number of pin-contacts of all species) for each of the two sample dates each year and for each species the maximum value attained between the two sample dates was retained for analysis. The frequency ( percentage of the 10-pin frames in which species x was encountered) also was estimated for each plant species. The total number of pin contacts of all species was used as an index of total canopy density in each plot. Previous use of this pincontact method on these tallgrass prairie sites showed that the total number of pin contacts of all species is also strongly correlated with total aboveground plant biomass (Hickman, 1996). Plant species richness (mean number of species per plot), species diversity (Shannon’s H’), and evenness were calculated using both types of abundance data (frequency and cover).</para>
+      </section>
+    </abstract>
+  <coreArea>Primary Production</coreArea>
+  <keywordSet>
+      <keyword keywordType="place">LTER</keyword>
+      <keyword keywordType="place">KNZ</keyword>
+      <keyword keywordType="place">Konza Prairie Biological Station</keyword>
+      <keyword keywordType="place">Kansas</keyword>
+    </keywordSet>
+    <keywordSet>
+    	<keyword>mycorrhizae</keyword>
+    	<keyword>fungi</keyword>
+    	<keyword>plant species composition</keyword>
+    	<keyword>roots</keyword>
+    	<keyword>species diversity</keyword>
+    	<keyword>species composition</keyword>
+    	<keyword>community composition</keyword>
+    </keywordSet>
+    <distribution>
+      <online>
+        <url>http://www.konza.ksu.edu/KNZ/pages/data/Knzdsdetail.aspx?datasetCode=CMY01</url>
+      </online>
+    </distribution>
+    <coverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1991-04-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>1999-10-31</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact id="im">
+      <positionName>KNZ-LTER Data Manager</positionName>
+      <address>
+        <deliveryPoint> Division of Biology</deliveryPoint>
+        <deliveryPoint> Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66506</postalCode>
+      </address>
+      <phone phonetype="voice">(785)532-6729</phone>
+      <phone phonetype="fax">(785)532-6653</phone>
+      <electronicMailAddress>knzlter@ksu.edu</electronicMailAddress>
+      <onlineUrl>http://www.konza.ksu.edu</onlineUrl>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>For additional metadata see: <ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/DC2011_1.pdf</ulink></para>
+          <para>For additional methods information see: <ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/MM2011_1.pdf</ulink></para>
+        </description>
+      </methodStep>
+    </methods>
+    <dataTable>
+      <alternateIdentifier>CMY011</alternateIdentifier>
+      <entityName>CMY011 Mycorrhizal suppression plots</entityName>
+      <entityDescription>Mycorrhizal Suppression Plots</entityDescription>
+      <physical>
+        <objectName>CMY011</objectName>
+        <encodingMethod>None</encodingMethod>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <collapseDelimiters>no</collapseDelimiters>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>http://www.konza.ksu.edu/harvest/PASTA/CMY011.CSV</url>
+          </online>
+        </distribution>
+      </physical>
+      <coverage>
+        <temporalCoverage>
+          <rangeOfDates>
+            <beginDate>
+              <calendarDate>1991-04-01</calendarDate>
+            </beginDate>
+            <endDate>
+              <calendarDate>1999-10-31 </calendarDate>
+            </endDate>
+          </rangeOfDates>
+        </temporalCoverage>
+      </coverage>
+      <attributeList>
+        <attribute>
+          <attributeName>rowid</attributeName>
+          <attributeDefinition>rowid in file (internal book keeping)</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>natural</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DataCode</attributeName>
+          <attributeDefinition>Dataset code</attributeDefinition>
+          <storageType>char(5)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>dataset code</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      	<attribute>
+      		<attributeName>RecType</attributeName>
+      		<attributeDefinition>Record type</attributeDefinition>
+      		<storageType>int</storageType>
+      		<measurementScale>
+      			<nominal>
+      				<nonNumericDomain>
+      					<textDomain>
+      						<definition>record type</definition>
+      					</textDomain>
+      				</nonNumericDomain>
+      			</nominal>
+      		</measurementScale>
+      	</attribute>
+        <attribute>
+          <attributeName>RecYear</attributeName>
+          <attributeDefinition>Year of record</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false"> </minimum>
+                  <maximum exclusive="false"> </maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>RecMonth</attributeName>
+          <attributeDefinition>Month of record</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>MM</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false"> </minimum>
+                  <maximum exclusive="false"> </maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>RecDay</attributeName>
+          <attributeDefinition>Day of record</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>DD</formatString>
+              <dateTimePrecision>1</dateTimePrecision>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false"> </minimum>
+                  <maximum exclusive="false"> </maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Transect</attributeName>
+          <attributeDefinition>transect code</attributeDefinition>
+          <storageType>char(1)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>a</code>
+                    <definition>HQB</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>b</code>
+                    <definition>HQB</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>c</code>
+                    <definition>1B</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>d</code>
+                    <definition>10B</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>e</code>
+                    <definition>1D</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>f</code>
+                    <definition>20D</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Burn</attributeName>
+          <attributeDefinition>burn frequency</attributeDefinition>
+          <storageType>char(1)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>b</code>
+                    <definition>annual</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>u</code>
+                    <definition>infrequent</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Plot</attributeName>
+          <attributeDefinition>Plot number</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>plot number</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Fungicide</attributeName>
+          <attributeDefinition>fungicide usage</attributeDefinition>
+          <storageType>char(3)</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>ben</code>
+                    <definition>fungicide</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>myc</code>
+                    <definition>control</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Species</attributeName>
+          <attributeDefinition>species abbreviation code</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>Agropyron smithii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>Andropogon gerardii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>Andropogon scoparius</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>Bouteloua curtipendula</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>5</code>
+                    <definition>Bouteloua gracilis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6</code>
+                    <definition>bouteloua hirsuta</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>7</code>
+                    <definition>buchloe dactyloides</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>8</code>
+                    <definition>chloris verticillata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>elymus canadensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>10</code>
+                    <definition>elymus virginicus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>11</code>
+                    <definition>eragrostis spectabilis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>12</code>
+                    <definition>koeleria pyramidata (k. cristata)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>13</code>
+                    <definition>muhlenbergia cuspidata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>14</code>
+                    <definition>scri dichanthelium oligosanthes var scribnerianum (panicum
+                      o.)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>15</code>
+                    <definition>panicum virgatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>16</code>
+                    <definition>dichanthelium acuminatum (panicum praecocius)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>17</code>
+                    <definition>poa pratensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>18</code>
+                    <definition>sorghastrum nutans (s. avenaceum)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>19</code>
+                    <definition>spartina pectinata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>20</code>
+                    <definition>obtu sphenopholis obtusata var. obtusata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>21</code>
+                    <definition>aspe sporobolus asper var. asper</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>22</code>
+                    <definition>sporobolus cryptandrus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>23</code>
+                    <definition>sporobolus heterolepis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>24</code>
+                    <definition>aristida oligantha</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>25</code>
+                    <definition>bromus japonicus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>26</code>
+                    <definition>bromus tectorum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>27</code>
+                    <definition>festuca octoflora</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>28</code>
+                    <definition>hordeum pusillum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>29</code>
+                    <definition>panicum capillare</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>30</code>
+                    <definition>schedonnardus paniculatus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>31</code>
+                    <definition>carex brevior</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>32</code>
+                    <definition>lune carex gravida var. lunelliana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>33</code>
+                    <definition>carex heliophila</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>34</code>
+                    <definition>carex meadii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>35</code>
+                    <definition>carex blanda</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>36</code>
+                    <definition>lupu cyperus lupulinus subsp. lupulinus (C. filiculmis)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>37</code>
+                    <definition>cyperus schweinitzii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>38</code>
+                    <definition>eleocharis compressa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>39</code>
+                    <definition>eleocharis erythropoda</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>40</code>
+                    <definition>amorpha canescens</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>41</code>
+                    <definition>pube ceanothus herbaceus var. pubescens</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>42</code>
+                    <definition>rosa arkansana (r. suffulta)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>43</code>
+                    <definition>symphoricarpos orbiculatus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>44</code>
+                    <definition>lanu achillea millefolium subsp. lanulosa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>45</code>
+                    <definition>allium canadense</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>46</code>
+                    <definition>ambrosia psilotachya</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>47</code>
+                    <definition>androsace occidentalis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>48</code>
+                    <definition>anemone caroliniana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>49</code>
+                    <definition>negl antennaria neglecta var. neglecta (A. campestris)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>50</code>
+                    <definition>pocynum cannabinum (including a. sibiricum)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>51</code>
+                    <definition>argemone polyanthemos</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>52</code>
+                    <definition>ludo artemisia ludoviciana var. ludoviciana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>53</code>
+                    <definition>sclepias lanuginosa (probably a. viridiflora)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>54</code>
+                    <definition>asclepias stenophylla</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>55</code>
+                    <definition>asclepias verticillata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>56</code>
+                    <definition>asclepias viridis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>57</code>
+                    <definition>nte asclepias tuberosa subsp. interior</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>58</code>
+                    <definition>aster ericoides</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>59</code>
+                    <definition>aster oblongifolius</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>60</code>
+                    <definition>aster sericeus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>61</code>
+                    <definition>cras astragalus crassicarpus var. crassicarpus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>62</code>
+                    <definition>astragalus lotiflorus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>63</code>
+                    <definition>astragalus plattensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>64</code>
+                    <definition>astragalus canadensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>65</code>
+                    <definition>mino baptisia australis var. minor</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>66</code>
+                    <definition>glab baptisia bracteata var. glabrescens (b.
+                      leucophaea)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>67</code>
+                    <definition>cacalia plantaginea (c. tuberosa)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>68</code>
+                    <definition>callirhoe alcaeoides</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>69</code>
+                    <definition>callirhoe involucrata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>70</code>
+                    <definition>cirsium undulatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>71</code>
+                    <definition>cana conyza canadensis var. canadensis (erigeron
+                      canadensis)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>72</code>
+                    <definition>croton monanthogynus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>73</code>
+                    <definition>vire delphinium carolinianum subsp. virescens (d.
+                      virescens)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>74</code>
+                    <definition>brac descurainia pinnata var. brachycarpa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>75</code>
+                    <definition>draba reptans</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>76</code>
+                    <definition>echinacea angustifolia (e. pallida var. angustifolia)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>77</code>
+                    <definition>stri erigeron strigosus var. strigosus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>78</code>
+                    <definition>euphorbia marginata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>79</code>
+                    <definition>uphorbia spathulata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>80</code>
+                    <definition>euphorbia glyptosperma</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>81</code>
+                    <definition>geranium carolinianum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>82</code>
+                    <definition>hedeoma hispida</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>83</code>
+                    <definition>hieracium longipilum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>84</code>
+                    <definition>hybanthus verticillatus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>85</code>
+                    <definition>cory hymenopappus scabiosaeus var. corymbosus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>86</code>
+                    <definition>cory kuhnia eupatoroides var. corymbulosa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>87</code>
+                    <definition>lactuca serriola</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>88</code>
+                    <definition>poly lathyrus polymorphus var. polymorphus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>89</code>
+                    <definition>lepidium densiflorum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>90</code>
+                    <definition>lespedeza capitata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>91</code>
+                    <definition>liatris punctata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>92</code>
+                    <definition>linum sulcatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>93</code>
+                    <definition>lithospermum incisum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>94</code>
+                    <definition>lomatium foeniculaceum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>95</code>
+                    <definition>microseris cuspidata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>96</code>
+                    <definition>miss coryphantha missouriensis var.missouriensis(Mamillaria
+                      mis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>97</code>
+                    <definition>macr oenothera macrocarpa subsp.macrocarpa (o.
+                      missouriensis)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>98</code>
+                    <definition>artemisia ludoviciana(no var.) see also 52 and 267</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>99</code>
+                    <definition>oenothera speciosa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>100</code>
+                    <definition>oenothera biennis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>101</code>
+                    <definition>macr opuntia macrorhiza var. macrorhiza</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>102</code>
+                    <definition>oxalis stricta</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>103</code>
+                    <definition>o xalis violacea</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>104</code>
+                    <definition>coba penstemon cobaea var. cobaea</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>105</code>
+                    <definition>penstemon grandiflorus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>106</code>
+                    <definition>cand dalea candida var. candida (petalostemon candidum)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>107</code>
+                    <definition>dalea multiflora (petalostemon multiflorum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>108</code>
+                    <definition>olig dalea candida var. oligophylla (petalostemon
+                      occidentale)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>109</code>
+                    <definition>purp dalea purpurea var. purpurea (petalostemon
+                      purpureum)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>110</code>
+                    <definition>actuca saligna</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>111</code>
+                    <definition>physalis pumila</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>112</code>
+                    <definition>physalis virginiana (no variety)(see 171/207/and 345)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>113</code>
+                    <definition>crataegus mollis (formerly c. coccinoides)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>114</code>
+                    <definition>plantago rhodosperma</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>115</code>
+                    <definition>polygala verticillata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>116</code>
+                    <definition>psoralea esculenta</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>117</code>
+                    <definition>flor psoralea tenuiflora var. floribunda</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>118</code>
+                    <definition>ratibida columnifera</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>119</code>
+                    <definition>rudbeckia hirta</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>120</code>
+                    <definition>ruellia humilis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>121</code>
+                    <definition>salvia pitcheri (s. azurea var. grandiflora)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>122</code>
+                    <definition>schrankia nuttallii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>123</code>
+                    <definition>senecio plattensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>124</code>
+                    <definition>silene antirrhina</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>125</code>
+                    <definition>sisyrinchium campestre</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>126</code>
+                    <definition>olanum carolinense</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>127</code>
+                    <definition>scab solidago canadensis var. scabra</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>128</code>
+                    <definition>fasc solidago missouriensis fasciculata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>129</code>
+                    <definition>solidago mollis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>130</code>
+                    <definition>humi solidago rigida var. humilis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>131</code>
+                    <definition>rigi solidago speciosa var. rigiduscula</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>132</code>
+                    <definition>s permolepis inermis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>133</code>
+                    <definition>tradescantia bracteata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>134</code>
+                    <definition>tragia betonicifolia (t. urticifolia)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>135</code>
+                    <definition>tragopogon dubius</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>136</code>
+                    <definition>triodanis leptocarpa (specularia leptocarpa)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>137</code>
+                    <definition>triodanis perfoliata (specularia perfoliata)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>138</code>
+                    <definition>verbena bipinnatifida (glandularia bipinnatifida)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>139</code>
+                    <definition>verbena stricta</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>140</code>
+                    <definition>inte vernonia baldwinii var. interior</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>141</code>
+                    <definition>viola rafinesquii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>142</code>
+                    <definition>galium aparine</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>143</code>
+                    <definition>lespedeza violacea</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>144</code>
+                    <definition>soralea argophylla</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>145</code>
+                    <definition>desmodium illinoense</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>146</code>
+                    <definition>juncus interior</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>147</code>
+                    <definition>viola pedatifida</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>148</code>
+                    <definition>prunus americana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>149</code>
+                    <definition>leon scutellaria parvula var. leonardii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>150</code>
+                    <definition>agrostis hyemalis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>151</code>
+                    <definition>espedeza stipulacea</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>152</code>
+                    <definition>asclepias viridiflora</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>153</code>
+                    <definition>eupatorium rugosum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>154</code>
+                    <definition>pall comandra umbellata subsp. pallida</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>155</code>
+                    <definition>agalinis aspera (gerardia aspera)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>156</code>
+                    <definition>acalypha virginica</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>157</code>
+                    <definition>myosotis verna</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>158</code>
+                    <definition>ulmus americana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>159</code>
+                    <definition>parietaria pensylvanica</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>160</code>
+                    <definition>ambrosia trifida</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>161</code>
+                    <definition>asclepias syriaca</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>162</code>
+                    <definition>taraxacum officinale</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>163</code>
+                    <definition>medicago lupulina</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>164</code>
+                    <definition>cornus drummondii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>165</code>
+                    <definition>cyperus spp.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>166</code>
+                    <definition>chenopodium album</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>167</code>
+                    <definition>panicum perlongum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>168</code>
+                    <definition>leptoloma cognatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>169</code>
+                    <definition>capsella bursa-pastoris</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>170</code>
+                    <definition>strophostyles leiosperma</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>171</code>
+                    <definition>sono physalis virginiana var. sonorae</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>172</code>
+                    <definition>euphorbia corollata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>173</code>
+                    <definition>[unused code]</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>174</code>
+                    <definition>gaura parviflora</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>175</code>
+                    <definition>zigadenus nuttallii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>176</code>
+                    <definition>occi onosmodium molle var. occidentale</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>177</code>
+                    <definition>r umex crispus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>178</code>
+                    <definition>iner bromus inermis subsp. inermis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>179</code>
+                    <definition>prunella vulgaris</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>180</code>
+                    <definition>virg teucrium canadense var. virginicum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>181</code>
+                    <definition>quisetum laevigatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>182</code>
+                    <definition>lotus corniculatus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>183</code>
+                    <definition>squa grindelia squarrosa var. squarrosa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>184</code>
+                    <definition>rumex altissimus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>185</code>
+                    <definition>calystegia macounii (convolvulus sepium)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>186</code>
+                    <definition>melilotus officinalis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>187</code>
+                    <definition>verbascum blattaria</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>188</code>
+                    <definition>laev silphium integrifolium var. laeve (s. speciosum)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>189</code>
+                    <definition>tripsacum dactyloides</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>190</code>
+                    <definition>setaria glauca (s. lutescens)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>191</code>
+                    <definition>lycopus americanus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>192</code>
+                    <definition>cynanchum laeve</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>193</code>
+                    <definition>euphorbia dentata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>194</code>
+                    <definition>physalis heterophylla</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>195</code>
+                    <definition>Digitaria sanguinalis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>196</code>
+                    <definition>scab heliopsis helianthoides var. scabra</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>197</code>
+                    <definition>carduus nutans</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>198</code>
+                    <definition>nepeta cataria</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>199</code>
+                    <definition>gleditsia triacanthos</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>200</code>
+                    <definition>celtis occidentalis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>201</code>
+                    <definition>inte silphium integrifolium var. integrifolium</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>202</code>
+                    <definition>mirabilis nyctaginea</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>203</code>
+                    <definition>cyperus odoratus (c. ferruginescens)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>204</code>
+                    <definition>acalypha ostryaefolia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>205</code>
+                    <definition>polygonum ramosissimum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>206</code>
+                    <definition>viola pratincola (v. missouriensis)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>207</code>
+                    <definition>virg physalis virginiana var. virginiana(see
+                      112,171,345)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>208</code>
+                    <definition>solanum rostratum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>209</code>
+                    <definition>setaria viridis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>210</code>
+                    <definition>carex spp.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>211</code>
+                    <definition>ambrosia artemisifolia(a. elatior)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>212</code>
+                    <definition>amaranthus rudis(acnida tamariscina)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>213</code>
+                    <definition>amaranthus retroflexus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>214</code>
+                    <definition>cucurbita foetidissima</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>215</code>
+                    <definition>amaranthus graecizans</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>216</code>
+                    <definition>euphorbia serpens</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>217</code>
+                    <definition>helianthus annuus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>218</code>
+                    <definition>tridens flavus (triodia flava)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>219</code>
+                    <definition>parthenocissus quinquefolia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>220</code>
+                    <definition>(polygonum scandens)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>221</code>
+                    <definition>sporobolus neglectus (s. vaginiflorus var. neglectus)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>222</code>
+                    <definition>rosa blanda</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>223</code>
+                    <definition>hedyotis nigricans (houstonia nigricans)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>224</code>
+                    <definition>verbena canadensis (glandularia canadensis)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>225</code>
+                    <definition>mentzelia oligosperma</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>226</code>
+                    <definition>euphorbia stictospora</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>227</code>
+                    <definition>mino vicia americana var. minor</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>228</code>
+                    <definition>mirabilis albida</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>229</code>
+                    <definition>dicanthelium obtusum (panicum obtusum)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>230</code>
+                    <definition>sambucus canadensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>231</code>
+                    <definition>negu toxicodendron radicans subsp. negundo (rhus
+                      radicans)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>232</code>
+                    <definition>menispermum canadense</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>233</code>
+                    <definition>plantago virginica</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>234</code>
+                    <definition>rhus glabra</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>235</code>
+                    <definition>rorippa sinuata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>236</code>
+                    <definition>hordeum jubatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>237</code>
+                    <definition>xant carex annectens var. xanthocarpa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>238</code>
+                    <definition>juncus dudleyi</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>239</code>
+                    <definition>scirpus lineatus(now included in s. pendulus,297)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>240</code>
+                    <definition>amorpha fruticosa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>241</code>
+                    <definition>morus rubra</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>242</code>
+                    <definition>juncus torreyi</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>243</code>
+                    <definition>erigeron spp.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>244</code>
+                    <definition>scirpus atrovirens</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>245</code>
+                    <definition>[unused code]</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>246</code>
+                    <definition>zsch chenopodium berlandieri var. zschackei</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>247</code>
+                    <definition>alat lythrum alatum var. alatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>248</code>
+                    <definition>euphorbia corollata(duplicate of 172)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>249</code>
+                    <definition>melilotus alba</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>250</code>
+                    <definition>euphorbia pubiserrate(??)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>251</code>
+                    <definition>vill dicanthelium acuminatum var.villosum(panicum
+                      villosissimum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>252</code>
+                    <definition>lespedeza violacea(duplicate of 143)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>253</code>
+                    <definition>mirabilis linearis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>254</code>
+                    <definition>[unused code]</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>255</code>
+                    <definition>fist monarda fistulosa var. fistulosa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>256</code>
+                    <definition>trichostema brachiatum(isanthus brachiatus)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>257</code>
+                    <definition>acalypha monococca</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>258</code>
+                    <definition>proboscidea louisianica</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>259</code>
+                    <definition>monarda citriodora</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>260</code>
+                    <definition>zizia aurea</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>261</code>
+                    <definition>torilis arvensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>262</code>
+                    <definition>arom rhus aromatica var. aromatica</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>263</code>
+                    <definition>sero rhus aromatica var. serotina</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>264</code>
+                    <definition>arisaema dracontium</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>265</code>
+                    <definition>asclepias sullivantii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>266</code>
+                    <definition>krigia oppositifolia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>267</code>
+                    <definition>mexi artemisia ludoviciana var.mexicana(see also 98 and
+                      52)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>268</code>
+                    <definition>sonchus asper</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>269</code>
+                    <definition>cana xanthium strumarium var. canadense</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>270</code>
+                    <definition>ramo aster simplex var. ramosissimus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>271</code>
+                    <definition>peti helianthus petiolaris var. petiolaris</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>272</code>
+                    <definition>dyssodia papposa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>273</code>
+                    <definition>(lactuca canadensis)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>274</code>
+                    <definition>conyza ramosissima</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>275</code>
+                    <definition>silphium laciniatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>276</code>
+                    <definition>cynoglossum officinale</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>277</code>
+                    <definition>hackelia virginiana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>278</code>
+                    <definition>nasturtium officinale</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>279</code>
+                    <definition>erysimum repandum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>280</code>
+                    <definition>rorippa palustris</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>281</code>
+                    <definition>lobelia cardinalis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>282</code>
+                    <definition>campanula americana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>283</code>
+                    <definition>sati cannabis sativa subsp. sativa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>284</code>
+                    <definition>perf triosteum perfoliatum var. perfoliatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>285</code>
+                    <definition>silene stellata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>286</code>
+                    <definition>euonymus atropurpureus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>287</code>
+                    <definition>chenopodium gigantospermum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>288</code>
+                    <definition>chenopodium pallescens</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>289</code>
+                    <definition>kochia scoparia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>290</code>
+                    <definition>angu commelina erecta var. angustifolia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>291</code>
+                    <definition>convolvulus arvensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>292</code>
+                    <definition>penthorum sedoides</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>293</code>
+                    <definition>juniperus virginiana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>294</code>
+                    <definition>[unused code]</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>295</code>
+                    <definition>carex hystericina</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>296</code>
+                    <definition>scirpus validus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>297</code>
+                    <definition>scirpus pendulus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>298</code>
+                    <definition>cyperus acuminatus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>299</code>
+                    <definition>euphorbia prostrata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>300</code>
+                    <definition>euphorbia nutans</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>301</code>
+                    <definition>euphorbia missurica</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>302</code>
+                    <definition>euphorbia cyathophora</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>303</code>
+                    <definition>croton capitatus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>304</code>
+                    <definition>quercus muehlenbergii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>305</code>
+                    <definition>quercus macrocarpa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>306</code>
+                    <definition>hypericum perforatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>307</code>
+                    <definition>argu aesculus glabra var. arguta</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>308</code>
+                    <definition>(sisyrinchium angustifolium)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>309</code>
+                    <definition>carya cordiformis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>310</code>
+                    <definition>juglans nigra</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>311</code>
+                    <definition>agastache nepetoides</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>312</code>
+                    <definition>mentha arvensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>313</code>
+                    <definition>salvia reflexa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>314</code>
+                    <definition>(stachys palustris)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>315</code>
+                    <definition>leonurus cardiaca</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>316</code>
+                    <definition>yucca glauca</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>317</code>
+                    <definition>gymnocladus dioica</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>318</code>
+                    <definition>crotalaria sagittalis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>319</code>
+                    <definition>glycyrrhiza lepidota</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>320</code>
+                    <definition>desmodium glutinosum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>321</code>
+                    <definition>desmanthus illinoensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>322</code>
+                    <definition>cassia marilandica</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>323</code>
+                    <definition>cassia chamaecrista (c. fasciculata)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>324</code>
+                    <definition>cersis canadensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>325</code>
+                    <definition>abutilon theophrasti</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>326</code>
+                    <definition>hibiscus trionum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>327</code>
+                    <definition>malvastrum hispidum (sphaeralcea angusta)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>328</code>
+                    <definition>morus alba</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>329</code>
+                    <definition>subi fraxinus pennsylvanica var. subintegerrima</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>330</code>
+                    <definition>calylophus serrulatus (oenothera serrulata)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>331</code>
+                    <definition>vill oenothera villosa subsp. villosa(o. strigosa)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>332</code>
+                    <definition>spiranthes vernalis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>333</code>
+                    <definition>[unused code]</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>334</code>
+                    <definition>phryma leptostachya</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>335</code>
+                    <definition>phytolacca americana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>336</code>
+                    <definition>plantago rugelii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>337</code>
+                    <definition>plantago aristata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>338</code>
+                    <definition>pata plantago patagonica var. patagonica(p. purshii)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>339</code>
+                    <definition>platanus occidentalis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>340</code>
+                    <definition>muhlenbergia racemosa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>341</code>
+                    <definition>muhlenbergia frondosa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>342</code>
+                    <definition>fasc panicum lanuginosum var.fasciculatum(p.
+                      villosissimum)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>343</code>
+                    <definition>purp aristida purpurea var. purpurea</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>344</code>
+                    <definition>cenchrus longispinus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>345</code>
+                    <definition>hisp physalis virginiana var. hispida</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>346</code>
+                    <definition>frem mimulus glabratus var. fremontii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>347</code>
+                    <definition>leucospora multifida (conobea multifida)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>348</code>
+                    <definition>bacopa rotundifolia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>349</code>
+                    <definition>ribes missouriense</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>350</code>
+                    <definition>umbe (commandra umbellata subsp.
+                      umbellata)(misidentified)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>351</code>
+                    <definition>inte salix exigua subsp. interior</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>352</code>
+                    <definition>salix nigra</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>353</code>
+                    <definition>salix amygdaloides</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>354</code>
+                    <definition>moni populus deltoides subsp. monilifera</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>355</code>
+                    <definition>zanthoxylum americanum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>356</code>
+                    <definition>galium circaezans</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>357</code>
+                    <definition>geum canadense</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>358</code>
+                    <definition>fragaria virginiana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>359</code>
+                    <definition>prunus angustifolia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>360</code>
+                    <definition>(prunus besseyi - misidentified)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>361</code>
+                    <definition>rubus ostryifolia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>362</code>
+                    <definition>smilax hispida</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>363</code>
+                    <definition>clematis pitcheri</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>364</code>
+                    <definition>thalictrum dasycarpum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>365</code>
+                    <definition>notholaena dealbata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>366</code>
+                    <definition>glab pellaea glabella var. glabella</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>367</code>
+                    <definition>woodsia obtusa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>368</code>
+                    <definition>polygonum achoreum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>369</code>
+                    <definition>polygonum lapathifolium</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>370</code>
+                    <definition>polygonum pensylvanicum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>371</code>
+                    <definition>polygonum persicaria</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>372</code>
+                    <definition>polygonum punctatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>373</code>
+                    <definition>stipa spartea</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>374</code>
+                    <definition>brev sitanion hystrix var. brevifolium</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>375</code>
+                    <definition>glyceria striata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>376</code>
+                    <definition>leersia oryzoides</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>377</code>
+                    <definition>hystrix patula</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>378</code>
+                    <definition>muhl paspalum setaceum var. muhlenbergii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>379</code>
+                    <definition>echinochloa crusgalli</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>380</code>
+                    <definition>verbena bracteata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>381</code>
+                    <definition>verbena urticifolia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>382</code>
+                    <definition>tilia americana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>383</code>
+                    <definition>typha latifolia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>384</code>
+                    <definition>solanum americanum (s. nigrum)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>385</code>
+                    <definition>miss physalis pubescens var. missouriensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>386</code>
+                    <definition>cate veronica catenata var. catenata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>387</code>
+                    <definition>verbascum thapsus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>388</code>
+                    <definition>scrophularia lanceolata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>389</code>
+                    <definition>liatris aspera</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>390</code>
+                    <definition>tribulus terrestris</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>391</code>
+                    <definition>vitis riparia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>392</code>
+                    <definition>botrychium virginianum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>393</code>
+                    <definition>ruellia strepens</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>394</code>
+                    <definition>acer negundo</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>395</code>
+                    <definition>asimina triloba</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>396</code>
+                    <definition>chaerophyllum procumbens</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>397</code>
+                    <definition>sanicula canadensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>398</code>
+                    <definition>arctium minus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>399</code>
+                    <definition>aster drummondii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>400</code>
+                    <definition>aster laevis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>401</code>
+                    <definition>ligu aster subulatus var. ligulatus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>402</code>
+                    <definition>bidens bipinnata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>403</code>
+                    <definition>bidens cernua</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>404</code>
+                    <definition>bidens frondosa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>405</code>
+                    <definition>bidens polylepis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>406</code>
+                    <definition>chrysopis canescens</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>407</code>
+                    <definition>cirsium altissimum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>408</code>
+                    <definition>cirsium vulgare</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>409</code>
+                    <definition>erigeron philadelphicus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>410</code>
+                    <definition>eupatorium altissimum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>411</code>
+                    <definition>helianthus tuberosus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>412</code>
+                    <definition>liatris mucronata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>413</code>
+                    <definition>verbesina alternifolia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>414</code>
+                    <definition>ostrya virginiana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>415</code>
+                    <definition>lithospermum arvense</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>416</code>
+                    <definition>lithospermum canescens</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>417</code>
+                    <definition>alliaria petiolata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>418</code>
+                    <definition>camelina microcarpa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>419</code>
+                    <definition>dentaria laciniata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>420</code>
+                    <definition>draba cuneifolia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>421</code>
+                    <definition>hesperis matronalis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>422</code>
+                    <definition>thlaspi arvense</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>423</code>
+                    <definition>lobelia siphilitica</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>424</code>
+                    <definition>dianthus armeria</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>425</code>
+                    <definition>celastrus scandens</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>426</code>
+                    <definition>chenopodium standleyanum (c. boscianum)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>427</code>
+                    <definition>monolepis nuttalliana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>428</code>
+                    <definition>evolvulus nuttallianus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>429</code>
+                    <definition>ipomoea hederacea</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>430</code>
+                    <definition>sicyos angulatus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>431</code>
+                    <definition>cuscuta glomerata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>432</code>
+                    <definition>astragalus missouriensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>433</code>
+                    <definition>dill desmodium paniculatum var. dillenii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>434</code>
+                    <definition>desmodium sessilifolium</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>435</code>
+                    <definition>corydalis micrantha</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>436</code>
+                    <definition>dicentra cucullaria</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>437</code>
+                    <definition>ellisia nyctelea</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>438</code>
+                    <definition>ammannia coccinea</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>439</code>
+                    <definition>sida spinosa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>440</code>
+                    <definition>maclura pomifera</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>441</code>
+                    <definition>stenosiphon linifolius</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>442</code>
+                    <definition>laph phlox divaricata var. laphamii</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>443</code>
+                    <definition>emer polygonum amphibium var. emersum (p. coccineum)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>444</code>
+                    <definition>portulaca oleracea</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>445</code>
+                    <definition>lysimachia ciliata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>446</code>
+                    <definition>ranunculus abortivus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>447</code>
+                    <definition>prunus virginiana</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>448</code>
+                    <definition>tuba penstemon tubaeflorus var. tubaeflorus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>449</code>
+                    <definition>tomanthera densiflora (gerardia densiflora)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>450</code>
+                    <definition>xala veronica peregrina var. xalapensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>451</code>
+                    <definition>grac urtica dioica subsp. gracilis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>452</code>
+                    <definition>lippia lanceolata (phyla lanceolata)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>453</code>
+                    <definition>verbena hastata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>454</code>
+                    <definition>alisma subcordatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>455</code>
+                    <definition>sagittaria latifolia</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>456</code>
+                    <definition>tradescantia ohiensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>457</code>
+                    <definition>allium stellatum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>458</code>
+                    <definition>asparagus officinalis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>459</code>
+                    <definition>erythronium albidum</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>460</code>
+                    <definition>najas guadalupensis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>461</code>
+                    <definition>majo agrostis stolonifera var. major (a. alba)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>462</code>
+                    <definition>song andropogon ischaemum var. songaricus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>463</code>
+                    <definition>eriochloa contracta</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>464</code>
+                    <definition>phleum pratense</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>465</code>
+                    <definition>potamogeton foliosus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>466</code>
+                    <definition>potamogeton nodosus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>467</code>
+                    <definition>pusi potamogeton pusillus var. pusillus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>468</code>
+                    <definition>veronica agrestis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>469</code>
+                    <definition>strophostyles helvola</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>470</code>
+                    <definition>lactuca ludoviciana</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Form</attributeName>
+          <attributeDefinition>growth form</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <nominal>              
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>growth form</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Sample</attributeName>
+          <attributeDefinition>repeated measure 1-4</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <nominal>              
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>sample number</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Vegetative</attributeName>
+          <attributeDefinition>number of vegetative pin contacts</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Reproductive</attributeName>
+          <attributeDefinition>number of reproductive pin contacts</attributeDefinition>
+          <storageType>int</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>1</precision>
+              <numericDomain>
+                <numberType>whole</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+    <stmml:unitList>
+      <stmml:unit name="year (yyyy)" unitType="datetime" id="year (yyyy)"
+        parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1&#xD;&#xA;							"> </stmml:unit>
+      <stmml:unit name="month of year" unitType="datetime" id="month of year"
+        parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1&#xD;&#xA;							"> </stmml:unit>
+      <stmml:unit name="day of month" unitType="datetime" id="day of month"
+        parentSI="YYYY-MM-DDThh:mm:ss" multiplierToSI="1&#xD;&#xA;							"> </stmml:unit>
+    </stmml:unitList></metadata>
+  </additionalMetadata>
+</eml:eml>

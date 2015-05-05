@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd"
+  packageId="knb-lter-knz.235.2" system="KNB" scope="system">
+  <access authSystem="knb" order="allowFirst" scope="document">
+    <allow>
+      <principal>uid=KNZ,o=lter,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset id="" system="ESRI MetaID" xmlns:stmml="http://www.xml-cml.org/schema/stmml" xmlns:sw="eml://ecoinformatics.org/software-2.1.0" xmlns:cit="eml://ecoinformatics.org/literature-2.1.0" xmlns:ds="eml://ecoinformatics.org/dataset-2.1.0" xmlns:prot="eml://ecoinformatics.org/protocol-2.1.0" xmlns:doc="eml://ecoinformatics.org/documentation-2.1.0" xmlns:res="eml://ecoinformatics.org/resource-2.1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <alternateIdentifier>GIS35</alternateIdentifier>
+    <title>GIS35 GIS Coverages Defining Sample Locations for Belowground Datasets on Konza Prairie</title>
+    <creator>
+      <individualName>
+        <givenName>Adam</givenName>
+        <givenName>M.</givenName>
+        <surName>Skibbe</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>116 Ackert Hall, Division of Biology, Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66502</postalCode>
+        <country>USA</country>
+      </address>
+      <phone>
+        785-532-6729
+      </phone>
+      <electronicMailAddress>askibbe@ksu.edu</electronicMailAddress>
+    </creator>
+    <abstract>
+    	<para>These data show the locations of research conducted at the below ground plots near Konza Headquarters. Record type 1 (GIS350) describes the 64 belowground plots receiving a variety of nutrient, burn, and mowing treatments. Data for BMS01, BMS02, and BNS01 are collected on these plots. Record type 6 (GIS355) describes the locations of the Micro-Rhizotrons. Two spatial datasets lie on the belowground plots, but are classified separately. These are the Lysimeters on belowground plots (GIS455) and Aboveground biomass on belowground plots (GIS505) datasets. GIS505 may be used alongside the BGPVC dataset, because it shares sample locations with PBB01.</para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">Geographic Information Systems</keyword>
+      <keyword keywordType="theme">GIS</keyword>
+      <keyword keywordType="theme">Biota</keyword>
+      <keyword keywordType="theme">Grasslands</keyword>
+      <keyword keywordType="theme">Grasses</keyword>
+      <keyword keywordType="theme">Environment</keyword>
+      <keyword keywordType="theme">Ecology</keyword>
+      <keyword keywordType="theme">Roots</keyword>
+      <keyword keywordType="theme">Species Compostion</keyword>
+      <keyword keywordType="theme">Plant Species Compostion</keyword>
+      <keyword keywordType="theme">Plants</keyword>
+      <keyword keywordType="theme">boundaries</keyword>
+      <keyword keywordType="theme">biota</keyword>
+      <keyword keywordType="theme">environment</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="place">Riley County</keyword>
+      <keyword keywordType="place">Geary county</keyword>
+      <keyword keywordType="place">Kansas</keyword>
+      <keyword keywordType="place">KNZ</keyword>
+      <keyword keywordType="place">Konza Prairie Biological Station</keyword>
+      <keyword keywordType="place">LTER</keyword>
+      <keywordThesaurus>GNIS</keywordThesaurus>
+    </keywordSet>
+  	<intellectualRights>
+  		<section>
+  			<title>Access constraints</title>
+  			<para>
+  				<literalLayout>None</literalLayout>
+  			</para>
+  		</section>
+  		<section>
+  			<title>Use Constraints</title>
+  			<para>
+  				<literalLayout>We ask all publications, reports and proposals who use any data from KNZ acknowledge cite the KNZ program using the following statement: "Data for XXX was supported by the NSF Long Term Ecological Research Program at Konza Prairie Research Natural Area"; where XXX is the list of data sets used in the publications, reports or proposals.</literalLayout>
+  			</para>
+  		</section>
+  	</intellectualRights>
+  	<distribution>
+  		<online>
+  			<url>http://www.konza.ksu.edu/KNZ/pages/data/Knzdsdetail.aspx?datasetCode=GIS35</url>
+  		</online>
+  	</distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-96.612955</westBoundingCoordinate>
+          <eastBoundingCoordinate>-96.610254</eastBoundingCoordinate>
+          <northBoundingCoordinate>39.102116</northBoundingCoordinate>
+          <southBoundingCoordinate>39.100688</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+    </coverage>
+  	<contact>
+  		<organizationName>Konza Prairie Biological Station, Div. of Biology, Kansas State University</organizationName>
+  		<positionName>Information Manager</positionName>
+  		<address>
+        <deliveryPoint>Div. of Biology</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66506</postalCode>
+        <country>US</country>
+      </address>
+  		<phone phonetype="voice">785-532-6729</phone>
+  		<electronicMailAddress>askibbe@ksu.edu</electronicMailAddress>
+  	</contact>
+  	<methods>
+  		<methodStep>
+  			<description>
+  				<para> For additional metadata see:
+  					<ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/DC2011_1.pdf</ulink></para>
+  				<para>For additional methods information see:
+  					<ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/MM2011_1.pdf</ulink>
+  				</para>
+  			</description>
+  		</methodStep>
+  	</methods>
+    <spatialVector>
+      <alternateIdentifier>GIS350</alternateIdentifier>
+    	<entityName>GIS350 BGPVC sampling sites</entityName>
+      <entityDescription>This dataset (GIS35) depicts research that is conducted at the below ground plots near Konza Headquarters. There are 64 belowground plots recieving a variety of nutrient, burn, and mowing treatments, for more details see GIS505. Record type 1 (GIS350) describes the sampling sites for datasets BGPVC01 and BGPVC02. Record type 6 (GIS355) describes the locations of the Micro-Rhizotrons. This is record type GIS350.</entityDescription>
+      <physical>
+        <objectName>GIS350</objectName> 
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>zip file with ARC/INFO shape file
+								</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS350.zip</url>
+          </online>
+        </distribution>
+      </physical>
+    	<coverage>
+    		<geographicCoverage>
+    			<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+    			<boundingCoordinates>
+    				<westBoundingCoordinate>-96.612955</westBoundingCoordinate>
+    				<eastBoundingCoordinate>-96.610254</eastBoundingCoordinate>
+    				<northBoundingCoordinate>39.102116</northBoundingCoordinate>
+    				<southBoundingCoordinate>39.100688</southBoundingCoordinate>
+    			</boundingCoordinates>
+    		</geographicCoverage>
+    	</coverage>
+    	<attributeList>
+    		<attribute>
+    			<attributeName>FID</attributeName>
+    			<attributeDefinition>Internal feature number.</attributeDefinition>
+    			<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+    			<measurementScale>
+    				<nominal>
+    					<nonNumericDomain>
+    						<textDomain>
+    							<definition>Sequential unique whole numbers that are automatically generated.</definition>
+    						</textDomain>
+    					</nonNumericDomain>
+    				</nominal>
+    			</measurementScale>
+    		</attribute>
+    		<attribute>
+    			<attributeName>Shape</attributeName>
+    			<attributeDefinition>Feature geometry.</attributeDefinition>
+    			<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+    			<measurementScale>
+    				<nominal>
+    					<nonNumericDomain>
+    						<textDomain>
+    							<definition>Coordinates defining the features.</definition>
+    						</textDomain>
+    					</nonNumericDomain>
+    				</nominal>
+    			</measurementScale>
+    		</attribute>
+    		<attribute>
+    			<attributeName>Watershed</attributeName>
+    			<attributeDefinition>Watershed name</attributeDefinition>
+    			<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+    			<measurementScale>
+    				<nominal>
+    					<nonNumericDomain>
+    						<textDomain>
+    							<definition>No further information about this attribute was provided</definition>
+    						</textDomain>
+    					</nonNumericDomain>
+    				</nominal>
+    			</measurementScale>
+    		</attribute>
+    		<attribute>
+    			<attributeName>Plot</attributeName>
+    			<attributeDefinition>Plot number</attributeDefinition>
+    			<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+    			<measurementScale>
+    				<nominal>
+    					<nonNumericDomain>
+    						<textDomain>
+    							<definition>No further information about this attribute was provided</definition>
+    						</textDomain>
+    					</nonNumericDomain>
+    				</nominal>
+    			</measurementScale>
+    		</attribute>
+    		<attribute>
+    			<attributeName>Subplot</attributeName>
+    			<attributeDefinition>Subplot label</attributeDefinition>
+    			<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+    			<measurementScale>
+    				<nominal>
+    					<nonNumericDomain>
+    						<textDomain>
+    							<definition>No further information about this attribute was provided</definition>
+    						</textDomain>
+    					</nonNumericDomain>
+    				</nominal>
+    			</measurementScale>
+    		</attribute>
+    		<attribute>
+    			<attributeName>MOWING_TRE</attributeName>
+    			<attributeDefinition>Mowing treatment for the plot</attributeDefinition>
+    			<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+    			<measurementScale>
+    				<nominal>
+    					<nonNumericDomain>
+    						<textDomain>
+    							<definition>No further information about this attribute was provided</definition>
+    						</textDomain>
+    					</nonNumericDomain>
+    				</nominal>
+    			</measurementScale>
+    		</attribute>
+    		<attribute>
+    			<attributeName>NUTRIENT_T</attributeName>
+    			<attributeDefinition>Nutrient treatment for the plot</attributeDefinition>
+    			<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+    			<measurementScale>
+    				<nominal>
+    					<nonNumericDomain>
+    						<textDomain>
+    							<definition>No further information about this attribute was provided</definition>
+    						</textDomain>
+    					</nonNumericDomain>
+    				</nominal>
+    			</measurementScale>
+    		</attribute>
+    		<attribute>
+    			<attributeName>BURN_TREAT</attributeName>
+    			<attributeDefinition>Burning treatment for the plot</attributeDefinition>
+    			<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+    			<measurementScale>
+    				<nominal>
+    					<nonNumericDomain>
+    						<textDomain>
+    							<definition>No further information about this attribute was provided</definition>
+    						</textDomain>
+    					</nonNumericDomain>
+    				</nominal>
+    			</measurementScale>
+    		</attribute>
+    		<attribute>
+    			<attributeName>Datacode</attributeName>
+    			<attributeDefinition>Data code name</attributeDefinition>
+    			<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+    			<measurementScale>
+    				<nominal>
+    					<nonNumericDomain>
+    						<textDomain>
+    							<definition>No further information about this attribute was provided</definition>
+    						</textDomain>
+    					</nonNumericDomain>
+    				</nominal>
+    			</measurementScale>
+    		</attribute>
+    		<attribute>
+    			<attributeName>DATAID</attributeName>
+    			<attributeDefinition>Feature ID number</attributeDefinition>
+    			<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+    			<measurementScale>
+    				<nominal>
+    					<nonNumericDomain>
+    						<textDomain>
+    							<definition>No further information about this attribute was provided</definition>
+    						</textDomain>
+    					</nonNumericDomain>
+    				</nominal>
+    			</measurementScale>
+    		</attribute>
+    	</attributeList>
+      <geometry>Point</geometry>
+      <geometricObjectCount>126</geometricObjectCount>
+      <spatialReference>
+        <horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+          <projCoordSys>
+            <geogCoordSys>
+              <datum name="D North American 1983" />
+              <spheroid name="GRS 1980" semiAxisMajor="6378137.0" denomFlatRatio="298.257222101" />
+              <primeMeridian name=" Greenwich" longitude="0.0" />
+              <unit name="degree" />
+            </geogCoordSys>
+            <projection name="Transverse Mercator">
+              <parameter name="Scale factor at central meridian" description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian." value="0.9996" />
+              <parameter name="Longitude at central meridian" description="The line of logitude at the center of the map projection" value="-99.0" />
+              <parameter name="Latitude of projection origin" description="The latitude chosen as center of the projection" value="0.0" />
+              <parameter name="False Easting" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="500000.0" />
+              <parameter name="False Northing" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="0.0" />
+              <unit name="meter" />
+            </projection>
+          </projCoordSys>
+        </horizCoordSysDef>
+      </spatialReference>
+    </spatialVector>
+  	<spatialVector>
+  		<alternateIdentifier>GIS355</alternateIdentifier>
+  		<entityName>GIS355 Micro-Rhizotron locations</entityName>
+  		<entityDescription>This dataset (GIS35) depicts research that is conducted at the below ground plots near Konza Headquarters. There are 64 belowground plots recieving a variety of nutrient, burn, and mowing treatments, for more details see GIS505. Record type 1 (GIS350) describes the sampling sites for datasets BGPVC01 and BGPVC02. Record type 6 (GIS355) describes the locations of the Micro-Rhizotrons. This is record type GIS355.</entityDescription>
+  		<physical>
+  			<objectName>GIS355</objectName> 
+  			<dataFormat>
+  				<externallyDefinedFormat>
+  					<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+  				</externallyDefinedFormat>
+  			</dataFormat>
+  			<distribution>
+  				<online>
+  					<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS355.zip</url>
+  				</online>
+  			</distribution>
+  		</physical>
+  		<coverage>
+  			<geographicCoverage>
+  				<geographicDescription>LTERRiley CountyKonza Prairie Biological StationGeary countyKansasKNZ</geographicDescription>
+  				<boundingCoordinates>
+  					<westBoundingCoordinate>-96.611265</westBoundingCoordinate>
+  					<eastBoundingCoordinate>-96.610492</eastBoundingCoordinate>
+  					<northBoundingCoordinate>39.101824</northBoundingCoordinate>
+  					<southBoundingCoordinate>39.100780</southBoundingCoordinate>
+  				</boundingCoordinates>
+  			</geographicCoverage>
+  		</coverage>
+  		<attributeList>
+  			<attribute>
+  				<attributeName>FID</attributeName>
+  				<attributeDefinition>Internal feature number.</attributeDefinition>
+  				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+  				<measurementScale>
+  					<nominal>
+  						<nonNumericDomain>
+  							<textDomain>
+  								<definition>Sequential unique whole numbers that are automatically generated.</definition>
+  							</textDomain>
+  						</nonNumericDomain>
+  					</nominal>
+  				</measurementScale>
+  			</attribute>
+  			<attribute>
+  				<attributeName>Shape</attributeName>
+  				<attributeDefinition>Feature geometry.</attributeDefinition>
+  				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+  				<measurementScale>
+  					<nominal>
+  						<nonNumericDomain>
+  							<textDomain>
+  								<definition>Coordinates defining the features.</definition>
+  							</textDomain>
+  						</nonNumericDomain>
+  					</nominal>
+  				</measurementScale>
+  			</attribute>
+  			<attribute>
+  				<attributeName>PLOT</attributeName>
+  				<attributeDefinition>PLOT</attributeDefinition>
+  				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+  				<measurementScale>
+  					<nominal>
+  						<nonNumericDomain>
+  							<textDomain>
+  								<definition>No further information about this attribute was provided</definition>
+  							</textDomain>
+  						</nonNumericDomain>
+  					</nominal>
+  				</measurementScale>
+  			</attribute>
+  			<attribute>
+  				<attributeName>TUBE</attributeName>
+  				<attributeDefinition>TUBE</attributeDefinition>
+  				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+  				<measurementScale>
+  					<nominal>
+  						<nonNumericDomain>
+  							<textDomain>
+  								<definition>No further information about this attribute was provided</definition>
+  							</textDomain>
+  						</nonNumericDomain>
+  					</nominal>
+  				</measurementScale>
+  			</attribute>
+  			<attribute>
+  				<attributeName>WATERSHED</attributeName>
+  				<attributeDefinition>WATERSHED</attributeDefinition>
+  				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+  				<measurementScale>
+  					<nominal>
+  						<nonNumericDomain>
+  							<textDomain>
+  								<definition>No further information about this attribute was provided</definition>
+  							</textDomain>
+  						</nonNumericDomain>
+  					</nominal>
+  				</measurementScale>
+  			</attribute>
+  			<attribute>
+  				<attributeName>X_COOR</attributeName>
+  				<attributeDefinition>X_COOR</attributeDefinition>
+  				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+  				<measurementScale>
+  					<nominal>
+  						<nonNumericDomain>
+  							<textDomain>
+  								<definition>No further information about this attribute was provided</definition>
+  							</textDomain>
+  						</nonNumericDomain>
+  					</nominal>
+  				</measurementScale>
+  			</attribute>
+  			<attribute>
+  				<attributeName>Y_COOR</attributeName>
+  				<attributeDefinition>Y_COOR</attributeDefinition>
+  				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+  				<measurementScale>
+  					<nominal>
+  						<nonNumericDomain>
+  							<textDomain>
+  								<definition>No further information about this attribute was provided</definition>
+  							</textDomain>
+  						</nonNumericDomain>
+  					</nominal>
+  				</measurementScale>
+  			</attribute>
+  			<attribute>
+  				<attributeName>DATACODE</attributeName>
+  				<attributeDefinition>DATACODE</attributeDefinition>
+  				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+  				<measurementScale>
+  					<nominal>
+  						<nonNumericDomain>
+  							<textDomain>
+  								<definition>No further information about this attribute was provided</definition>
+  							</textDomain>
+  						</nonNumericDomain>
+  					</nominal>
+  				</measurementScale>
+  			</attribute>
+  			<attribute>
+  				<attributeName>DATAID</attributeName>
+  				<attributeDefinition>DATAID</attributeDefinition>
+  				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+  				<measurementScale>
+  					<nominal>
+  						<nonNumericDomain>
+  							<textDomain>
+  								<definition>No further information about this attribute was provided</definition>
+  							</textDomain>
+  						</nonNumericDomain>
+  					</nominal>
+  				</measurementScale>
+  			</attribute>
+  		</attributeList>
+  		<geometry>Point</geometry>
+  		<geometricObjectCount>24</geometricObjectCount>
+  		<spatialReference>
+  			<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+  				<projCoordSys>
+  					<geogCoordSys>
+  						<datum name="D North American 1983" />
+  						<spheroid name="GRS 1980" semiAxisMajor="6378137.0" denomFlatRatio="298.257222101" />
+  						<primeMeridian name=" Greenwich" longitude="0.0" />
+  						<unit name="degree" />
+  					</geogCoordSys>
+  					<projection name="Transverse Mercator">
+  						<parameter name="Scale factor at central meridian" description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian." value="0.9996" />
+  						<parameter name="Longitude at central meridian" description="The line of logitude at the center of the map projection" value="-99.0" />
+  						<parameter name="Latitude of projection origin" description="The latitude chosen as center of the projection" value="0.0" />
+  						<parameter name="False Easting" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="500000.0" />
+  						<parameter name="False Northing" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="0.0" />
+  						<unit name="meter" />
+  					</projection>
+  				</projCoordSys>
+  			</horizCoordSysDef>
+  		</spatialReference>
+  	</spatialVector>
+  </dataset>
+</eml:eml>

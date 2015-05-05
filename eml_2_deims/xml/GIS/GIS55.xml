@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+	xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd"
+	packageId="knb-lter-knz.255.1" system="KNB" scope="system">
+	<access xmlns:stmml="http://www.xml-cml.org/schema/stmml" xmlns:sw="eml://ecoinformatics.org/software-2.1.0" xmlns:cit="eml://ecoinformatics.org/literature-2.1.0" xmlns:ds="eml://ecoinformatics.org/dataset-2.1.0" xmlns:prot="eml://ecoinformatics.org/protocol-2.1.0" xmlns:doc="eml://ecoinformatics.org/documentation-2.1.0" xmlns:res="eml://ecoinformatics.org/resource-2.1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" scope="document" order="allowFirst" authSystem="knb">
+      <allow>
+         <principal>uid=AND,o=lter,dc=ecoinformatics,dc=org</principal>
+         <permission>all</permission>
+      </allow>
+      <allow>
+         <principal>public</principal>
+         <permission>read</permission>
+      </allow>
+   </access>
+   <dataset xmlns:stmml="http://www.xml-cml.org/schema/stmml" xmlns:sw="eml://ecoinformatics.org/software-2.1.0" xmlns:cit="eml://ecoinformatics.org/literature-2.1.0" xmlns:ds="eml://ecoinformatics.org/dataset-2.1.0" xmlns:prot="eml://ecoinformatics.org/protocol-2.1.0" xmlns:doc="eml://ecoinformatics.org/documentation-2.1.0" xmlns:res="eml://ecoinformatics.org/resource-2.1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="" system="ESRI MetaID">
+   	<alternateIdentifier>GIS55</alternateIdentifier>
+   	<title>GIS55 GIS Coverages Defining the Konza HQ Irrigation System</title>
+   	<creator>
+   		<individualName>
+   			<givenName>Adam</givenName>
+   			<givenName>M.</givenName>
+   			<surName>Skibbe</surName>
+   		</individualName>
+   		<address>
+        <deliveryPoint>116 Ackert Hall, Division of Biology, Kansas State University</deliveryPoint>
+        <city>Manhattan</city>
+        <administrativeArea>KS</administrativeArea>
+        <postalCode>66502</postalCode>
+        <country>USA</country>
+      </address>
+   		<phone>
+   			785-532-6729
+   		</phone>
+   		<electronicMailAddress>askibbe@ksu.edu</electronicMailAddress>
+   	</creator>
+      <abstract>
+         <para>
+         	<literalLayout>These data show the components of the irrigation system near Konza Prairie HQ. Record types 1, 2, 3 and 4 demarcate the locations of the study plots heads (GIS550), transect lines (GIS551), irrigation lines (GIS552), and irrigation line joints (GIS553). Record types 4 and 5 describe the location of the storage piles (GIS554) and the irrigation reservoir (GIS555). This data may be used in conjunction with the Irrigation Transect Studies (WATXX) data.</literalLayout>
+         </para>
+      </abstract>
+      <keywordSet>
+      	<keyword keywordType="theme">Grasslands</keyword>
+      	<keyword keywordType="theme">Ecology</keyword>
+      	<keyword keywordType="theme">Grasses</keyword>
+      	<keyword keywordType="theme">Geographic Information Systems</keyword>
+      	<keyword keywordType="theme">GIS</keyword>
+      	<keyword keywordType="theme">Irrigation</keyword>
+      	<keyword keywordType="theme">Canopy Cover</keyword>
+      	<keyword keywordType="theme">Species Composition</keyword>
+      	<keyword keywordType="theme">Production</keyword>
+      	<keyword keywordType="theme">Aboveground Production</keyword>
+      	<keyword keywordType="theme">Reproduction</keyword>
+      	<keyword keywordType="theme">Biomass</keyword>
+      	<keyword keywordType="theme">Aboveground Biomass</keyword>
+      	<keyword keywordType="theme">Boundaries</keyword>
+      	<keyword keywordType="theme">Biota</keyword>
+      	<keyword keywordType="theme">Environment</keyword>
+      	<keyword keywordType="theme">boundaries</keyword>
+      	<keyword keywordType="theme">biota</keyword>
+      	<keyword keywordType="theme">environment</keyword>
+         <keywordThesaurus>None</keywordThesaurus>
+      </keywordSet>
+      <keywordSet>
+         <keyword keywordType="place">Riley County</keyword>
+         <keyword keywordType="place">Geary county</keyword>
+         <keyword keywordType="place">Kansas</keyword>
+         <keyword keywordType="place">Konza Prairie Biological Station</keyword>
+         <keyword keywordType="place">KNZ</keyword>
+         <keyword keywordType="place">LTER</keyword>
+         <keywordThesaurus>GNIS</keywordThesaurus>
+      </keywordSet>
+      <additionalInfo>
+         <section>
+            <title>Data presentation form</title>
+            <para>
+               <literalLayout>vector digital data</literalLayout>
+            </para>
+         </section>
+      </additionalInfo>
+      <intellectualRights>
+         <section>
+            <title>Access constraints</title>
+            <para>
+               <literalLayout>None</literalLayout>
+            </para>
+         </section>
+         <section>
+            <title>Use Constraints</title>
+            <para>
+               <literalLayout>We ask all publications, reports and proposals who use any data from KNZ acknowledge cite the KNZ program using the following statement: "Data for XXX was supported by the NSF Long Term Ecological Research Program at Konza Prairie Research Natural Area"; where XXX is the list of data sets used in the publications, reports or proposals.</literalLayout>
+            </para>
+         </section>
+      </intellectualRights>
+   	<distribution>
+   		<online>
+   			<url>http://www.konza.ksu.edu/KNZ/pages/data/Knzdsdetail.aspx?datasetCode=GIS55</url>
+   		</online>
+   	</distribution>
+      <coverage>
+         <geographicCoverage>
+            <geographicDescription>Riley CountyGeary countyKansasKonza Prairie Biological StationKNZLTER</geographicDescription>
+            <boundingCoordinates>
+               <westBoundingCoordinate>-96.611943</westBoundingCoordinate>
+               <eastBoundingCoordinate>-96.609910</eastBoundingCoordinate>
+               <northBoundingCoordinate>39.100743</northBoundingCoordinate>
+               <southBoundingCoordinate>39.099746</southBoundingCoordinate>
+            </boundingCoordinates>
+         </geographicCoverage>
+      	<temporalCoverage>
+      		<rangeOfDates>
+      			<beginDate>
+      				<calendarDate>1982-01-01</calendarDate>
+      			</beginDate>
+      			<endDate>
+      				<calendarDate> 2012-12-31 </calendarDate>
+      			</endDate>
+      		</rangeOfDates>
+      	</temporalCoverage>
+      </coverage>
+      <maintenance>
+         <description>
+            <section>
+               <title>Progress</title>
+               <para>
+                  <literalLayout>Complete</literalLayout>
+               </para>
+            </section>
+            <section>
+               <title>Update</title>
+               <para>
+                  <literalLayout>None planned</literalLayout>
+               </para>
+            </section>
+         </description>
+         <maintenanceUpdateFrequency>otherMaintenancePeriod</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+         <organizationName>Konza Prairie Biological Station, Div. of Biology, Kansas State University</organizationName>
+         <positionName>Information Manager</positionName>
+         <address>
+            <deliveryPoint>Div. of Biology</deliveryPoint>
+            <city>Manhattan</city>
+            <administrativeArea>KS</administrativeArea>
+            <postalCode>66506</postalCode>
+            <country>US</country>
+         </address>
+         <phone phonetype="voice">785-532-6729</phone>
+         <electronicMailAddress>askibbe@ksu.edu</electronicMailAddress>
+      </contact>
+   	<methods>
+   		<methodStep>
+   			<description>
+   				<para>
+   					For additional metadata see: <ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/DC2011_1.pdf</ulink></para>
+   				<para>For additional methods information see: <ulink>http://www.konza.ksu.edu/KNZ/datasets/textfiles/MM2011_1.pdf</ulink>
+   				</para>
+   			</description>
+   		</methodStep>
+   	</methods>
+   	<spatialVector>
+   		<alternateIdentifier>GIS550</alternateIdentifier>
+   		<entityName>GIS550 Irrigation transect points</entityName>
+   		<entityDescription>Dataset GIS55 describes the components of the irrigation system near Konza Prairie HQ. Record types 1, 2, 3 and 4 demarcate the locations of the study plots heads (GIS550), transect lines (GIS551), irrigation lines (GIS552), and irrigation line joints (GIS553). Record types 4 and 5 describe the location of the storage piles (GIS554) and the irrigation reservoir (GIS555). This data may be used in conjunction with the Irrigation Transect Studies (WATXX) data. This is record type GIS550.</entityDescription>
+   		<physical>
+   			<objectName>GIS550</objectName> 
+   			<dataFormat>
+   				<externallyDefinedFormat>
+   					<formatName>zip file with ARC/INFO shape file
+   					</formatName>
+   				</externallyDefinedFormat>
+   			</dataFormat>
+   			<distribution>
+   				<online>
+   					<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS550.zip</url>
+   				</online>
+   			</distribution>
+   		</physical>
+   		<coverage>
+   			<geographicCoverage>
+   				<geographicDescription>Riley CountyGeary countyKansasKonza Prairie Biological StationKNZLTER</geographicDescription>
+   				<boundingCoordinates>
+   					<westBoundingCoordinate>-96.611956</westBoundingCoordinate>
+   					<eastBoundingCoordinate>-96.609910</eastBoundingCoordinate>
+   					<northBoundingCoordinate>39.100743</northBoundingCoordinate>
+   					<southBoundingCoordinate>39.099706</southBoundingCoordinate>
+   				</boundingCoordinates>
+   			</geographicCoverage>
+   		</coverage>
+   		<attributeList>
+   			<attribute>
+   				<attributeName>FID</attributeName>
+   				<attributeDefinition>Internal feature number.</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>Sequential unique whole numbers that are automatically generated.</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Shape</attributeName>
+   				<attributeDefinition>Feature geometry.</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>Coordinates defining the features.</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Watershed</attributeName>
+   				<attributeDefinition>Watershed name</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Plot</attributeName>
+   				<attributeDefinition>Plot number</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Sprinkler</attributeName>
+   				<attributeDefinition>Sprinkler number</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Transect</attributeName>
+   				<attributeDefinition>Transect label</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>X_COOR</attributeName>
+   				<attributeDefinition>X_COOR</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Y_COOR</attributeName>
+   				<attributeDefinition>Y_COOR</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Datacode</attributeName>
+   				<attributeDefinition>Dataset code name</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>DataID</attributeName>
+   				<attributeDefinition>Feature ID number</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   		</attributeList>
+   		<geometry>Point</geometry>
+   		<geometricObjectCount>60</geometricObjectCount>
+   		<spatialReference>
+   			<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+   				<projCoordSys>
+   					<geogCoordSys>
+   						<datum name="D North American 1983" />
+   						<spheroid name="GRS 1980" semiAxisMajor="6378137.0" denomFlatRatio="298.257222101" />
+   						<primeMeridian name=" Greenwich" longitude="0.0" />
+   						<unit name="degree" />
+   					</geogCoordSys>
+   					<projection name="Transverse Mercator">
+   						<parameter name="Scale factor at central meridian" description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian." value="0.9996" />
+   						<parameter name="Longitude at central meridian" description="The line of logitude at the center of the map projection" value="-99.0" />
+   						<parameter name="Latitude of projection origin" description="The latitude chosen as center of the projection" value="0.0" />
+   						<parameter name="False Easting" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="500000.0" />
+   						<parameter name="False Northing" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="0.0" />
+   						<unit name="meter" />
+   					</projection>
+   				</projCoordSys>
+   			</horizCoordSysDef>
+   		</spatialReference>
+   	</spatialVector>
+   	<spatialVector>
+   		<alternateIdentifier>GIS551</alternateIdentifier>
+   		<entityName>GIS551 Irrigation system transect lines</entityName>
+   		<entityDescription>Dataset GIS55 describes the components of the irrigation system near Konza Prairie HQ. Record types 1, 2, 3 and 4 demarcate the locations of the study plots heads (GIS550), transect lines (GIS551), irrigation lines (GIS552), and irrigation line joints (GIS553). Record types 4 and 5 describe the location of the storage piles (GIS554) and the irrigation reservoir (GIS555). This data may be used in conjunction with the Irrigation Transect Studies (WATXX) data. This is record type GIS551.</entityDescription>
+   		<physical>
+   			<objectName>GIS551</objectName> 
+   			<dataFormat>
+   				<externallyDefinedFormat>
+   					<formatName>zip file with ARC/INFO shape file
+   					</formatName>
+   				</externallyDefinedFormat>
+   			</dataFormat>
+   			<distribution>
+   				<online>
+   					<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS551.zip</url>
+   				</online>
+   			</distribution>
+   		</physical>
+   		<coverage>
+   			<geographicCoverage>
+   				<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+   				<boundingCoordinates>
+   					<westBoundingCoordinate>-96.611956</westBoundingCoordinate>
+   					<eastBoundingCoordinate>-96.609910</eastBoundingCoordinate>
+   					<northBoundingCoordinate>39.100743</northBoundingCoordinate>
+   					<southBoundingCoordinate>39.099706</southBoundingCoordinate>
+   				</boundingCoordinates>
+   			</geographicCoverage>
+   		</coverage>
+   		<attributeList>
+   			<attribute>
+   				<attributeName>FID</attributeName>
+   				<attributeDefinition>Internal feature number.</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>Sequential unique whole numbers that are automatically generated.</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>SHAPE</attributeName>
+   				<attributeDefinition>Feature geometry.</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>Coordinates defining the features.</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>TRANSECT</attributeName>
+   				<attributeDefinition>TRANSECT</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>PLOTS</attributeName>
+   				<attributeDefinition>PLOTS</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>DATACODE</attributeName>
+   				<attributeDefinition>DATACODE</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>DATAID</attributeName>
+   				<attributeDefinition>DATAID</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   		</attributeList>
+   		<geometry>LinearRing</geometry>
+   		<geometricObjectCount>6</geometricObjectCount>
+   		<spatialReference>
+   			<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+   				<projCoordSys>
+   					<geogCoordSys>
+   						<datum name="D North American 1983" />
+   						<spheroid name="GRS 1980" semiAxisMajor="6378137.0" denomFlatRatio="298.257222101" />
+   						<primeMeridian name=" Greenwich" longitude="0.0" />
+   						<unit name="degree" />
+   					</geogCoordSys>
+   					<projection name="Transverse Mercator">
+   						<parameter name="Scale factor at central meridian" description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian." value="0.9996" />
+   						<parameter name="Longitude at central meridian" description="The line of logitude at the center of the map projection" value="-99.0" />
+   						<parameter name="Latitude of projection origin" description="The latitude chosen as center of the projection" value="0.0" />
+   						<parameter name="False Easting" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="500000.0" />
+   						<parameter name="False Northing" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="0.0" />
+   						<unit name="meter" />
+   					</projection>
+   				</projCoordSys>
+   			</horizCoordSysDef>
+   		</spatialReference>
+   	</spatialVector>
+   	<spatialVector>
+   		<alternateIdentifier>GIS552</alternateIdentifier>
+   		<entityName>GIS552 Irrigation system water lines</entityName>
+   		<entityDescription>Dataset GIS55 describes the components of the irrigation system near Konza Prairie HQ. Record types 1, 2, 3 and 4 demarcate the locations of the study plots heads (GIS550), transect lines (GIS551), irrigation lines (GIS552), and irrigation line joints (GIS553). Record types 4 and 5 describe the location of the storage piles (GIS554) and the irrigation reservoir (GIS555). This data may be used in conjunction with the Irrigation Transect Studies (WATXX) data. This is record type GIS552.</entityDescription>
+   		<physical>
+   			<objectName>GIS552</objectName> 
+   			<dataFormat>
+   				<externallyDefinedFormat>
+   					<formatName>zip file with ARC/INFO shape file
+   					</formatName>
+   				</externallyDefinedFormat>
+   			</dataFormat>
+   			<distribution>
+   				<online>
+   					<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS552.zip</url>
+   				</online>
+   			</distribution>
+   		</physical>
+   		<coverage>
+   			<geographicCoverage>
+   				<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+   				<boundingCoordinates>
+   					<westBoundingCoordinate>-96.611964</westBoundingCoordinate>
+   					<eastBoundingCoordinate>-96.609692</eastBoundingCoordinate>
+   					<northBoundingCoordinate>39.101271</northBoundingCoordinate>
+   					<southBoundingCoordinate>39.099708</southBoundingCoordinate>
+   				</boundingCoordinates>
+   			</geographicCoverage>
+   		</coverage>
+   		<attributeList>
+   			<attribute>
+   				<attributeName>FID</attributeName>
+   				<attributeDefinition>Internal feature number.</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>Sequential unique whole numbers that are automatically generated.</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Shape</attributeName>
+   				<attributeDefinition>Feature geometry.</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>Coordinates defining the features.</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>ID</attributeName>
+   				<attributeDefinition>ID</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Type</attributeName>
+   				<attributeDefinition>Type</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Storage</attributeName>
+   				<attributeDefinition>Storage</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Display_CD</attributeName>
+   				<attributeDefinition>Display_CD</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>DATACODE</attributeName>
+   				<attributeDefinition>DATACODE</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>DATAID</attributeName>
+   				<attributeDefinition>DATAID</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   		</attributeList>
+   		<geometry>LinearRing</geometry>
+   		<geometricObjectCount>58</geometricObjectCount>
+   		<spatialReference>
+   			<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+   				<projCoordSys>
+   					<geogCoordSys>
+   						<datum name="D North American 1983" />
+   						<spheroid name="GRS 1980" semiAxisMajor="6378137.0" denomFlatRatio="298.257222101" />
+   						<primeMeridian name=" Greenwich" longitude="0.0" />
+   						<unit name="degree" />
+   					</geogCoordSys>
+   					<projection name="Transverse Mercator">
+   						<parameter name="Scale factor at central meridian" description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian." value="0.9996" />
+   						<parameter name="Longitude at central meridian" description="The line of logitude at the center of the map projection" value="-99.0" />
+   						<parameter name="Latitude of projection origin" description="The latitude chosen as center of the projection" value="0.0" />
+   						<parameter name="False Easting" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="500000.0" />
+   						<parameter name="False Northing" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="0.0" />
+   						<unit name="meter" />
+   					</projection>
+   				</projCoordSys>
+   			</horizCoordSysDef>
+   		</spatialReference>
+   	</spatialVector>
+   	<spatialVector>
+   		<alternateIdentifier>GIS553</alternateIdentifier>
+   		<entityName>GIS553 Irrigation Line Joints</entityName>
+   		<entityDescription>Dataset GIS55 describes the components of the irrigation system near Konza Prairie HQ. Record types 1, 2, 3 and 4 demarcate the locations of the study plots heads (GIS550), transect lines (GIS551), irrigation lines (GIS552), and irrigation line joints (GIS553). Record types 4 and 5 describe the location of the storage piles (GIS554) and the irrigation reservoir (GIS555). This data may be used in conjunction with the Irrigation Transect Studies (WATXX) data. This is record type GIS553.</entityDescription>
+   		<physical>
+   			<objectName>GIS553</objectName> 
+   			<dataFormat>
+   				<externallyDefinedFormat>
+   					<formatName>zip file with ARC/INFO shape file
+   					</formatName>
+   				</externallyDefinedFormat>
+   			</dataFormat>
+   			<distribution>
+   				<online>
+   					<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS553.zip</url>
+   				</online>
+   			</distribution>
+   		</physical>
+   		<coverage>
+   			<geographicCoverage>
+   				<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+   				<boundingCoordinates>
+   					<westBoundingCoordinate>-96.611956</westBoundingCoordinate>
+   					<eastBoundingCoordinate>-96.609695</eastBoundingCoordinate>
+   					<northBoundingCoordinate>39.101252</northBoundingCoordinate>
+   					<southBoundingCoordinate>39.099701</southBoundingCoordinate>
+   				</boundingCoordinates>
+   			</geographicCoverage>
+   		</coverage>
+   		<attributeList>
+   			<attribute>
+   				<attributeName>FID</attributeName>
+   				<attributeDefinition>Internal feature number.</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>Sequential unique whole numbers that are automatically generated.</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Shape</attributeName>
+   				<attributeDefinition>Feature geometry.</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>Coordinates defining the features.</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Fitting</attributeName>
+   				<attributeDefinition>Fitting</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Special</attributeName>
+   				<attributeDefinition>Special</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>X_COOR</attributeName>
+   				<attributeDefinition>X_COOR</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Y_COOR</attributeName>
+   				<attributeDefinition>Y_COOR</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>DATACODE</attributeName>
+   				<attributeDefinition>DATACODE</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>DATAID</attributeName>
+   				<attributeDefinition>DATAID</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   		</attributeList>
+   		<geometry>Point</geometry>
+   		<geometricObjectCount>58</geometricObjectCount>
+   		<spatialReference>
+   			<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+   				<projCoordSys>
+   					<geogCoordSys>
+   						<datum name="D North American 1983" />
+   						<spheroid name="GRS 1980" semiAxisMajor="6378137.0" denomFlatRatio="298.257222101" />
+   						<primeMeridian name=" Greenwich" longitude="0.0" />
+   						<unit name="degree" />
+   					</geogCoordSys>
+   					<projection name="Transverse Mercator">
+   						<parameter name="Scale factor at central meridian" description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian." value="0.9996" />
+   						<parameter name="Longitude at central meridian" description="The line of logitude at the center of the map projection" value="-99.0" />
+   						<parameter name="Latitude of projection origin" description="The latitude chosen as center of the projection" value="0.0" />
+   						<parameter name="False Easting" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="500000.0" />
+   						<parameter name="False Northing" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="0.0" />
+   						<unit name="meter" />
+   					</projection>
+   				</projCoordSys>
+   			</horizCoordSysDef>
+   		</spatialReference>
+   	</spatialVector>
+   	<spatialVector>
+   		<alternateIdentifier>GIS554</alternateIdentifier>
+   		<entityName>GIS554 Irrigation storage piles</entityName>
+   		<entityDescription>Dataset GIS55 describes the components of the irrigation system near Konza Prairie HQ. Record types 1, 2, 3 and 4 demarcate the locations of the study plots heads (GIS550), transect lines (GIS551), irrigation lines (GIS552), and irrigation line joints (GIS553). Record types 4 and 5 describe the location of the storage piles (GIS554) and the irrigation reservoir (GIS555). This data may be used in conjunction with the Irrigation Transect Studies (WATXX) data. This is record type GIS554.</entityDescription>
+   		<physical>
+   			<objectName>GIS554</objectName> 
+   			<dataFormat>
+   				<externallyDefinedFormat>
+   					<formatName>zip file with ARC/INFO shape file
+   					</formatName>
+   				</externallyDefinedFormat>
+   			</dataFormat>
+   			<distribution>
+   				<online>
+   					<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS554.zip</url>
+   				</online>
+   			</distribution>
+   		</physical>
+   		<coverage>
+   			<geographicCoverage>
+   				<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+   				<boundingCoordinates>
+   					<westBoundingCoordinate>-96.611508</westBoundingCoordinate>
+   					<eastBoundingCoordinate>-96.609634</eastBoundingCoordinate>
+   					<northBoundingCoordinate>39.100941</northBoundingCoordinate>
+   					<southBoundingCoordinate>39.099402</southBoundingCoordinate>
+   				</boundingCoordinates>
+   			</geographicCoverage>
+   		</coverage>
+   		<attributeList>
+   			<attribute>
+   				<attributeName>FID</attributeName>
+   				<attributeDefinition>Internal feature number.</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>Sequential unique whole numbers that are automatically generated.</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Shape</attributeName>
+   				<attributeDefinition>Feature geometry.</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>Coordinates defining the features.</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>ID</attributeName>
+   				<attributeDefinition>ID</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>DATACODE</attributeName>
+   				<attributeDefinition>DATACODE</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>DATAID</attributeName>
+   				<attributeDefinition>DATAID</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   		</attributeList>
+   		<geometry>Polygon</geometry>
+   		<geometricObjectCount>3</geometricObjectCount>
+   		<spatialReference>
+   			<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+   				<projCoordSys>
+   					<geogCoordSys>
+   						<datum name="D North American 1983" />
+   						<spheroid name="GRS 1980" semiAxisMajor="6378137.0" denomFlatRatio="298.257222101" />
+   						<primeMeridian name=" Greenwich" longitude="0.0" />
+   						<unit name="degree" />
+   					</geogCoordSys>
+   					<projection name="Transverse Mercator">
+   						<parameter name="Scale factor at central meridian" description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian." value="0.9996" />
+   						<parameter name="Longitude at central meridian" description="The line of logitude at the center of the map projection" value="-99.0" />
+   						<parameter name="Latitude of projection origin" description="The latitude chosen as center of the projection" value="0.0" />
+   						<parameter name="False Easting" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="500000.0" />
+   						<parameter name="False Northing" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="0.0" />
+   						<unit name="meter" />
+   					</projection>
+   				</projCoordSys>
+   			</horizCoordSysDef>
+   		</spatialReference>
+   	</spatialVector>
+   	<spatialVector>
+   		<alternateIdentifier>GIS555</alternateIdentifier>
+   		<entityName>GIS555 Irrigation System Reservoir</entityName>
+   		<entityDescription>Dataset GIS55 describes the components of the irrigation system near Konza Prairie HQ. Record types 1, 2, 3 and 4 demarcate the locations of the study plots heads (GIS550), transect lines (GIS551), irrigation lines (GIS552), and irrigation line joints (GIS553). Record types 4 and 5 describe the location of the storage piles (GIS554) and the irrigation reservoir (GIS555). This data may be used in conjunction with the Irrigation Transect Studies (WATXX) data. This is record type GIS555.</entityDescription>
+   		<physical>
+   			<objectName>GIS555</objectName> 
+   			<dataFormat>
+   				<externallyDefinedFormat>
+   					<formatName>zip file with ARC/INFO shape file
+   					</formatName>
+   				</externallyDefinedFormat>
+   			</dataFormat>
+   			<distribution>
+   				<online>
+   					<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS555.zip</url>
+   				</online>
+   			</distribution>
+   		</physical>
+   		<coverage>
+   			<geographicCoverage>
+   				<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+   				<boundingCoordinates>
+   					<westBoundingCoordinate>-96.609752</westBoundingCoordinate>
+   					<eastBoundingCoordinate>-96.609588</eastBoundingCoordinate>
+   					<northBoundingCoordinate>39.101360</northBoundingCoordinate>
+   					<southBoundingCoordinate>39.101221</southBoundingCoordinate>
+   				</boundingCoordinates>
+   			</geographicCoverage>
+   		</coverage>
+   		<attributeList>
+   			<attribute>
+   				<attributeName>FID</attributeName>
+   				<attributeDefinition>Internal feature number.</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>Sequential unique whole numbers that are automatically generated.</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>Shape</attributeName>
+   				<attributeDefinition>Feature geometry.</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>Coordinates defining the features.</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>LABEL</attributeName>
+   				<attributeDefinition>LABEL</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>AREA</attributeName>
+   				<attributeDefinition>AREA</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>DATACODE</attributeName>
+   				<attributeDefinition>DATACODE</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   			<attribute>
+   				<attributeName>DATAID</attributeName>
+   				<attributeDefinition>DATAID</attributeDefinition>
+   				<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html" />
+   				<measurementScale>
+   					<nominal>
+   						<nonNumericDomain>
+   							<textDomain>
+   								<definition>No further information about this attribute was provided</definition>
+   							</textDomain>
+   						</nonNumericDomain>
+   					</nominal>
+   				</measurementScale>
+   			</attribute>
+   		</attributeList>
+   		<geometry>Polygon</geometry>
+   		<geometricObjectCount>1</geometricObjectCount>
+   		<spatialReference>
+   			<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+   				<projCoordSys>
+   					<geogCoordSys>
+   						<datum name="D North American 1983" />
+   						<spheroid name="GRS 1980" semiAxisMajor="6378137.0" denomFlatRatio="298.257222101" />
+   						<primeMeridian name=" Greenwich" longitude="0.0" />
+   						<unit name="degree" />
+   					</geogCoordSys>
+   					<projection name="Transverse Mercator">
+   						<parameter name="Scale factor at central meridian" description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian." value="0.9996" />
+   						<parameter name="Longitude at central meridian" description="The line of logitude at the center of the map projection" value="-99.0" />
+   						<parameter name="Latitude of projection origin" description="The latitude chosen as center of the projection" value="0.0" />
+   						<parameter name="False Easting" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="500000.0" />
+   						<parameter name="False Northing" description="A value added in a rectangular coordinate system, usually used to avoid negative values" value="0.0" />
+   						<unit name="meter" />
+   					</projection>
+   				</projCoordSys>
+   			</horizCoordSysDef>
+   		</spatialReference>
+   	</spatialVector>
+   </dataset>
+</eml:eml>
