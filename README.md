@@ -68,6 +68,14 @@ your DEIMS install to warranty your slideshow functions correctly.  The Slidesho
 will require you to install two additional modules, the 'views_slideshow' and the
 'flexslider_views_slideshow'.
 
+
+### Migration Overview ###
+At least three sources.  
+One is the EMLs (about 100).  
+Second, the KNZMETA database, and specifically, 5 tables with content about personnel, pageContents (stories, static HTML), newsItems-newsTicker, relatedProjects.
+Third is the EndNote publications.
+
+FILES, IMAGES?
 ###  For the custom migrations to work ###
 This applies to the DEIMS D6 migration and customizations. You need 
 to have a _settings.local.php_ file in the same place you have the _settings.php_ file.
