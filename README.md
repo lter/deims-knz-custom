@@ -57,7 +57,7 @@ In that page, find and enable the new _knz_ modules. Mark the checkbox to
 the side, and hit _Save_. 
 
 If you prefer speed, use drush to enable the module(s). For example:
-* `drush en knz knz_spatial_data`
+* `drush en eml_2_deims`
 
 Some other components are not installed by default using the method described below under the
 _instructions_ section. Here are additional instructions for these other components.
@@ -88,8 +88,7 @@ an example
 * ` );`
 
 
-For more documentation on this customizations visit the blogs at http://lno.lternet.edu/blog/6 
-and look for DEIMS Migrations
+For more documentation on this customizations visit the DEIMS project pages help, and blog posts.
 
 For DEIMS help, visit the DEIMS project page at drupal.org, read the papers in databits.lternet.edu
 or contact us.
