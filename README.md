@@ -33,15 +33,12 @@ places in your DEIMS install, as we explain now.
 Once you have the repository locally, create a folder named _modules_ under your
 DEIMS root _sites/default_ (unless you have already made it)
 
-Under the _sites/default/modules_, create another folder named _knz_ 
-
-Copy the _knz.*_ files you downloaded from github locally, into the _knz_ 
-folder you just created. Also, copy the _migration_ folder you downloaded from _github_
-into the same _knz_ folder. This module is necessary for your migrations.
+Under the _sites/default/modules_, place the modules you see in the repo, and 
+enable them afterwards, for example the folder and module 'eml_2_deims'.
 
 Also, we need new content types for the konza prairie LTER. In the local github download, you also
 see a _features_ folder.  Inside, there are at least two folders that begin with the word
-_knz_, (for slides and spatial data).  Move these folders to the modules folder,
+_knz_, (for slides, etc).  Move these folders to the modules folder,
 like this:
 
 * `mv deims-knz-custom/features DEIMSROOT/sites/default/modules/`
@@ -97,23 +94,11 @@ and look for DEIMS Migrations
 For DEIMS help, visit the DEIMS project page at drupal.org, read the papers in databits.lternet.edu
 or contact us.
 
-Other notes on the migration:
+Other notes on the migration: The biblio nodes (the citations, references, publication list) are imported 
+using the export/import built-in the module.  Export the latest version in EndNote Tagged, and re-import that file.  
+You need to connect publications to authors and the likes. 
 
-The biblio nodes (the citations, references, publication list) are imported using the export/import
-built-in the module.  Export the latest version in EndNote Tagged, and re-import that file.  Now,
-the connections DataSet-Biblios, etc are lost.  You need to reconstruct them either painstaikingly,
-or using some sort of sql query.  We now associate Authors with People using the new view, that solves
-part of it. 
-
-Files: Files have a renewed status in D7.  For those used to Drupal 6, understand this:  In DEIMS, 
-all files are like content types. We have four declared types, documents, images, audios and videos.
-In D7, the type is known as a bundle. Update your semantics.  The images have fields, in addition 
-to "alt" and "title", they can have "date", "caption" and a "photographer".  Documents, have a slightly 
-different set of fields, including some term-references for the Sev-DEIMS instance. 
-Migration-wise, there is an added step, Im afraid. Since we are not going to upgrade the migrate module, 
-you are going to need to apply the patch here:
-https://www.drupal.org/node/2039649#comment-8218849
-This patch will help to properly assign the files to its proper bundle (or type). 
+We now associate Authors with People using the new view, that solves part of it. 
 
 The slideshow will require you to download two additional modules (views-slideshow and flexslider-views-
 slideshow). In addition, visit the "blocks" admin page, and mode the Views-slideshow block to the header
