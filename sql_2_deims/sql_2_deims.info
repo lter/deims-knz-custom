@@ -1,0 +1,17 @@
+name = SQL to DEIMS Migration
+description = "Provides a migration from MySQL to DEIMS. Originally came from MSSQL::knzmeta"
+package = DEIMS Enhancements
+core = 7.x
+dependencies[] = migrate
+dependencies[] = migrate_ui
+dependencies[] = migrate_extras
+dependencies[] = taxonomy
+
+; Migration classes
+files[] = migration/SQLMigration.php
+;files[] = migration/SQLFileMigration.php
+files[] = migration/SQLContentPersonMigration.php
+;files[] = migration/SQLContentNewsMigration.php
+;files[] = migration/SQLContentPagesMigration.php
+;files[] = migration/SQLRelatedProjectsMigration.php
+
