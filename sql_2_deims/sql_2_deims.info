@@ -12,6 +12,6 @@ files[] = migration/SQLMigration.php
 ;files[] = migration/SQLFileMigration.php
 files[] = migration/SQLContentPersonMigration.php
 ;files[] = migration/SQLContentNewsMigration.php
-;files[] = migration/SQLContentPagesMigration.php
+files[] = migration/SQLContentPagesMigration.php
 ;files[] = migration/SQLRelatedProjectsMigration.php
 
