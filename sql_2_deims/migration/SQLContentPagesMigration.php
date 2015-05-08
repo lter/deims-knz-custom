@@ -90,9 +90,12 @@ class SQLContentPagesMigration extends Migration {
         array('totalcount', 'daycount', 'timestamp'));
     }
   }
+
   public function prepareRow($row) {
-    // need to get the first sentence of the "content", which will be the title of the drupal page
-     preg_match(/<strong>(.+)<\/strong>/,$row->content,$titlematches);
+
+    // need to get the first sentence of the "content", 
+    // which will be the title of the drupal page
+     preg_match('%<strong>.+<\/strong>%',$row->content,$titlematches);
      $row->title = $titlematches[0];
      
     //Prepend  http://www.konza.ksu.edu/knz in the URL
