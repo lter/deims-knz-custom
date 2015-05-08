@@ -32,10 +32,13 @@ class SQLContentPagesMigration extends Migration {
     // Mapped fields
     $this->addFieldMapping('uid')->defaultValue(1);
     $this->addFieldMapping('sticky')->defaultValue(0);
-    $this->addFieldMapping('title','pageName');
+    // $this->addFieldMapping('title','pageName');   // This may be the "menu item / tab" name
+    $this->addFieldMapping('title','title')
+      ->description('Changed in prepareRow()');
     $this->addFieldMapping('body','content');
     $this->addFieldMapping('body:format')->defaultValue('full_html');
-    $this->addFieldMapping('field_url','URL');
+    $this->addFieldMapping('field_url','URL')
+      ->description('changed in prepareRow');
 
     
     // No Unmapped source fields
@@ -87,11 +90,19 @@ class SQLContentPagesMigration extends Migration {
         array('totalcount', 'daycount', 'timestamp'));
     }
   }
-
+  public function prepareRow($row) {
+    // need to get the first sentence of the "content", which will be the title of the drupal page
+     preg_match(/<strong>(.+)<\/strong>/,$row->content,$titlematches);
+     $row->title = $titlematches[0];
+     
+    //Prepend  http://www.konza.ksu.edu/knz in the URL
+    $row->url =  'http://www.konza.ksu.edu/knz/' . $row->url;
+  }
   public function prepare($node, $row) {
     // Remove any empty or illegal delta field values.
     EntityHelper::removeInvalidFieldDeltas('node', $node);
     EntityHelper::removeEmptyFieldValues('node', $node);
+     
   }
 
 }
