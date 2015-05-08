@@ -11,7 +11,8 @@ dependencies[] = taxonomy
 files[] = migration/SQLMigration.php
 ;files[] = migration/SQLFileMigration.php
 files[] = migration/SQLContentPersonMigration.php
-;files[] = migration/SQLContentNewsMigration.php
+;files[] = migration/SQLContentNewsTickerMigration.php
+files[] = migration/SQLContentNewsItemsMigration.php
 files[] = migration/SQLContentPagesMigration.php
 ;files[] = migration/SQLRelatedProjectsMigration.php
 

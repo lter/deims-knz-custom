@@ -20,8 +20,11 @@ function sql_2_deims_migrate_api() {
       'sqlFile' => array(
          'class_name' => 'sqlFileMigration',
       ),
-      'sqlContentNews' => array(
-         'class_name' => 'sqlContentNewsMigration',
+      'sqlContentNewsTicker' => array(
+         'class_name' => 'sqlContentNewsTickerMigration',
+      ),
+      'sqlContentNewsItems' => array(
+         'class_name' => 'sqlContentNewsItemsMigration',
       ),
       'sqlContentPerson' => array(
          'class_name' => 'sqlContentPersonMigration',
