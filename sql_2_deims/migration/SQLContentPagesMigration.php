@@ -35,7 +35,9 @@ class SQLContentPagesMigration extends Migration {
     // $this->addFieldMapping('title','pageName');   // This may be the "menu item / tab" name
     $this->addFieldMapping('title','title')
       ->description('Changed in prepareRow()');
-    $this->addFieldMapping('body','content');
+    $this->addFieldMapping('body','content')
+      ->description('tweak in prepareRow()');
+
     $this->addFieldMapping('body:format')->defaultValue('full_html');
     $this->addFieldMapping('field_url','URL')
       ->description('changed in prepareRow');
@@ -95,11 +97,24 @@ class SQLContentPagesMigration extends Migration {
 
     // need to get the first sentence of the "content", 
     // which will be the title of the drupal page
-     preg_match('%<strong>.+<\/strong>%',$row->content,$titlematches);
-     $row->title = $titlematches[0];
-     
-    //Prepend  http://www.konza.ksu.edu/knz in the URL
-    $row->url =  'http://www.konza.ksu.edu/knz/' . $row->url;
+     if( preg_match('%<strong>.+<\/strong>%',$row->content,$matches) ){
+        $cleantitle = preg_replace( '%<strong>%','',$matches[0]);
+        $cleantitle = preg_replace( '%</strong>%','',$cleantitle);
+        $row->title = $cleantitle;
+     }else{
+       $row->title = $row->pageName;
+     }     
+//
+//   clean redundancy of title in body
+     if( preg_match('%<\/strong>.+%',$row->content,$matches) ){
+        $row->content = $matches[0];
+     }     
+    // Prepend  http://www.konza.ksu.edu/knz in the URL
+     $row->URL =  'http://www.konza.ksu.edu/knz/' . $row->URL;
+//      $url = __toString($row->url);
+//      $allurl = 'http://www.konza.ksu.edu/knz/' . $url;
+//      $row->url = (object)$allurl;
+ 
   }
   public function prepare($node, $row) {
     // Remove any empty or illegal delta field values.
