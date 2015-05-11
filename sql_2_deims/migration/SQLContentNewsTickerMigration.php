@@ -2,18 +2,18 @@
 
 /**
  * @file
- * Definition of SQLContentNewsItemsMigration.
+ * Definition of SQLContentNewsTickerMigration.
  */
-class SQLContentNewsItemsMigration extends Migration {
+class SQLContentNewsTickerMigration extends Migration {
 
   public function __construct($arguments) {
     parent::__construct($arguments);
-    $this->description = t('The News articles Konza Prairie LTER');
+    $this->description = t('The News Ticker articles Konza Prairie LTER');
 
     $this->map = new MigrateSQLMap(
       $this->machineName,
       array(
-        'NewsID' => array('type' => 'int',
+        'ItemID' => array('type' => 'int',
                                'unsigned' => TRUE,
                                'not null' => TRUE,
                                'alias' => 'ni',
@@ -23,8 +23,8 @@ class SQLContentNewsItemsMigration extends Migration {
     );
 
       $query = Database::getConnection('default', 'mssqlknzmeta')
-               ->select('newsitems','ni')
-               ->fields('ni', array('NewsID', 'Title', 'DateAdded','isActive','LinkAddress'));
+               ->select('newsticker','ni')
+               ->fields('ni', array('ItemID', 'Abstract','EventDate','Location','Title','isActive'));
 
     $this->source = new MigrateSourceSQL($query);
     $this->destination = new MigrateDestinationNode('article');
@@ -33,25 +33,23 @@ class SQLContentNewsItemsMigration extends Migration {
     $this->addFieldMapping('uid')->defaultValue(1);
     $this->addFieldMapping('sticky')->defaultValue(0);
     $this->addFieldMapping('title','Title');
-    $this->addFieldMapping('status','isActive');
-    $this->addFieldMapping('field_article_date','DateAdded');
-    $this->addFieldMapping('field_url','LinkAddress');
+    $this->addFieldMapping('field_article_date','EventDate');
 
+    $this->addFieldMapping('status','isActive');
+    $this->addFieldMapping('body','Abstract');
     $this->addFieldMapping('field_section')
-     ->defaultValue('News');
+     ->defaultValue('News Item');
 
     // No Unmapped source fields
 
     // Unmapped destination fields
     $this->addUnmigratedDestinations(array(
-      'body',
       'body:format',
       'body:summary',
       'body:language',
       'field_article_date:timezone',
       'field_article_date:rrule',
       'field_article_date:to',
-      'field_url:title',
       'field_url:attributes',
       'changed',
       'comment',

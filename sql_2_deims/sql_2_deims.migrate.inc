@@ -17,14 +17,14 @@ function sql_2_deims_migrate_api() {
       ),
     ),
     'migrations' => array(
-      'sqlFile' => array(
-         'class_name' => 'sqlFileMigration',
+//      'sqlFile' => array(
+//         'class_name' => 'sqlFileMigration',
+//      ),
+      'sqlContentNewsItems' => array(
+         'class_name' => 'sqlContentNewsItemsMigration',
       ),
       'sqlContentNewsTicker' => array(
          'class_name' => 'sqlContentNewsTickerMigration',
-      ),
-      'sqlContentNewsItems' => array(
-         'class_name' => 'sqlContentNewsItemsMigration',
       ),
       'sqlContentPerson' => array(
          'class_name' => 'sqlContentPersonMigration',
