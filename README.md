@@ -9,13 +9,41 @@ and tweaks over DEIMS, specifically crafted for the Konza LTER.
 Tweaks may include modules, some css script for your DEIMS Theme and a set of features, 
 (like modules) to extend existing content types and/or create new ones.  
 
-We will create a custom module for the migration named _knz_. This is is used to 
-ensure the Konza-specific customizations are migrated to DEIMS D7.  
+There are a number of custom modules to migrate the Konza assets into DEIMS. 
+In general, for the Konza there are two main sources of data and content.  
+The current system is powered by a MSSQL database, some ASP scripts to retrieve
+and scaffold the database, and then, being an LTER site, most of the dataset
+content is well expressed in an EML (XML) subset (flavor). There is also a 
+great geo (GIS) based interface to display the data holdings.  Most data are
+stored in the filesystem, in Comma delimited files, and like other LTER sites,
+there is a scholarly publication list to manage, news, galleries.  
 
-In this module, there is code that extends the Drupal Migrate stack and classes by
-Mike Ryan and others.
+The preliminary approach consisted of migrating the files (images, CSVs, pdfs)
+with enough context to be tied in to their related content resources (news tidbits,
+events, pages, projects or datasets.). Along with the files, and from the MSSQL
+database, we use 5 tables to populate DEIMS.
 
-The code also expands the DEIMS core infrastructure, adding content types and 
+Personnel directory, (person)
+Pages (basic pages) 
+News (articles), 
+Events (more articles qualified by controlled terms from the Section vocabulary)
+Related Projects.
+
+Also, from the EML work (the MSSQL counterpart is not as rich and up-to-date), we
+populate DEIMS
+Data-sources
+Data Files
+Data-set Metadata.
+
+THe locations related for the dataset are in the works.  Presumably, these will
+come either from a well crafted CSV, or a shapefile to WKT.  THe relationships
+to the dataset holdings may have to be constructed after migration, unless we
+figure the connectors within the MSSQL. Still discovery-in-progress.
+
+We use the migrate framework and code that extends by Acquia'sMike Ryan and other
+great drupal contributors.
+
+Here we expand DEIMS adding fields to existing content types and 
 vocabularies to accomodate the Konza LTER specific configurations.
 
 ## Instructions ##
