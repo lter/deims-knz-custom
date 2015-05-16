@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the KNZ Slideshow feature.
+ */
+
+include_once 'knz_slideshow.features.inc';
