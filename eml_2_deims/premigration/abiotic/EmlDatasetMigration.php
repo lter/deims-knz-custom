@@ -15,7 +15,7 @@ class EmlDatasetMigration extends XMLMigration {
 
     // all fields that come from EML an map to the Person Content Type
     $fields = array(
-        'shortName' => t('The dataset abbreviation, a short name'),
+        'alternateIdentifier' => t('The dataset abbreviation, a short name'),
         'title' => t('The dataset title'),
         'abstract' => t('The dataset abstract'),
         'purpose' => t('The dataset purpose'),
@@ -76,8 +76,8 @@ class EmlDatasetMigration extends XMLMigration {
     $this->addFieldMapping('title','title')
       ->xpath('dataset/title');
 
-    $this->addFieldMapping('field_short_name', 'shortName')
-       ->xpath('dataset/shortName');
+    $this->addFieldMapping('field_short_name', 'alternateIdentifier')
+       ->xpath('dataset/alternateIdentifier');
 
     $this->addFieldMapping('field_abstract','abstract')
       ->xpath('dataset/abstract/section/para');
@@ -208,8 +208,8 @@ class EmlDatasetMigration extends XMLMigration {
     $row->revisionid= $revision;
 
     //dataset shortname
-    if(!isset($row->xml->dataset->shortName)){
-        $row->xml->dataset->shortName = 'No short name assigned';
+    if(!isset($row->xml->dataset->alternateIdentifier)){
+        $row->xml->dataset->alternateIdentifier = 'No short name assigned';
     }
  
     //pubdate
