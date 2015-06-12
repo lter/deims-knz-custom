@@ -115,7 +115,7 @@ class EmlDatasetMigration extends XMLMigration {
 
       //@todo another text type for parsing
     $this->addFieldMapping('field_additional_information', 'additionalInfo')
-        ->xpath('dataset/additionalInfo/section/para/literalLayout');
+        ->xpath('dataset/additionalInfo/para/literalLayout');
 
     $this->addFieldMapping('field_maintenance', 'maintenance')
         ->xpath('dataset/maintenance/description/section/para/literalLayout');
