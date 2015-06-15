@@ -17,7 +17,6 @@ class EmlFileMigration extends XMLMigration {
 
     // all fields that come from EML an map to the Person Content Type
     $fields = array(
-//      'url' => t('data file Url'),
       'sourceid' => t('local location of the data file')
     );
 
@@ -46,7 +45,7 @@ class EmlFileMigration extends XMLMigration {
 //  the xpath
 
     $item_xpath = '/eml:eml/dataset/dataTable';      // relative to document
-    $item_ID_xpath = 'entityName';                   // relative to item_xpath
+    $item_ID_xpath = 'physical/objectName';                   // relative to item_xpath
 
     $this->source = new MigrateSourceXML($items_url, $item_xpath, $item_ID_xpath, $fields);
 
@@ -60,6 +59,7 @@ class EmlFileMigration extends XMLMigration {
     $this->addFieldMapping('destination_file', 'destination_file');
     // Set the value to the file name, including path.
     $this->addFieldMapping('value', 'file_uri');
+
     $this->addFieldMapping('uid')->defaultValue('1');
 
     $this->addUnmigratedDestinations(array(
@@ -70,15 +70,12 @@ class EmlFileMigration extends XMLMigration {
        'source_dir', 	 //      Subfield: Path to source file.
        'urlencode',
     ));
-
   }
-
-// there is no 'prepare' method for XMLmigration, it would seem.
 
   public function prepareRow($row) {
 
-    $filen = (string) $row->xml->entityName ;
-    $row->file_uri = $base_path . 'sites/default/imports/' . $filen . '.csv';
+    $filen = (string) $row->xml->physical->objectName ;
+    $row->file_uri = $base_path . 'sites/default/imports/consumer/' . $filen . '.csv';
     $row->destination_file = $filen . '.csv';
 
   }

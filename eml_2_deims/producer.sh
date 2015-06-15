@@ -23,7 +23,7 @@
 
 
 #General path 
-mydir="/home/isangil/WWW/deims_mcm/www/sites/default/modules/eml_2_deims/xml/producers"
+mydir="/home/isangil/WWW/deims_knz/www/sites/default/modules/eml_2_deims/xml/producers"
 
 # Get the names of XML files from the subfolder (abiotic, consumer, producer, others)
 

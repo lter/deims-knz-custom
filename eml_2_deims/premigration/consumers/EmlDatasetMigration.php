@@ -15,11 +15,11 @@ class EmlDatasetMigration extends XMLMigration {
 
     // all fields that come from EML an map to the Person Content Type
     $fields = array(
-        'alternateID' => t('The dataset abbreviation, a short name'),
+        'alternateIdentifier' => t('The dataset abbreviation, a short name'),
         'title' => t('The dataset title'),
         'abstract' => t('The dataset abstract'),
         'purpose' => t('The dataset purpose'),
-        'emlmethods' => t('The dataset methods'),
+        'methods' => t('The dataset methods'),
         'additionalInfo' =>('The dataset additional information'),
         'instrumentation' =>('The dataset instrumentation'),
         'qualityControl' =>('The dataset quality assurance'),
@@ -76,7 +76,7 @@ class EmlDatasetMigration extends XMLMigration {
     $this->addFieldMapping('title','title')
       ->xpath('dataset/title');
 
-    $this->addFieldMapping('field_short_name', 'alternateID')
+    $this->addFieldMapping('field_short_name', 'alternateIdentifier')
        ->xpath('dataset/alternateIdentifier');
 
     $this->addFieldMapping('field_abstract','abstract')
@@ -115,7 +115,7 @@ class EmlDatasetMigration extends XMLMigration {
 
       //@todo another text type for parsing
     $this->addFieldMapping('field_additional_information', 'additionalInfo')
-        ->xpath('dataset/additionalInfo/section/para/literalLayout');
+        ->xpath('dataset/additionalInfo/para/literalLayout');
 
     $this->addFieldMapping('field_maintenance', 'maintenance')
         ->xpath('dataset/maintenance/description/section/para/literalLayout');
@@ -124,9 +124,9 @@ class EmlDatasetMigration extends XMLMigration {
     $this->addFieldMapping('field_data_sources', 'dataTableRef')
       ->description('In preparerow');
 
-    $this->addFieldMapping('field_methods', 'emlmethods')
-      ->description('in prepareRow');
-//        ->xpath('dataset/methods/methodStep/description/section/para');
+    $this->addFieldMapping('field_methods', 'methods')
+        ->description('in prepareRow');
+//        ->xpath('dataset/methods/methodStep/description');
 
       //@todo another text type for parsing
     $this->addFieldMapping('field_instrumentation', 'instrumentation')
@@ -153,13 +153,13 @@ class EmlDatasetMigration extends XMLMigration {
        ->description('lookup creator in prepareRow');
 
     $this->addFieldMapping('field_person_contact', 'contactRef')
-        ->defaultValue(2495);
+        ->defaultValue(2226);
 
     $this->addFieldMapping('field_person_metadata_provider', 'metadataProviderRef')
-        ->defaultValue(2495);
+        ->defaultValue(2226);
 
     $this->addFieldMapping('field_person_publisher', 'publisherRef')
-        ->defaultValue(2495);
+        ->defaultValue(2226);
 
     $this->addFieldMapping('uid')->defaultValue(1);
 
@@ -247,91 +247,19 @@ class EmlDatasetMigration extends XMLMigration {
     // pi-assigned keywords in <keywordSet> construct
     $row->customKeywordRef = $this->getKeywords($row);
 
-    //emlmethods
-    
-    $methods_values = array();
-
-    if (!empty($row->xml->dataset->methods->methodStep->description->section->para)){
-
-      foreach($row->xml->dataset->methods->methodStep->description->section as $xmlmethodsection) {
-
-        if ($xmlmethodsection->title){
-            $methods_values[] = '<strong>' . $xmlmethodsection->title .'</strong><p/>';
-        }
-
-        if ($xmlmethodsection->para->itemizedlist->listitem) {
-       
-          $methods_array[] = '<ul>';
-          foreach ($xmlmethodsection->para->itemizedlist->listitem as $uitem){
-            if (!empty($uitem->para)){
-              $methods_values[] = '<li>' . $uitem->para . '<li>';
-            } else {
-              $methods_values[] = '<li>' . $uitem->para->literalLayout . '<li>';
-            } // could add class to address nested lists or other para elements
-          }
-          $methods_values[] ='</ul>'; 
-        }
-
-        if ($xmlmethodsection->para->orderedlist){       
-          $methods_values[] = '<ol>';
-          foreach ($xmlmethodsection->para->orderedlist->listitem as $uitem){
-            if (!empty($uitem->para)){
-              $methods_values[] = '<li>' . $uitem->para . '<li>';
-            } else {
-              $methods_values[] = '<li>' . $uitem->para->literalLayout . '<li>';
-            } // could add class to address nested lists or other para elements
-          }
-          $methods_values[] ='</ol>'; 
-        }
-
-        if ($xmlmethodsection->para->literalLayout){       
-
-          foreach ($xmlmethodsection->para->literalLayout as $blurb){       
-            $methods_values[] = $blurb;            
-          }
-
-        }else{
-            $methods_values[] = $xmlmethodsection->para ;   
-        }       
-
-      }
-    }   
-    else if (!empty($row->xml->dataset->methods->methodStep->description->para)){
-
-      foreach($row->xml->dataset->methods->methodStep->description->para as $parael){
-
-        if ($parael->itemizedlist){       
-          $methods_array[] = '<ul>';
-          foreach ($parael->itemizedlist->listitem as $uitem){
-            $methods_values[] = '<li>' . $uitem->para . '<li>';
-          }
-          $methods_values[] ='</ul>'; 
-        }
-
-        if ($parael->orderedlist){       
-          $methods_values[] = '<ol>';
-          foreach ($parael->orderedlist->listitem as $oitem){
-            $methods_values[] = '<li>' . $oitem->para . '<li>';
-          }
-          $methods_values[] ='</ol>'; 
-        }
-
-        if ($parael->literalLayout){       
-          foreach ($parael->literalLayout as $blurb){       
-            $methods_values[] = $blurb;            
-          }
-        }else{
-            $methods_values[] = (string)$parael;            
-        }       
-      
-      }
-    } 
-    else {
-      throw new Exception('Unable to parse EML Methods for Eml ID: ', $identifier);
-      return FALSE;
+    // EML Methods:
+    // <description>
+    // <para>For additional metadata see: <ulink>http://www.konza.ksu.edu/KNZ/../DC2011_1.pdf</ulink></para>
+    // <para>For additional methods information see: <ulink>http://www.nza.ksu.edu/KNZ/datasets/textfiles/MM2011_1.pdf</ulink></para>
+    // </description>
+    // $methods_values = array();
+    $methods_values = '';
+    foreach($row->xml->dataset->methods->methodStep->description->para->ulink as $parael){
+       $methods_values .= 'For additional methods and metadata, see: '. (string)$parael;  
+        //watchdog('EML2DEIMS:', "Meths : $methods_values");
+        //print_r(dpm($parael));
     }
-    $row->emlmethods = $methods_values;
-  
+    $row->methods = $methods_values;
   }
 
   public function getPerson($row) {
@@ -363,7 +291,7 @@ class EmlDatasetMigration extends XMLMigration {
     $field_values = array();
 
     foreach($row->xml->dataset->dataTable as $xmldatasource) {
-      $source_id  = $xmldatasource->entityName;
+      $source_id  = $xmldatasource->physical->objectName;
       $field_values[] = $this->handleSourceMigration('EmlDataFile', $source_id);
     }
     return $field_values;

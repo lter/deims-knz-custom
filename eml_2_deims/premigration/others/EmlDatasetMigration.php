@@ -15,7 +15,7 @@ class EmlDatasetMigration extends XMLMigration {
 
     // all fields that come from EML an map to the Person Content Type
     $fields = array(
-        'altID' => t('The dataset abbreviation, a short name'),
+        'alternateIdentifier' => t('The dataset abbreviation, a short name'),
         'title' => t('The dataset title'),
         'abstract' => t('The dataset abstract'),
         'purpose' => t('The dataset purpose'),
@@ -76,7 +76,7 @@ class EmlDatasetMigration extends XMLMigration {
     $this->addFieldMapping('title','title')
       ->xpath('dataset/title');
 
-    $this->addFieldMapping('field_short_name', 'altID')
+    $this->addFieldMapping('field_short_name', 'alternateIdentifier')
        ->xpath('dataset/alternateIdentifier');
 
     $this->addFieldMapping('field_abstract','abstract')
@@ -115,7 +115,7 @@ class EmlDatasetMigration extends XMLMigration {
 
       //@todo another text type for parsing
     $this->addFieldMapping('field_additional_information', 'additionalInfo')
-        ->xpath('dataset/additionalInfo/section/para/literalLayout');
+        ->xpath('dataset/additionalInfo/para/literalLayout');
 
     $this->addFieldMapping('field_maintenance', 'maintenance')
         ->xpath('dataset/maintenance/description/section/para/literalLayout');
@@ -125,7 +125,8 @@ class EmlDatasetMigration extends XMLMigration {
       ->description('In preparerow');
 
     $this->addFieldMapping('field_methods', 'methods')
-        ->xpath('dataset/methods/methodStep/description/section/para');
+        ->description('in prepareRow');
+//        ->xpath('dataset/methods/methodStep/description');
 
       //@todo another text type for parsing
     $this->addFieldMapping('field_instrumentation', 'instrumentation')
@@ -152,13 +153,13 @@ class EmlDatasetMigration extends XMLMigration {
        ->description('lookup creator in prepareRow');
 
     $this->addFieldMapping('field_person_contact', 'contactRef')
-        ->defaultValue(1269);
+        ->defaultValue(2226);
 
     $this->addFieldMapping('field_person_metadata_provider', 'metadataProviderRef')
-        ->defaultValue(1269);
+        ->defaultValue(2226);
 
     $this->addFieldMapping('field_person_publisher', 'publisherRef')
-        ->defaultValue(1269);
+        ->defaultValue(2226);
 
     $this->addFieldMapping('uid')->defaultValue(1);
 
@@ -246,6 +247,19 @@ class EmlDatasetMigration extends XMLMigration {
     // pi-assigned keywords in <keywordSet> construct
     $row->customKeywordRef = $this->getKeywords($row);
 
+    // EML Methods:
+    // <description>
+    // <para>For additional metadata see: <ulink>http://www.konza.ksu.edu/KNZ/../DC2011_1.pdf</ulink></para>
+    // <para>For additional methods information see: <ulink>http://www.nza.ksu.edu/KNZ/datasets/textfiles/MM2011_1.pdf</ulink></para>
+    // </description>
+    // $methods_values = array();
+    $methods_values = '';
+    foreach($row->xml->dataset->methods->methodStep->description->para->ulink as $parael){
+       $methods_values .= 'For additional methods and metadata, see: '. (string)$parael;  
+        //watchdog('EML2DEIMS:', "Meths : $methods_values");
+        //print_r(dpm($parael));
+    }
+    $row->methods = $methods_values;
   }
 
   public function getPerson($row) {
@@ -277,7 +291,7 @@ class EmlDatasetMigration extends XMLMigration {
     $field_values = array();
 
     foreach($row->xml->dataset->dataTable as $xmldatasource) {
-      $source_id  = $xmldatasource->entityName;
+      $source_id  = $xmldatasource->physical->objectName;
       $field_values[] = $this->handleSourceMigration('EmlDataFile', $source_id);
     }
     return $field_values;
