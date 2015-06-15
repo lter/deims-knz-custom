@@ -31,7 +31,7 @@ class EmlDataFileMigration extends XMLMigration {
     // used to identify specific items
     $this->map = new MigrateSQLMap($this->machineName,
        array(
-        'entityName' => array(
+        'objectName' => array(
           'type' => 'varchar',
           'length' => 255,
           'not null' => TRUE,
@@ -49,7 +49,7 @@ class EmlDataFileMigration extends XMLMigration {
     // the xpath
     $item_xpath = '/eml:eml/dataset/dataTable';  // relative to document
 
-    $item_ID_xpath = 'entityName';          // relative to item_xpath
+    $item_ID_xpath = 'physical/objectName';          // relative to item_xpath
 
     $items_class = new MigrateItemsXML($items_url, $item_xpath, $item_ID_xpath);
     $this->source = new MigrateSourceMultiItems($items_class, $fields);
@@ -57,13 +57,13 @@ class EmlDataFileMigration extends XMLMigration {
     $this->destination = new MigrateDestinationNode('data_source');
 
     $this->addFieldMapping('title', 'datasrcname')
-      ->xpath('entityName');
+      ->xpath('physical/objectName');
 
     $this->addFieldMapping('field_description', 'datasrcdescription')
       ->xpath('entityDescription');
 
     $this->addFieldMapping('field_data_source_file', 'datasrcname')
-      ->xpath('entityName')
+      ->xpath('physical/objectName')
       ->sourceMigration('EmlFile');
 
     $this->addFieldMapping('field_data_source_file:preserve_files')->defaultValue(TRUE);
