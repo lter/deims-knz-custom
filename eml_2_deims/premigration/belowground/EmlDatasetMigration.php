@@ -15,7 +15,7 @@ class EmlDatasetMigration extends XMLMigration {
 
     // all fields that come from EML an map to the Person Content Type
     $fields = array(
-        'alternateID' => t('The dataset abbreviation, a short name'),
+        'alternateIdentifier' => t('The dataset abbreviation, a short name'),
         'title' => t('The dataset title'),
         'abstract' => t('The dataset abstract'),
         'purpose' => t('The dataset purpose'),
@@ -76,11 +76,11 @@ class EmlDatasetMigration extends XMLMigration {
     $this->addFieldMapping('title','title')
       ->xpath('dataset/title');
 
-    $this->addFieldMapping('field_short_name', 'alternateID')
+    $this->addFieldMapping('field_short_name', 'alternateIdentifier')
        ->xpath('dataset/alternateIdentifier');
 
     $this->addFieldMapping('field_abstract','abstract')
-      ->description('Xpath is dataset/abstract/section/para Work in cleaning markup ingesting');
+      ->xpath('dataset/abstract/section/para');
 
     //@todo  here again, it is a complex element
     // This content type does not have a body field.
@@ -115,17 +115,18 @@ class EmlDatasetMigration extends XMLMigration {
 
       //@todo another text type for parsing
     $this->addFieldMapping('field_additional_information', 'additionalInfo')
-      ->description('treated in prepareRow, multiple Xpaths with text elements');
+        ->xpath('dataset/additionalInfo/para/literalLayout');
 
     $this->addFieldMapping('field_maintenance', 'maintenance')
-      ->description('treated in prepareRow, multiple Xpaths with text elements');
+        ->xpath('dataset/maintenance/description/section/para/literalLayout');
+      //@todo another text type for parsing
 
     $this->addFieldMapping('field_data_sources', 'dataTableRef')
       ->description('In preparerow');
 
     $this->addFieldMapping('field_methods', 'methods')
-      ->description('multiple Xpaths and content managed in preparerow');
-//        ->xpath('dataset/methods/methodStep/description/section/para');
+        ->description('in prepareRow');
+//        ->xpath('dataset/methods/methodStep/description');
 
       //@todo another text type for parsing
     $this->addFieldMapping('field_instrumentation', 'instrumentation')
@@ -152,13 +153,13 @@ class EmlDatasetMigration extends XMLMigration {
        ->description('lookup creator in prepareRow');
 
     $this->addFieldMapping('field_person_contact', 'contactRef')
-        ->defaultValue(1269);
+        ->defaultValue(2226);
 
     $this->addFieldMapping('field_person_metadata_provider', 'metadataProviderRef')
-        ->defaultValue(1269);
+        ->defaultValue(2226);
 
     $this->addFieldMapping('field_person_publisher', 'publisherRef')
-        ->defaultValue(1269);
+        ->defaultValue(2226);
 
     $this->addFieldMapping('uid')->defaultValue(1);
 
@@ -200,74 +201,18 @@ class EmlDatasetMigration extends XMLMigration {
   public function prepareRow($row) {
     parent::prepareRow($row);
 
-    // dataset id
+    //dataset id
     $pa = $row->xml->attributes();
     $val=$pa['packageId'];
     list($scope, $identifier, $revision)= explode('.', $val, 3);
     $row->datasetid = $identifier;
     $row->revisionid= $revision;
 
-    // dataset shortname
+    //dataset shortname
     if(!isset($row->xml->dataset->alternateIdentifier)){
         $row->xml->dataset->alternateIdentifier = 'No short name assigned';
     }
-
-    // abstract
-    if (isset($row->xml->dataset->abstract->section->para->literalLayout)){
-      foreach($row->xml->dataset->abstract->section as $xmlabs){
-        $row->abstract .= $this->removeMarkup($xmlabs->para->literalLayout) . "\n\n";
-      }
-    }else {
-      foreach($row->xml->dataset->abstract->section->para as $xmlabs){
-        $row->abstract .= $this->removeMarkup($xmlabs) . "\n\n";      
-      }
-    }
-
-    // maintenance
-    if (isset($row->xml->dataset->maintenance->description->section->para->literalLayout)){
-      foreach($row->xml->dataset->maintenance->description->section as $xmlmaintenance){
-        $row->maintenance .= $this->removeMarkup($xmlmaintenance->para->literalLayout) . "\n\n";
-      }
-    }else {
-      foreach($row->xml->dataset->maintenance->description->section->para as $xmlmaintenance){
-        $row->maintenance .= $this->removeMarkup($xmlmaintenance) . "\n\n";
-      }
-    }
-
-    // additional info
-    foreach($row->xml->dataset->additionalInfo->section as $xmladditionalinfo) { 
-    
-     if(isset($xmladditionalinfo->title)){
-         $row->additionalInfo .= $xmladditionalinfo->title . "\n";
-     }
-     
-     if(isset($xmladditionalinfo->para->itemizedlist->listitem->para->literalLayout)){
-       foreach($xmladditionalinfo->para->itemizedlist->listitem as $xmlitem){
-         $row->additionalInfo .= $xmlitem->para->literalLayout . "\n";
-       }         
-     }
-     if(isset($xmladditionalinfo->para->literalLayout)){
-        foreach($xmladditionalinfo->para->literalLayout as $xmlliteral) { 
-           $row->additionalInfo .= $this->removeMarkup($xmlliteral) . "\n\n";
-        }
-     }else{
-        foreach($xmladditionalinfo->para as $xmlpara) { 
-           $row->additionalInfo .= $this->removeMarkup($xmlpara) . "\n\n";
-        }
-     }
-    }
-
-    // methods
-    if(isset($row->xml->dataset->methods->methodStep->description->para->literalLayout)){
-        foreach($row->xml->dataset->methods->methodStep->description->para as $xmlmethods) { 
-           $row->methods .= $this->removeMarkup($xmlmethods->literalLayout) . "\n\n";
-        }
-    }else{
-        foreach($row->xml->dataset->methods->methodStep->description->para as $xmlmethods) { 
-           $row->methods .= $this->removeMarkup($xmlmethods) . "\n\n";
-        }
-    }
-
+ 
     //pubdate
     if (preg_match('/(\d+)/',$row->xml->dataset->pubDate, $found)){
      $mydate = date('Y-m-d H:i:s',strtotime("$found[1]-01-01 00:00:00"));
@@ -302,14 +247,12 @@ class EmlDatasetMigration extends XMLMigration {
     // pi-assigned keywords in <keywordSet> construct
     $row->customKeywordRef = $this->getKeywords($row);
 
-  }
-
-  public function removeMarkup($xmlthing) {
-      $xmlt = preg_replace('/\s\s\s\s/', '', $xmlthing);
-      $xmlt = preg_replace('/\r\n/', '', $xmlthing);
-      $xmlt = preg_replace('/\n\s\s\s\s/', '', $xmlthing);
-      $xmlt = preg_replace('/\n/', '', $xmlthing );
-      return($xmlt);
+    // EML Methods:
+    $methods_values = '';
+    foreach($row->xml->dataset->methods->methodStep->description->para->ulink as $parael){
+       $methods_values .= 'For additional methods and metadata, see: '. (string)$parael;  
+    }
+    $row->methods = $methods_values;
   }
 
   public function getPerson($row) {
@@ -327,10 +270,10 @@ class EmlDatasetMigration extends XMLMigration {
       $results = $query->execute();
       if (!empty($results['node'])) {
         $nid = reset($results['node'])->nid;
-        watchdog('EML2DEIMS:', "Ds-Person query matches: $nid");
+//        watchdog('EML2DEIMS:', "Ds-Person query matches: $nid");
       }else{
         $strquery = print_r($query);
-        watchdog('EML2DEIMS:', "Ds-Person query yield no matches $strquery ");
+//        watchdog('EML2DEIMS:', "Ds-Person query yield no matches $strquery ");
       }
     }
     return $nid;
@@ -341,7 +284,7 @@ class EmlDatasetMigration extends XMLMigration {
     $field_values = array();
 
     foreach($row->xml->dataset->dataTable as $xmldatasource) {
-      $source_id  = $xmldatasource->entityName;
+      $source_id  = $xmldatasource->physical->objectName;
       $field_values[] = $this->handleSourceMigration('EmlDataFile', $source_id);
     }
     return $field_values;

@@ -45,7 +45,7 @@ class EmlFileMigration extends XMLMigration {
 //  the xpath
 
     $item_xpath = '/eml:eml/dataset/dataTable';      // relative to document
-    $item_ID_xpath = 'entityName';                   // relative to item_xpath
+    $item_ID_xpath = 'physical/objectName';                   // relative to item_xpath
 
     $this->source = new MigrateSourceXML($items_url, $item_xpath, $item_ID_xpath, $fields);
 
@@ -74,8 +74,8 @@ class EmlFileMigration extends XMLMigration {
 
   public function prepareRow($row) {
 
-    $filen = (string) $row->xml->entityName ;
-    $row->file_uri = $base_path . 'sites/default/imports/' . $filen . '.csv';
+    $filen = (string) $row->xml->physical->objectName ;
+    $row->file_uri = $base_path . 'sites/default/imports/belowground/' . $filen . '.csv';
     $row->destination_file = $filen . '.csv';
 
   }
