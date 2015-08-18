@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Set up the CSV to DEIMS module.
+ */
+
+function csv_2_deims_install() {
+  migrate_static_registration();
+}
+
+function csv_2_deims_disable() {
+    MigrateGroup::deregister('csv_2_deims');
+}

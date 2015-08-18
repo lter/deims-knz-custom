@@ -1,0 +1,11 @@
+name = CSV to DEIMS Migration
+description = "Provides a base migration from CSVs to DEIMS"
+package = DEIMS Enhancements
+core = 7.x
+dependencies[] = migrate
+dependencies[] = migrate_ui
+dependencies[] = migrate_extras
+dependencies[] = taxonomy
+
+; Migration classes
+files[] = migration/CsvWatershedMigration.php
