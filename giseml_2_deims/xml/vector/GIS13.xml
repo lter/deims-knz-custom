@@ -1,0 +1,4509 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+	xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 
+	http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd"
+	packageId="knb-lter-knz.213.3" system="KNB" scope="system">
+	<access system="https://pasta.lternet.edu" order="allowFirst"
+		authSystem="https://pasta.lternet.edu/authentication">
+		<allow>
+			<principal>uid=KNZ,o=LTER,dc=ecoinformatics,dc=org</principal>
+			<permission>all</permission>
+		</allow>
+		<allow>
+			<principal>public</principal>
+			<permission>read</permission>
+		</allow>
+	</access>
+	<dataset>
+		<alternateIdentifier>GIS13</alternateIdentifier>
+		<title>GIS13 GIS Coverages Defining Konza Wildfire and Supplementary Burn History (1977-present)</title>
+		<creator>
+			<individualName>
+				<givenName>John</givenName>
+				<givenName>M.</givenName>
+				<surName>Briggs</surName>
+			</individualName>
+			<address>
+				<deliveryPoint>116 Ackert Hall, Division of Biology, Kansas State University</deliveryPoint>
+				<city>Manhattan</city>
+				<administrativeArea>KS</administrativeArea>
+				<postalCode>66506</postalCode>
+				<country>USA</country>
+			</address>
+			<phone>785-532-0140</phone>
+			<electronicMailAddress>Jbriggs1@ksu.edu</electronicMailAddress>
+		</creator>
+		<metadataProvider>
+			<organizationName>KNZ LTER information Manager</organizationName>
+			<onlineUrl>http://www.konza.ksu.edu</onlineUrl>
+		</metadataProvider>
+		<pubDate>2016</pubDate>
+		<language>english</language>
+		<abstract>
+			<para>This dataset contains a comprehensive record of supplemental burns, wildfires,
+				wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from
+				1972. Burn history data contains date burned, area burned and type of treatment
+				(wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned,
+				prescribed burns are available in dataset GIS05. These data are available as zipped
+				(.zip) shapefiles (.shp). </para>
+		</abstract>
+		<keywordSet>
+			<keyword keywordType="theme">grasslands</keyword>
+			<keyword keywordType="theme">ecology</keyword>
+			<keyword keywordType="theme">grasses</keyword>
+			<keyword keywordType="theme">GIS</keyword>
+			<keyword keywordType="theme">geographic information systems</keyword>
+			<keyword keywordType="theme">burning</keyword>
+			<keyword keywordType="theme">fires</keyword>
+			<keyword keywordType="theme">Boundaries</keyword>
+			<keyword keywordType="theme">Biota</keyword>
+			<keyword keywordType="theme">Environment</keyword>
+			<keyword keywordType="theme">boundaries</keyword>
+			<keyword keywordType="theme">biota</keyword>
+			<keyword keywordType="theme">environment</keyword>
+			<keywordThesaurus>None</keywordThesaurus>
+		</keywordSet>
+		<keywordSet>
+			<keyword keywordType="place">Riley County</keyword>
+			<keyword keywordType="place">Geary county</keyword>
+			<keyword keywordType="place">Kansas</keyword>
+			<keyword keywordType="place">KNZ</keyword>
+			<keyword keywordType="place">Konza Prairie Biological Station</keyword>
+			<keyword keywordType="place">LTER</keyword>
+			<keywordThesaurus>GNIS</keywordThesaurus>
+		</keywordSet>
+		<distribution>
+			<online>
+				<url>http://www.konza.ksu.edu/KNZ/pages/data/Knzdsdetail.aspx?datasetCode=GIS05</url>
+			</online>
+		</distribution>
+		<coverage>
+			<geographicCoverage>
+				<geographicDescription>Riley CountyGeary countyKansasKonza Prairie Biological StationKNZLTER</geographicDescription>
+				<boundingCoordinates>
+					<westBoundingCoordinate>-96.614518</westBoundingCoordinate>
+					<eastBoundingCoordinate>-96.559591</eastBoundingCoordinate>
+					<northBoundingCoordinate>39.074285</northBoundingCoordinate>
+					<southBoundingCoordinate>39.065299</southBoundingCoordinate>
+				</boundingCoordinates>
+			</geographicCoverage>
+			<temporalCoverage>
+				<rangeOfDates>
+					<beginDate>
+						<calendarDate>1977-01-01</calendarDate>
+					</beginDate>
+					<endDate>
+						<calendarDate> 2016-12-31 </calendarDate>
+					</endDate>
+				</rangeOfDates>
+			</temporalCoverage>
+		</coverage>
+		<contact id="im">
+			<positionName>KNZ-LTER Data Manager</positionName>
+			<address>
+				<deliveryPoint>Division of Biology</deliveryPoint>
+				<deliveryPoint>Kansas State University</deliveryPoint>
+				<city>Manhattan</city>
+				<administrativeArea>KS</administrativeArea>
+				<postalCode>66506</postalCode>
+			</address>
+			<phone phonetype="voice">(785)532-6729</phone>
+			<phone phonetype="fax">(785)532-6653</phone>
+			<electronicMailAddress>knzlter@ksu.edu</electronicMailAddress>
+			<onlineUrl>http://www.konza.ksu.edu</onlineUrl>
+		</contact>
+		<methods>
+			<methodStep>
+				<description>
+					<para>For additional metadata see:
+						<ulink>http://www.konza.ksu.edu/KNZ/docs/DC.pdf</ulink>
+					</para>
+					<para>For additional methods information see:
+						<ulink>http://www.konza.ksu.edu/KNZ/docs/MM.pdf</ulink>
+					</para>
+				</description>
+			</methodStep>
+		</methods>
+		<spatialVector>
+			<alternateIdentifier>GIS130</alternateIdentifier>
+			<entityName>GIS130 Wildfires and supplementary burns for 1973</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 1973.</entityDescription>
+			<physical>
+				<objectName>GIS130</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+								</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS130.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKonza Prairie Biological StationKNZLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.614518</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.559591</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.074285</northBoundingCoordinate>
+						<southBoundingCoordinate>39.065299</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>30</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS131</alternateIdentifier>
+			<entityName>GIS131 Wildfires and supplementary burns for 1976</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 1976.</entityDescription>
+			<physical>
+				<objectName>GIS131</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS131.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.590711</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.589033</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.068462</northBoundingCoordinate>
+						<southBoundingCoordinate>39.066987</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>1</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS132</alternateIdentifier>
+			<entityName>GIS132 Wildfires and supplementary burns for 1978</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 1978.</entityDescription>
+			<physical>
+				<objectName>GIS132</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS132.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.590749</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.586958</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.068501</northBoundingCoordinate>
+						<southBoundingCoordinate>39.066932</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>1</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS133</alternateIdentifier>
+			<entityName>GIS133 Wildfires and supplementary burns for 1980</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 1980.</entityDescription>
+			<physical>
+				<objectName>GIS133</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS133.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.612932</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.538040</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.092787</northBoundingCoordinate>
+						<southBoundingCoordinate>39.065301</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>11</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS134</alternateIdentifier>
+			<entityName>GIS134 Wildfires and supplementary burns for 1983</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 1983.</entityDescription>
+			<physical>
+				<objectName>GIS134</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS134.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.546280</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.538107</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.095882</northBoundingCoordinate>
+						<southBoundingCoordinate>39.081898</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>4</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS135</alternateIdentifier>
+			<entityName>GIS135 Wildfires and supplementary burns for 1984</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 1984.</entityDescription>
+			<physical>
+				<objectName>GIS135</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS135.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.612880</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.607932</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.087771</northBoundingCoordinate>
+						<southBoundingCoordinate>39.083890</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>1</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS136</alternateIdentifier>
+			<entityName>GIS136 Wildfires and supplementary burns for 1985</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 1985.</entityDescription>
+			<physical>
+				<objectName>GIS136</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS136.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.578744</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.568910</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.108006</northBoundingCoordinate>
+						<southBoundingCoordinate>39.100545</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>1</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS137</alternateIdentifier>
+			<entityName>GIS137 Wildfires and supplementary burns for 1986</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 1986.</entityDescription>
+			<physical>
+				<objectName>GIS137</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS137.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.571008</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.569290</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.072635</northBoundingCoordinate>
+						<southBoundingCoordinate>39.071124</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>1</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS138</alternateIdentifier>
+			<entityName>GIS138 Wildfires and supplementary burns for spring of 1991</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for spring of 1991.</entityDescription>
+			<physical>
+				<objectName>GIS138</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS138.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.605446</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.537126</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.118910</northBoundingCoordinate>
+						<southBoundingCoordinate>39.065292</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>37</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS139</alternateIdentifier>
+			<entityName>GIS139 Wildfires and supplementary burns for fall of 1991</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for fall of 1991.</entityDescription>
+			<physical>
+				<objectName>GIS139</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS139.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.578390</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.566541</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.097074</northBoundingCoordinate>
+						<southBoundingCoordinate>39.070018</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>10</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS140</alternateIdentifier>
+			<entityName>GIS140 Wildfires and supplementary burns for 1993</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 1993.</entityDescription>
+			<physical>
+				<objectName>GIS140</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS140.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.561294</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.538267</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.117998</northBoundingCoordinate>
+						<southBoundingCoordinate>39.072865</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>3</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS141</alternateIdentifier>
+			<entityName>GIS141 Wildfires and supplementary burns for 1994</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 1994.</entityDescription>
+			<physical>
+				<objectName>GIS141</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS141.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.615935</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.537520</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.137415</northBoundingCoordinate>
+						<southBoundingCoordinate>39.064882</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>22</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS142</alternateIdentifier>
+			<entityName>GIS142 Wildfires and supplementary burns for 1996</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 1996.</entityDescription>
+			<physical>
+				<objectName>GIS142</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS142.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.580915</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.536749</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.136692</northBoundingCoordinate>
+						<southBoundingCoordinate>39.065297</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>24</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS143</alternateIdentifier>
+			<entityName>GIS143 Wildfires and supplementary burns for 1997</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 1997.</entityDescription>
+			<physical>
+				<objectName>GIS143</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS143.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.594206</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.587967</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.078477</northBoundingCoordinate>
+						<southBoundingCoordinate>39.069917</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>2</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS144</alternateIdentifier>
+			<entityName>GIS144 Wildfires and supplementary burns for 2002</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 2002.</entityDescription>
+			<physical>
+				<objectName>GIS144</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS144.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.614340</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.539082</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.128753</northBoundingCoordinate>
+						<southBoundingCoordinate>39.070499</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>4</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS145</alternateIdentifier>
+			<entityName>GIS145 Wildfires and supplementary burns for 2004</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 2004.</entityDescription>
+			<physical>
+				<objectName>GIS145</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS145.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.582637</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.553196</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.084529</northBoundingCoordinate>
+						<southBoundingCoordinate>39.067599</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>4</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS146</alternateIdentifier>
+			<entityName>GIS146 Wildfires and supplementary burns for 2005</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 2005.</entityDescription>
+			<physical>
+				<objectName>GIS146</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS146.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.590467</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.575332</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.117378</northBoundingCoordinate>
+						<southBoundingCoordinate>39.107456</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>1</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS147</alternateIdentifier>
+			<entityName>GIS147 Wildfires and supplementary burns for 2008</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 2008.</entityDescription>
+			<physical>
+				<objectName>GIS147</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS147.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.614518</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.567190</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.074480</northBoundingCoordinate>
+						<southBoundingCoordinate>39.065458</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>4</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS148</alternateIdentifier>
+			<entityName>GIS148 Wildfires and supplementary burns for 2010</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 2010.</entityDescription>
+			<physical>
+				<objectName>GIS148</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS148.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.575740</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.558977</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.097023</northBoundingCoordinate>
+						<southBoundingCoordinate>39.083530</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>1</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS149</alternateIdentifier>
+			<entityName>GIS149 Wildfires and supplementary burns for 2011</entityName>
+			<entityDescription>This dataset contains a comprehensive record of supplemental burns, wildfires, wildfire cleanup burns for the Konza Prairie Biological Station (KPBS) dating from 1972. Burn history data contains date burned, area burned and type of treatment (wildfires, wildfire cleanup, and supplemental burns). Burn histories for planned, prescribed burns are available in dataset GIS05. This datatype reprensents wildfires and supplementary burns for 2011.</entityDescription>
+			<physical>
+				<objectName>GIS149</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS149.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.575212</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.564128</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.103027</northBoundingCoordinate>
+						<southBoundingCoordinate>39.065620</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATE</attributeName>
+					<attributeDefinition>DATE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>CODE</attributeName>
+					<attributeDefinition>Watershed code name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Total hectares burned per watershed in a given year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>DATACODE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>DATAID</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>TYPE</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>YEAR</attributeName>
+					<attributeDefinition>Burn year</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DESCRIP</attributeName>
+					<attributeDefinition>DESCRIPTION</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>8</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="NAD 1983 UTM Zone 14N">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+	</dataset>
+</eml:eml>

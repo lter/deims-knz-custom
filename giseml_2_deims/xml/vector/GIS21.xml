@@ -1,0 +1,435 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+	xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 
+	http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd"
+	packageId="knb-lter-knz.221.3" system="KNB" scope="system">
+	<access system="https://pasta.lternet.edu" order="allowFirst"
+		authSystem="https://pasta.lternet.edu/authentication">
+		<allow>
+			<principal>uid=KNZ,o=LTER,dc=ecoinformatics,dc=org</principal>
+			<permission>all</permission>
+		</allow>
+		<allow>
+			<principal>public</principal>
+			<permission>read</permission>
+		</allow>
+	</access>
+	<dataset>
+		<alternateIdentifier>GIS21</alternateIdentifier>
+		<title>GIS21 GIS coverages defining water bodies on Konza Prairie (1972-present)</title>
+		<creator>
+			<individualName>
+				<givenName>John</givenName>
+				<givenName>M.</givenName>
+				<surName>Briggs</surName>
+			</individualName>
+			<address>
+				<deliveryPoint>116 Ackert Hall, Division of Biology, Kansas State University</deliveryPoint>
+				<city>Manhattan</city>
+				<administrativeArea>KS</administrativeArea>
+				<postalCode>66506</postalCode>
+				<country>USA</country>
+			</address>
+			<phone>785-532-0140</phone>
+			<electronicMailAddress>Jbriggs1@ksu.edu</electronicMailAddress>
+		</creator>
+		<metadataProvider>
+			<organizationName>KNZ LTER information Manager</organizationName>
+			<onlineUrl>http://www.konza.ksu.edu</onlineUrl>
+		</metadataProvider>
+		<pubDate>2016</pubDate>
+		<language>english</language>
+		<abstract>
+			<para>
+				<literalLayout>This Coverage Contains the Locations of Streams (GIS210) and Waterbodies (GIS211) within the Konza Prairie Biological Station. These data are available as zipped (.zip) shapefiles (.shp).</literalLayout>
+			</para>
+		</abstract>
+		<keywordSet>
+			<keyword keywordType="theme">Geographic information systems</keyword>
+			<keyword keywordType="theme">GIS</keyword>
+			<keyword keywordType="theme">grasslands</keyword>
+			<keyword keywordType="theme">streams</keyword>
+			<keyword keywordType="theme">boundaries</keyword>
+			<keyword keywordType="theme">biota</keyword>
+			<keyword keywordType="theme">environment</keyword>
+			<keyword keywordType="theme">water</keyword>
+			<keyword keywordType="theme">basins</keyword>
+			<keyword keywordType="theme">freshwater</keyword>
+			<keywordThesaurus>None</keywordThesaurus>
+		</keywordSet>
+		<keywordSet>
+			<keyword keywordType="place">Geary county</keyword>
+			<keyword keywordType="place">Kansas</keyword>
+			<keyword keywordType="place">Riley County</keyword>
+			<keyword keywordType="place">KNZ</keyword>
+			<keyword keywordType="place">Konza Prairie Biological Station</keyword>
+			<keyword keywordType="place">LTER</keyword>
+			<keywordThesaurus>GNIS</keywordThesaurus>
+		</keywordSet>
+		<distribution>
+			<online>
+				<url>http://www.konza.ksu.edu/KNZ/pages/data/Knzdsdetail.aspx?datasetCode=GIS21</url>
+			</online>
+		</distribution>
+		<coverage>
+			<geographicCoverage>
+				<geographicDescription>Geary countyKansasRiley CountyKNZKonza Prairie Biological StationLTER</geographicDescription>
+				<boundingCoordinates>
+					<westBoundingCoordinate>-96.615831</westBoundingCoordinate>
+					<eastBoundingCoordinate>-96.536901</eastBoundingCoordinate>
+					<northBoundingCoordinate>39.134780</northBoundingCoordinate>
+					<southBoundingCoordinate>39.064767</southBoundingCoordinate>
+				</boundingCoordinates>
+			</geographicCoverage>
+			<temporalCoverage>
+				<rangeOfDates>
+					<beginDate>
+						<calendarDate>1972-01-01</calendarDate>
+					</beginDate>
+					<endDate>
+						<calendarDate> 2016-12-31 </calendarDate>
+					</endDate>
+				</rangeOfDates>
+			</temporalCoverage>
+		</coverage>
+		<contact id="im">
+			<positionName>KNZ-LTER Data Manager</positionName>
+			<address>
+				<deliveryPoint>Division of Biology</deliveryPoint>
+				<deliveryPoint>Kansas State University</deliveryPoint>
+				<city>Manhattan</city>
+				<administrativeArea>KS</administrativeArea>
+				<postalCode>66506</postalCode>
+			</address>
+			<phone phonetype="voice">(785)532-6729</phone>
+			<phone phonetype="fax">(785)532-6653</phone>
+			<electronicMailAddress>knzlter@ksu.edu</electronicMailAddress>
+			<onlineUrl>http://www.konza.ksu.edu</onlineUrl>
+		</contact>
+		<methods>
+			<methodStep>
+				<description>
+					<para>For additional metadata see:
+						<ulink>http://www.konza.ksu.edu/KNZ/docs/DC.pdf</ulink>
+					</para>
+					<para>For additional methods information see:
+						<ulink>http://www.konza.ksu.edu/KNZ/docs/MM.pdf</ulink>
+					</para>
+				</description>
+			</methodStep>
+		</methods>
+		<spatialVector>
+			<alternateIdentifier>GIS210</alternateIdentifier>
+			<entityName>GIS210 Streams</entityName>
+			<entityDescription>This coverage contains the locations of streams within the Konza Prairie Biological Station.</entityDescription>
+			<physical>
+				<objectName>GIS210</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+    				</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS210.ZIP</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Geary countyKansasRiley CountyKNZKonza Prairie Biological StationLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.615831</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.536901</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.134780</northBoundingCoordinate>
+						<southBoundingCoordinate>39.064767</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>Shape</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>NAME</attributeName>
+					<attributeDefinition>Stream name.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>LENGTH</attributeName>
+					<attributeDefinition>Stream length in meters.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>Dataset codename</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>Feature ID number</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>LinearRing</geometry>
+			<geometricObjectCount>96</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="Transverse Mercator">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+		<spatialVector>
+			<alternateIdentifier>GIS211</alternateIdentifier>
+			<entityName>GIS211 Waterbodies</entityName>
+			<entityDescription>This dataset is a spatially explicit guide to the locations of various waterbodies on the Konza Prairie Biological Station. These datasets include temporal ponds, spring fed ponds, oxbow waterbodies, and stream fed pools.</entityDescription>
+			<physical>
+				<objectName>SHP</objectName>
+				<dataFormat>
+					<externallyDefinedFormat>
+						<formatName>zip file with ARC/INFO shape file
+  					</formatName>
+					</externallyDefinedFormat>
+				</dataFormat>
+				<distribution>
+					<online>
+						<url>http://www.konza.ksu.edu/harvest/PASTA/GIS21/GIS211.zip</url>
+					</online>
+				</distribution>
+			</physical>
+			<coverage>
+				<geographicCoverage>
+					<geographicDescription>Riley CountyGeary countyKansasKonza Prairie Biological StationKNZLTER</geographicDescription>
+					<boundingCoordinates>
+						<westBoundingCoordinate>-96.615506</westBoundingCoordinate>
+						<eastBoundingCoordinate>-96.545936</eastBoundingCoordinate>
+						<northBoundingCoordinate>39.128115</northBoundingCoordinate>
+						<southBoundingCoordinate>39.068246</southBoundingCoordinate>
+					</boundingCoordinates>
+				</geographicCoverage>
+			</coverage>
+			<attributeList>
+				<attribute>
+					<attributeName>FID</attributeName>
+					<attributeDefinition>Internal feature number.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Sequential unique whole numbers that are automatically generated.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>SHAPE</attributeName>
+					<attributeDefinition>Feature geometry.</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>Coordinates defining the features.</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>WATERSHED</attributeName>
+					<attributeDefinition>Watershed name</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>TYPE</attributeName>
+					<attributeDefinition>Type of waterbody</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>HECTARES</attributeName>
+					<attributeDefinition>Area in hectares</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATACODE</attributeName>
+					<attributeDefinition>Dataset codename</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+				<attribute>
+					<attributeName>DATAID</attributeName>
+					<attributeDefinition>Feature ID number</attributeDefinition>
+					<storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+					<measurementScale>
+						<nominal>
+							<nonNumericDomain>
+								<textDomain>
+									<definition>No further information about this attribute was provided</definition>
+								</textDomain>
+							</nonNumericDomain>
+						</nominal>
+					</measurementScale>
+				</attribute>
+			</attributeList>
+			<geometry>Polygon</geometry>
+			<geometricObjectCount>14</geometricObjectCount>
+			<spatialReference>
+				<horizCoordSysDef name="Transverse Mercator">
+					<projCoordSys>
+						<geogCoordSys>
+							<datum name="D North American 1983"/>
+							<spheroid name="GRS 1980" semiAxisMajor="6378137.0"
+								denomFlatRatio="298.257222101"/>
+							<primeMeridian name=" Greenwich" longitude="0.0"/>
+							<unit name="degree"/>
+						</geogCoordSys>
+						<projection name="Transverse Mercator">
+							<parameter name="Scale factor at central meridian"
+								description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+								value="0.9996"/>
+							<parameter name="Longitude at central meridian"
+								description="The line of logitude at the center of the map projection"
+								value="-99.0"/>
+							<parameter name="Latitude of projection origin"
+								description="The latitude chosen as center of the projection"
+								value="0.0"/>
+							<parameter name="False Easting"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="500000.0"/>
+							<parameter name="False Northing"
+								description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+								value="0.0"/>
+							<unit name="meter"/>
+						</projection>
+					</projCoordSys>
+				</horizCoordSysDef>
+			</spatialReference>
+		</spatialVector>
+	</dataset>
+</eml:eml>
