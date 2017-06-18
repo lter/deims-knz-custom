@@ -11,7 +11,7 @@
  * example.migrate.inc, it is automatically invoked only when needed.
  */
 
-define('GIS_EML_MIGRATION_GROUP', 'Eml_210');
+define('GIS_EML_MIGRATION_GROUP', 'GisEml_210');
 
 /**
  * Implements hook_hook_info().

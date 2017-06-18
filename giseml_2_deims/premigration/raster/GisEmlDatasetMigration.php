@@ -121,7 +121,7 @@ class GisEmlDatasetMigration extends XMLMigration {
       //@todo another text type for parsing
 
     $this->addFieldMapping('field_data_sources', 'dataRasterRef')
-      ->xpath('dataset/spatialRaster/entityName')
+//      ->xpath('dataset/spatialRaster/physical/objectName')
       ->description('In preparerow');
 
     $this->addFieldMapping('field_methods:format')->defaultValue('full_html');
@@ -157,10 +157,10 @@ class GisEmlDatasetMigration extends XMLMigration {
        ->description('lookup contact in prepareRow');
 
     $this->addFieldMapping('field_person_metadata_provider', 'metadataProviderRef')
-        ->defaultValue(3413);   // set to PIE Org
+        ->defaultValue(2226);   // set to KNZ Org, change in PROD
 
     $this->addFieldMapping('field_person_publisher', 'publisherRef')
-        ->defaultValue(3413);
+        ->defaultValue(2226);   // set to KNZ Orf, Chanage in proD
 
     $this->addFieldMapping('uid')->defaultValue(1);
     $this->addFieldMapping('status')->defaultValue(1);
@@ -336,8 +336,14 @@ class GisEmlDatasetMigration extends XMLMigration {
     $row->xml->dataset->contact->individualName->surName = $surnameid;
 
     //  raster entity name
-    $rasternameid = $this->getRasterSource($row);
-    $row->xml->dataset->spatialRaster->entityName = $rasternameid;
+//    $rasternameid = $this->getRasterSource($row);
+//    $rasternameid = $this->getDataSource($row);
+//    $row->xml->dataset->spatialRaster->entityName = $rasternameid;
+
+    $row->dataRasterRef = $this->getDataSource($row);
+
+    //  raster objectName
+//    $row->xml->dataset->spatialRaster->physical->objectName = $rasternameid;
 
     // GIS EML Methods:
     $methods_values = '';
@@ -451,29 +457,11 @@ class GisEmlDatasetMigration extends XMLMigration {
         $nid = reset($results['node'])->nid;
       }
     } else {
-      $nid = 4382; // 4382 is the inform. mangr at dev
+      $nid = 2226; // 2226 is the Konza LTER at dev --- CHANGE in Prod
     }
     return $nid;
   }
 
-  public function getDataSource($row) {
-
-    $field_values = array();
-
-    foreach($row->xml->dataset->spatialRaster as $xmldatasource) {
-      $source_id  = $xmldatasource->entityName;
-      print_r('SourceID:'); 
-      print_r($source_id);
-      if ($value = $this->handleSourceMigration('GisEmlDataFile', $source_id)){
-        $field_values[] = $value;
-      }else{
-        print_r('No FV: ');
-        print_r($this->handleSourceMigration('GisEmlDataFile', $source_id));
-      }
-    }
-    return $field_values;
-
-  }
   public function getKeywords($row) {
 
     $field_values = array();
@@ -492,22 +480,43 @@ class GisEmlDatasetMigration extends XMLMigration {
 
   public function getRasterSource($row) {
 
-    if (!empty($row->xml->dataset->spatialRaster->entityName)) {
+    if (!empty($row->xml->dataset->spatialRaster->physical->objectName)) {
       $query = new EntityFieldQuery();
       $query->entityCondition('entity_type', 'node');
       $query->entityCondition('bundle', 'data_source');
-      $query->propertyCondition('title', $row->xml->dataset->spatialRaster->entityName, 'CONTAINS');
+      $query->propertyCondition('title', $row->xml->dataset->spatialRaster->physical->objectName, 'CONTAINS');
       $results = $query->execute();
       if (!empty($results['node'])) {
         $nid = reset($results['node'])->nid;
-//        watchdog('GISEML2DEIMS:', "Dset-Dsource query matches: $nid");
+        watchdog('GISEML2DEIMS:', "Dset-Dsource query matches: $nid");
+
       }else{
         $strquery = print_r($query);
-//        watchdog('GISEML2DEIMS:', "Dset-Dsource query yield no matches $strquery ");
+        watchdog('GISEML2DEIMS:', "Dset-Dsource query yield no matches $strquery ");
       }
     }
     return $nid;
 
   }
 
+  public function getDataSource($row) {
+
+    $field_values = array();
+
+    foreach($row->xml->dataset->spatialRaster as $xmldatasource) {
+      $source_id  = $xmldatasource->physical->objectName;
+      print_r('SourceID:'); 
+      print_r($source_id);
+       watchdog('GISEML2DEIMS:', "source  query s: $nid");
+
+      if ($value = $this->handleSourceMigration('GisEmlDataFile', $source_id)){
+        $field_values[] = $value;
+      }else{
+        print_r('No FV: ');
+        print_r($this->handleSourceMigration('GisEmlDataFile', $source_id));
+      }
+    }
+    return $field_values;
+
+  }
 }

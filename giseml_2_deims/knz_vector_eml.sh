@@ -23,7 +23,7 @@
 
 
 #General path 
-mydir="/home/isangil/www/pie7/www/sites/default/modules/giseml_2_deims/xml/vector"
+mydir="/home/isangil/WWW/deims_knz/www/sites/default/modules/giseml_2_deims/xml/vector"
 
 # Get the names of XML files from the subfolder
 xml_files="${mydir}/*.xml"
