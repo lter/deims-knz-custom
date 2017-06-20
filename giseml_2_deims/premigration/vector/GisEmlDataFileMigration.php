@@ -46,7 +46,7 @@ class GisEmlDataFileMigration extends XMLMigration {
     $this->destination = new MigrateDestinationNode('data_source');
 
     $this->addFieldMapping('title', 'datasrcname')
-      ->xpath('entityName');
+      ->xpath('physical/objectName');
 
     $this->addFieldMapping('field_description', 'description')
       ->xpath('entityDescription');

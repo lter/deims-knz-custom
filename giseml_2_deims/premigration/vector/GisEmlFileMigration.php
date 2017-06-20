@@ -27,7 +27,7 @@ class GisEmlFileMigration extends XMLMigration {
           'type' => 'varchar',
           'length' => 255,
           'not null' => TRUE,
-          'description' => 'the GIS Vectorr EML title',
+          'description' => 'the GIS Vector EML title',
         )
       ),
       MigrateDestinationNode::getKeySchema()
@@ -62,7 +62,7 @@ class GisEmlFileMigration extends XMLMigration {
        'path',
        'preserve_files',
        'file_replace',
-       'source_dir',	
+       'source_dir',
        'urlencode',
     ));
   }
@@ -70,7 +70,7 @@ class GisEmlFileMigration extends XMLMigration {
   public function prepareRow($row) {
 
     $filen = (string) $row->xml->physical->objectName;
-    $row->file_uri = $base_path . 'sites/default/files/gis/' . $filen;
+    $row->file_uri = $base_path . 'sites/default/imports/gis/' . $filen . '.zip';
     $row->destination_file = $filen ;
 
   }

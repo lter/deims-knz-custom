@@ -80,7 +80,9 @@ class GisEmlDatasetMigration extends XMLMigration {
        ->xpath('dataset/alternateIdentifier');
 
     $this->addFieldMapping('field_abstract','abstract')  // the Xpath varies.
-      ->xpath('dataset/abstract/para');
+//      ->xpath('dataset/abstract/para/literalLayout');
+       ->description('abstract may use two different paths.  in prepareRow');
+
     $this->addFieldMapping('field_abstract:format')->defaultValue('full_html');
 
     //@todo  here again, it is a complex element
@@ -112,7 +114,7 @@ class GisEmlDatasetMigration extends XMLMigration {
     $this->addFieldMapping('field_additional_information:format')->defaultValue('full_html');
 
     $this->addFieldMapping('field_data_sources', 'dataVectorRef')
-      ->xpath('dataset/spatialVector/entityName')
+//      ->xpath('dataset/spatialVector/entityName')
       ->description('In preparerow');
 
     $this->addFieldMapping('field_methods:format')->defaultValue('full_html');
@@ -148,10 +150,10 @@ class GisEmlDatasetMigration extends XMLMigration {
        ->description('lookup contact in prepareRow');
 
     $this->addFieldMapping('field_person_metadata_provider', 'metadataProviderRef')
-        ->defaultValue(4895);   // set to KNZ Org
+        ->defaultValue(2226);   // set to KNZ Org change in production
 
     $this->addFieldMapping('field_person_publisher', 'publisherRef')
-        ->defaultValue(4895);  // KNZ hardcoded.
+        ->defaultValue(2226);  // KNZ hardcoded. change in production
 
     $this->addFieldMapping('uid')->defaultValue(1);
     $this->addFieldMapping('status')->defaultValue(1);
@@ -232,7 +234,14 @@ class GisEmlDatasetMigration extends XMLMigration {
     $row->datasetid = $identifier;
     $row->revisionid= $revision;
 
-    // pie-assigned keywords in GIS EML <keywordSet> construct
+    //abstract
+    if (isset($row->xml->dataset->abstract->para->literalLayout)){
+      $row->abstract = $row->xml->dataset->abstract->para->literalLayout;
+    }else{
+      $row->abstract = $row->xml->dataset->abstract->para;
+    }
+
+    // knz-assigned keywords in GIS EML <keywordSet> construct
     $row->customKeywordRef = $this->getKeywords($row);
 
     //dataset shortname
@@ -286,8 +295,10 @@ class GisEmlDatasetMigration extends XMLMigration {
     $row->xml->dataset->contact->individualName->surName = $surnameid;
 
     //  vector entity name
-    $vectornameid = $this->getVectorSource($row);
-    $row->xml->dataset->spatialVector->entityName = $vectornameid;
+   // $vectornameid = $this->getVectorSource($row);
+   // $row->xml->dataset->spatialVector->entityName = $vectornameid;
+
+    $row->dataVectorRef = $this->getDataSource($row);
 
     // GIS EML Methods:
     $methods_values = '';
@@ -382,7 +393,7 @@ class GisEmlDatasetMigration extends XMLMigration {
         $nid = reset($results['node'])->nid;
 //        watchdog('GISEML2DEIMS:', "Ds-Person query matches: $nid");
       }else{
-        $strquery = print_r($query);
+//        $strquery = print_r($query);
 //        watchdog('GISEML2DEIMS:', "Ds-Person query yield no matches $strquery ");
       }
     }
@@ -401,7 +412,7 @@ class GisEmlDatasetMigration extends XMLMigration {
         $nid = reset($results['node'])->nid;
       }
     } else {
-      $nid = 4382; // 4382 is the inform. mangr at dev
+      $nid = 2226; // 2226 is the inform. mangr at dev for knz
     }
     return $nid;
   }
@@ -434,12 +445,29 @@ class GisEmlDatasetMigration extends XMLMigration {
         $nid = reset($results['node'])->nid;
 //        watchdog('GISEML2DEIMS:', "Dset-Dsource query matches: $nid");
       }else{
-        $strquery = print_r($query);
+//        $strquery = print_r($query);
 //        watchdog('GISEML2DEIMS:', "Dset-Dsource query yield no matches $strquery ");
       }
     }
     return $nid;
 
+  }
+
+  public function getDataSource($row) {
+    $field_values = array();
+    foreach($row->xml->dataset->spatialVector as $xmldatasource) {
+      $source_id  = $xmldatasource->physical->objectName;
+//      print_r('SourceID:'); 
+//      print_r($source_id);
+       watchdog('GISEML2DEIMS:', "source  query s: $nid");
+      if ($value = $this->handleSourceMigration('GisEmlDataFile', $source_id)){
+        $field_values[] = $value;
+      }else{
+//        print_r('No FV: ');
+//        print_r($this->handleSourceMigration('GisEmlDataFile', $source_id));
+      }
+    }
+    return $field_values;
   }
 
 }
