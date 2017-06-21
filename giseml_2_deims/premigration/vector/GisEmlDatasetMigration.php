@@ -34,9 +34,8 @@ class GisEmlDatasetMigration extends XMLMigration {
         'locationsitenid' => t('The nid for the location site'),
         'language' => t('The dataset language'),
    //    'associatedparties' => t('The dataset associated roles'),
-        'customKeywordRef' => t('The pie XML assigned keywords tagging this dataset to GIS Keyw'),
         'sectionKeywordRef' => t('The GIS specific subsection keywords tagging this dataset to Section'),
-        'gisKeywordRef' => t('One of four GIS section keywords tagging this dataset to PIE Res. Areas voc - aka stat key'),
+        'gisKeywordRef' => t('GIS section keywords tagging this dataset'),
         'maintenance' => t('The dataset maintenance'),
         'dataVectorRef' => t('The data sources associated with this dataset'),
         'datasetid' => t('The dataset id'),
@@ -97,15 +96,14 @@ class GisEmlDatasetMigration extends XMLMigration {
 //  'sectionKeywordRef' => t('The GIS specific subsection keywords tagging this dataset to Section'),
 
     $this->addFieldMapping('field_section:ignore_case')->defaultValue(TRUE);
-    $this->addFieldMapping('field_section','sectionKeywordRef')
-      ->description('In preparerow');
+    $this->addFieldMapping('field_section')->defaultValue('GIS');
 
 
-//  'customKeywordRef' => t('The pie XML assigned keywords tagging this dataset to GIS Keyw'),
+//  'gisKeywordRef' => t('The pie XML assigned keywords tagging this dataset to GIS Keyw'),
 
-    $this->addFieldMapping('field_gis_section_termref:source_type')->defaultValue('tid');
-    $this->addFieldMapping('field_gis_section_termref:ignore_case')->defaultValue(TRUE);
-    $this->addFieldMapping('field_gis_section_termref','customKeywordRef')
+    $this->addFieldMapping('field_giskeyword_termref:source_type')->defaultValue('tid');
+    $this->addFieldMapping('field_giskeyword_termref:ignore_case')->defaultValue(TRUE);
+    $this->addFieldMapping('field_giskeyword_termref','gisKeywordRef')
       ->description('explode XML in preparerow');
 
       //@todo another text type for parsing
@@ -242,7 +240,7 @@ class GisEmlDatasetMigration extends XMLMigration {
     }
 
     // knz-assigned keywords in GIS EML <keywordSet> construct
-    $row->customKeywordRef = $this->getKeywords($row);
+    $row->gisKeywordRef = $this->getKeywords($row);
 
     //dataset shortname
     if(!isset($row->xml->dataset->alternateIdentifier)){
