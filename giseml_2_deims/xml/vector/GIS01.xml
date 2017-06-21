@@ -118,7 +118,7 @@
 			<entityName>GIS010: Konza Fences</entityName>
 			<entityDescription>The internal fenced area on Konza Prairie.</entityDescription>
 			<physical>
-				<objectName>SHP</objectName>
+				<objectName>GIS010</objectName>
 				<dataFormat>
 					<externallyDefinedFormat>
 						<formatName>zip file with ARC/INFO shape file
