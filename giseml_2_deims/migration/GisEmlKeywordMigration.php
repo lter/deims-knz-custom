@@ -20,7 +20,7 @@ class GisEmlKeywordsMigration extends Migration {
 
     $columns = array(
       0 => array('keyword', 'The Keyword Name'),
-   );
+    );
 
     $xml_folder = DRUPAL_ROOT . '/' . drupal_get_path('module', 'giseml_2_deims') . '/xml/';
     $csv_file = $xml_folder . 'gisemlKeywords.txt';
@@ -43,8 +43,18 @@ class GisEmlKeywordsMigration extends Migration {
 
     $this->destination = new MigrateDestinationTerm('gis_keywords');
 
-    $this->addFieldMapping('name', 'keyword')
-     ->description('Optionally, tweak in prepareRow');
+    $this->addFieldMapping('name', 'keyword');
+
+    $this->addUnmigratedDestinations(array(
+      'description',  //	Description (link is external)
+      'parent',       //	Parent (by Drupal term ID) (link is external)
+      'parent_name',	//     Parent (by name) (link is external)
+      'format',	      // Format (link is external)
+      'weight',	     //  Weight (link is external)
+      'path',     //	Path alias
+      'pathauto',
+    ));
+
 
   }
 
